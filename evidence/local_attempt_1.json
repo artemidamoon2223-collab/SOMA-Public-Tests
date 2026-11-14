@@ -1,0 +1,214 @@
+{
+  "schema": "SOMA_PUBLIC_CI_001_V1",
+  "scope": "PUBLIC_SYNTHETIC_ONLY",
+  "execution_environment": "local",
+  "commit_sha": "local-uncommitted",
+  "github_run_id": null,
+  "github_run_attempt": null,
+  "results": [
+    {
+      "name": "platform_inventory",
+      "category": "capability",
+      "status": "PASS",
+      "seconds": 0.0014,
+      "detail": {
+        "distribution": {
+          "NAME": "Debian GNU/Linux",
+          "ID": "debian",
+          "PRETTY_NAME": "Debian GNU/Linux 13 (trixie)",
+          "VERSION_ID": "13",
+          "VERSION": "13 (trixie)",
+          "VERSION_CODENAME": "trixie",
+          "DEBIAN_VERSION_FULL": "13.6",
+          "HOME_URL": "https://www.debian.org/",
+          "SUPPORT_URL": "https://www.debian.org/support",
+          "BUG_REPORT_URL": "https://bugs.debian.org/"
+        },
+        "kernel": "6.18.57",
+        "architecture": "x86_64",
+        "python": "3.12.14",
+        "cpu_count": 9,
+        "cpu_affinity_count": 9,
+        "ram": {
+          "MemTotal_kib": 10206468,
+          "MemAvailable_kib": 9615028
+        },
+        "uid": 1000,
+        "euid": 1000,
+        "production_isolation_verified": false
+      }
+    },
+    {
+      "name": "af_unix_peer_credentials",
+      "category": "capability",
+      "status": "FAIL",
+      "seconds": 0.0055,
+      "detail": "Traceback (most recent call last):\n  File \"/workspace/scratch/815ebe1c986f/soma_public_ci/tests/preflight.py\", line 437, in main\n    detail = function(Path(temporary))\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/scratch/815ebe1c986f/soma_public_ci/tests/preflight.py\", line 193, in af_unix_peer_credentials\n    with socket.socket(socket.AF_UNIX) as server:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/socket.py\", line 233, in __init__\n    _socket.socket.__init__(self, family, type, proto, fileno)\nPermissionError: [Errno 1] Operation not permitted\n"
+    },
+    {
+      "name": "process_separation",
+      "category": "capability",
+      "status": "PASS",
+      "seconds": 0.0992,
+      "detail": {
+        "pid_session_cwd_environment_separation": true,
+        "hostile_code_sandbox": "NOT_VERIFIED"
+      }
+    },
+    {
+      "name": "permissions_locks_atomic_replace",
+      "category": "capability",
+      "status": "PASS",
+      "seconds": 0.2395,
+      "detail": {
+        "mode_0600": true,
+        "interprocess_lock": true,
+        "atomic_reader_view": true,
+        "cross_uid_permission_boundary": "NOT_VERIFIED"
+      }
+    },
+    {
+      "name": "sqlite_sigkill_recovery",
+      "category": "capability",
+      "status": "PASS",
+      "seconds": 0.1641,
+      "detail": {
+        "uncommitted_rollback": true,
+        "committed_survives_sigkill": true,
+        "power_loss_or_storage_failure": "NOT_VERIFIED"
+      }
+    },
+    {
+      "name": "sqlite_concurrent_writes",
+      "category": "capability",
+      "status": "PASS",
+      "seconds": 0.1056,
+      "detail": {
+        "processes": 4,
+        "committed_unique_rows": 60
+      }
+    },
+    {
+      "name": "resource_limit_enforcement",
+      "category": "capability",
+      "status": "PASS",
+      "seconds": 1.2733,
+      "detail": {
+        "memory": {
+          "memory_limit_enforced": true
+        },
+        "descriptors": {
+          "descriptor_limit_enforced": true,
+          "cleanup_recovered": true
+        },
+        "file_size": {
+          "file_size_limit_enforced": true
+        },
+        "cpu_limit_signal": "SIGXCPU",
+        "global_exhaustion_attempted": false
+      }
+    },
+    {
+      "name": "unprivileged_user_namespace",
+      "category": "optional_capability",
+      "status": "PASS",
+      "seconds": 0.0314,
+      "detail": {
+        "new_namespaces": [
+          "user"
+        ],
+        "privilege_escalation": false,
+        "mount_operations_tested": false
+      }
+    },
+    {
+      "name": "unprivileged_mount_namespace",
+      "category": "optional_capability",
+      "status": "PASS",
+      "seconds": 0.0319,
+      "detail": {
+        "new_namespaces": [
+          "user",
+          "mnt"
+        ],
+        "privilege_escalation": false,
+        "mount_operations_tested": false
+      }
+    },
+    {
+      "name": "durable_action_identity_and_authorization",
+      "category": "synthetic_invariant",
+      "status": "PASS",
+      "seconds": 0.0027,
+      "detail": {
+        "same_id_same_request_idempotent": true,
+        "rebind_rejected": true,
+        "unauthorized_operation_has_no_row": true,
+        "duplicate_execution_rejected": true
+      }
+    },
+    {
+      "name": "unknown_outcome_never_replays",
+      "category": "synthetic_invariant",
+      "status": "PASS",
+      "seconds": 0.2383,
+      "detail": {
+        "sigkill_verified": true,
+        "restart_attempts": 3,
+        "side_effect_count": 1,
+        "unknown_remained_blocked": true
+      }
+    },
+    {
+      "name": "concurrent_action_claims",
+      "category": "synthetic_invariant",
+      "status": "PASS",
+      "seconds": 0.133,
+      "detail": {
+        "concurrent_processes": 4,
+        "executions": 1
+      }
+    },
+    {
+      "name": "append_only_journal_and_tamper_controls",
+      "category": "synthetic_invariant",
+      "status": "PASS",
+      "seconds": 0.0025,
+      "detail": {
+        "existing_prefix_unchanged": true,
+        "negative_controls_rejected": [
+          "edit",
+          "truncate",
+          "missing_anchor",
+          "wrong_anchor",
+          "torn_append"
+        ],
+        "authenticated_journal": false,
+        "coordinated_journal_anchor_rollback_detection": "NOT_VERIFIED"
+      }
+    },
+    {
+      "name": "concurrent_journal_appends",
+      "category": "synthetic_invariant",
+      "status": "PASS",
+      "seconds": 0.1271,
+      "detail": {
+        "processes": 4,
+        "complete_unique_records": 48
+      }
+    }
+  ],
+  "counts": {
+    "PASS": 13,
+    "FAIL": 1
+  },
+  "source_sha256": {
+    "synthetic_store.py": "7529b983bb6c3dd6833e03d51f2c63b921f52c4a8985e233bb6fdf9f8b1d8b2e",
+    "tests/preflight.py": "46e180b4df3b24b428a4e04d7bdeb4e5c46b5cf4f7e208f8aacd981188428e09",
+    "tests/verify_report.py": "eef78ddf3c61aa2bc463024ed5133031f24db444b91be1c74568f0301f7f67f8"
+  },
+  "SCIENTIFICALLY_VALIDATED": "NO",
+  "CONFIRMATORY_SET_USED": false,
+  "NEW_LIVE_MODEL_CALLS": 0,
+  "production_isolation_verified": false
+}
