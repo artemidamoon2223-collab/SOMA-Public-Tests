@@ -1,0 +1,402 @@
+[
+  {
+    "CONFIRMATORY_SET_USED": false,
+    "NEW_LIVE_MODEL_CALLS": 0,
+    "SCIENTIFICALLY_VALIDATED": "NO",
+    "limitations": {
+      "authentication": "Fresh synthetic HMAC key in anonymous pipes only; same-UID memory isolation not claimed",
+      "different_uid": "BLOCKED: no authorized distinct-UID execution mechanism; no sudo/setuid attempted",
+      "filesystem_isolation": "NOT_VERIFIED: same UID can access shared filesystem; mode 0600 is not peer isolation",
+      "mount_namespace": "BLOCKED in CI-001; no bypass/retry",
+      "same_uid_peer_credentials": "Measured PID/UID binding only; hostile same-UID ptrace/filesystem attacker not isolated"
+    },
+    "records": [
+      {
+        "detail": {
+          "distinct_pids": true
+        },
+        "name": "three_process_authorized",
+        "status": "PASS"
+      },
+      {
+        "detail": {
+          "actual": "DENIED_OPERATION",
+          "all_servers_alive": true,
+          "expected": "DENIED_OPERATION"
+        },
+        "name": "unauthorized_operation",
+        "status": "PASS"
+      },
+      {
+        "detail": {
+          "actual": "FORGED_IDENTITY",
+          "all_servers_alive": true,
+          "expected": "FORGED_IDENTITY"
+        },
+        "name": "forged_identity",
+        "status": "PASS"
+      },
+      {
+        "detail": {
+          "actual": "REPLAY",
+          "all_servers_alive": true,
+          "expected": "REPLAY"
+        },
+        "name": "replay",
+        "status": "PASS"
+      },
+      {
+        "detail": {
+          "actual": "BAD_MAC",
+          "all_servers_alive": true,
+          "expected": "BAD_MAC"
+        },
+        "name": "altered_ticket",
+        "status": "PASS"
+      },
+      {
+        "detail": {
+          "actual": "BAD_MAC",
+          "all_servers_alive": true,
+          "expected": "BAD_MAC"
+        },
+        "name": "invalid_mac",
+        "status": "PASS"
+      },
+      {
+        "detail": {
+          "actual": "EXPIRED",
+          "all_servers_alive": true,
+          "expected": "EXPIRED"
+        },
+        "name": "expired_grant",
+        "status": "PASS"
+      },
+      {
+        "detail": {
+          "actual": "WRONG_PEER",
+          "all_servers_alive": true,
+          "expected": "WRONG_PEER"
+        },
+        "name": "wrong_peer",
+        "status": "PASS"
+      },
+      {
+        "detail": {
+          "actual": "WRONG_PEER",
+          "all_servers_alive": true,
+          "expected": "WRONG_PEER"
+        },
+        "name": "worker_permission_escalation",
+        "status": "PASS"
+      },
+      {
+        "detail": {
+          "actual": "MALFORMED",
+          "all_servers_alive": true,
+          "expected": "MALFORMED"
+        },
+        "name": "malformed_message",
+        "status": "PASS"
+      },
+      {
+        "detail": {
+          "codes": [
+            "OK",
+            "REPLAY",
+            "REPLAY",
+            "REPLAY"
+          ]
+        },
+        "name": "concurrent_one_execution",
+        "status": "PASS"
+      },
+      {
+        "detail": {
+          "actual": "IDENTITY_CONFLICT",
+          "all_servers_alive": true,
+          "expected": "IDENTITY_CONFLICT"
+        },
+        "name": "durable_identity_conflict",
+        "status": "PASS"
+      },
+      {
+        "detail": {
+          "actual": "IDENTITY_CONFLICT",
+          "all_servers_alive": true,
+          "expected": "IDENTITY_CONFLICT"
+        },
+        "name": "controller_restart_identity",
+        "status": "PASS"
+      },
+      {
+        "detail": {
+          "actual": "REPLAY",
+          "all_servers_alive": true,
+          "expected": "REPLAY"
+        },
+        "name": "completed_identity_restart",
+        "status": "PASS"
+      },
+      {
+        "detail": {
+          "exit_code": -9,
+          "response": "DISCONNECTED"
+        },
+        "name": "sigkill_exact_outcome",
+        "status": "PASS"
+      },
+      {
+        "detail": {
+          "actual": "UNKNOWN_OUTCOME",
+          "all_servers_alive": true,
+          "expected": "UNKNOWN_OUTCOME"
+        },
+        "name": "unknown_no_replay_0",
+        "status": "PASS"
+      },
+      {
+        "detail": {
+          "actual": "UNKNOWN_OUTCOME",
+          "all_servers_alive": true,
+          "expected": "UNKNOWN_OUTCOME"
+        },
+        "name": "unknown_no_replay_1",
+        "status": "PASS"
+      },
+      {
+        "detail": {
+          "executions": [
+            "normal",
+            "concurrent",
+            "uncertain"
+          ]
+        },
+        "name": "durable_execution_counts",
+        "status": "PASS"
+      },
+      {
+        "detail": {
+          "servers_alive": true
+        },
+        "name": "post_attack_legitimate_request",
+        "status": "PASS"
+      },
+      {
+        "detail": {
+          "diagnostic": "CORRUPT_STATE",
+          "exit_code": 42
+        },
+        "name": "corrupt_state_fail_closed",
+        "status": "PASS"
+      }
+    ],
+    "run_id": "43584686451",
+    "schema": "SOMA_CI002_V1",
+    "source_hashes": {
+      "system.py": "84086f0beda4983238aa77d07c4ca1ed1f38ecb7d3a48adf2cd867f80b6aa371",
+      "verify.py": "2d1fc8a30bb855b86056d4c5dc8683bb2ed0931ff30f1d99d08ebe321aec691b"
+    },
+    "source_sha": "b995d10090760a8fc41a87c5efa7d0548b184b16"
+  },
+  {
+    "CONFIRMATORY_SET_USED": false,
+    "NEW_LIVE_MODEL_CALLS": 0,
+    "SCIENTIFICALLY_VALIDATED": "NO",
+    "limitations": {
+      "authentication": "Fresh synthetic HMAC key in anonymous pipes only; same-UID memory isolation not claimed",
+      "different_uid": "BLOCKED: no authorized distinct-UID execution mechanism; no sudo/setuid attempted",
+      "filesystem_isolation": "NOT_VERIFIED: same UID can access shared filesystem; mode 0600 is not peer isolation",
+      "mount_namespace": "BLOCKED in CI-001; no bypass/retry",
+      "same_uid_peer_credentials": "Measured PID/UID binding only; hostile same-UID ptrace/filesystem attacker not isolated"
+    },
+    "records": [
+      {
+        "detail": {
+          "distinct_pids": true
+        },
+        "name": "three_process_authorized",
+        "status": "PASS"
+      },
+      {
+        "detail": {
+          "actual": "DENIED_OPERATION",
+          "all_servers_alive": true,
+          "expected": "DENIED_OPERATION"
+        },
+        "name": "unauthorized_operation",
+        "status": "PASS"
+      },
+      {
+        "detail": {
+          "actual": "FORGED_IDENTITY",
+          "all_servers_alive": true,
+          "expected": "FORGED_IDENTITY"
+        },
+        "name": "forged_identity",
+        "status": "PASS"
+      },
+      {
+        "detail": {
+          "actual": "REPLAY",
+          "all_servers_alive": true,
+          "expected": "REPLAY"
+        },
+        "name": "replay",
+        "status": "PASS"
+      },
+      {
+        "detail": {
+          "actual": "BAD_MAC",
+          "all_servers_alive": true,
+          "expected": "BAD_MAC"
+        },
+        "name": "altered_ticket",
+        "status": "PASS"
+      },
+      {
+        "detail": {
+          "actual": "BAD_MAC",
+          "all_servers_alive": true,
+          "expected": "BAD_MAC"
+        },
+        "name": "invalid_mac",
+        "status": "PASS"
+      },
+      {
+        "detail": {
+          "actual": "EXPIRED",
+          "all_servers_alive": true,
+          "expected": "EXPIRED"
+        },
+        "name": "expired_grant",
+        "status": "PASS"
+      },
+      {
+        "detail": {
+          "actual": "WRONG_PEER",
+          "all_servers_alive": true,
+          "expected": "WRONG_PEER"
+        },
+        "name": "wrong_peer",
+        "status": "PASS"
+      },
+      {
+        "detail": {
+          "actual": "WRONG_PEER",
+          "all_servers_alive": true,
+          "expected": "WRONG_PEER"
+        },
+        "name": "worker_permission_escalation",
+        "status": "PASS"
+      },
+      {
+        "detail": {
+          "actual": "MALFORMED",
+          "all_servers_alive": true,
+          "expected": "MALFORMED"
+        },
+        "name": "malformed_message",
+        "status": "PASS"
+      },
+      {
+        "detail": {
+          "codes": [
+            "REPLAY",
+            "OK",
+            "REPLAY",
+            "REPLAY"
+          ]
+        },
+        "name": "concurrent_one_execution",
+        "status": "PASS"
+      },
+      {
+        "detail": {
+          "actual": "IDENTITY_CONFLICT",
+          "all_servers_alive": true,
+          "expected": "IDENTITY_CONFLICT"
+        },
+        "name": "durable_identity_conflict",
+        "status": "PASS"
+      },
+      {
+        "detail": {
+          "actual": "IDENTITY_CONFLICT",
+          "all_servers_alive": true,
+          "expected": "IDENTITY_CONFLICT"
+        },
+        "name": "controller_restart_identity",
+        "status": "PASS"
+      },
+      {
+        "detail": {
+          "actual": "REPLAY",
+          "all_servers_alive": true,
+          "expected": "REPLAY"
+        },
+        "name": "completed_identity_restart",
+        "status": "PASS"
+      },
+      {
+        "detail": {
+          "exit_code": -9,
+          "response": "DISCONNECTED"
+        },
+        "name": "sigkill_exact_outcome",
+        "status": "PASS"
+      },
+      {
+        "detail": {
+          "actual": "UNKNOWN_OUTCOME",
+          "all_servers_alive": true,
+          "expected": "UNKNOWN_OUTCOME"
+        },
+        "name": "unknown_no_replay_0",
+        "status": "PASS"
+      },
+      {
+        "detail": {
+          "actual": "UNKNOWN_OUTCOME",
+          "all_servers_alive": true,
+          "expected": "UNKNOWN_OUTCOME"
+        },
+        "name": "unknown_no_replay_1",
+        "status": "PASS"
+      },
+      {
+        "detail": {
+          "executions": [
+            "normal",
+            "concurrent",
+            "uncertain"
+          ]
+        },
+        "name": "durable_execution_counts",
+        "status": "PASS"
+      },
+      {
+        "detail": {
+          "servers_alive": true
+        },
+        "name": "post_attack_legitimate_request",
+        "status": "PASS"
+      },
+      {
+        "detail": {
+          "diagnostic": "CORRUPT_STATE",
+          "exit_code": 42
+        },
+        "name": "corrupt_state_fail_closed",
+        "status": "PASS"
+      }
+    ],
+    "run_id": "43584686451",
+    "schema": "SOMA_CI002_V1",
+    "source_hashes": {
+      "system.py": "84086f0beda4983238aa77d07c4ca1ed1f38ecb7d3a48adf2cd867f80b6aa371",
+      "verify.py": "2d1fc8a30bb855b86056d4c5dc8683bb2ed0931ff30f1d99d08ebe321aec691b"
+    },
+    "source_sha": "b995d10090760a8fc41a87c5efa7d0548b184b16"
+  }
+]

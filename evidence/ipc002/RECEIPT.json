@@ -1,0 +1,31 @@
+{
+  "source_commit": "b995d10090760a8fc41a87c5efa7d0548b184b16",
+  "run_id": 43584686451,
+  "job_id": 132416544114,
+  "repetitions": 2,
+  "passed_per_repetition": 20,
+  "failures": 0,
+  "workflow_exit_code": 0,
+  "source_sha256": {
+    "ipc002/system.py": "84086f0beda4983238aa77d07c4ca1ed1f38ecb7d3a48adf2cd867f80b6aa371",
+    "ipc002/verify.py": "2d1fc8a30bb855b86056d4c5dc8683bb2ed0931ff30f1d99d08ebe321aec691b",
+    ".github/workflows/soma-ipc-verification.yml": "5919e9784ad70df4f53fb6ee4af57bd7ccb83eec750cf25dcedd790be7b53954"
+  },
+  "evidence_sha256": {
+    "review.py": "5798b08fc418a3a33ff3415445f15a04090a4a4fc5fd3348117161447976c69d",
+    "jobs.json": "a630f28d400a11591eb96df9b21ec1ca592a845e09b63dee4b7ae06db5b7e0ab",
+    "job.log": "af38315397b27f88648244052408eb0de740aeebcfe58035e5301525d21d8b95",
+    "REPORT_RU.md": "e35a2a32976ff5c8e67ea0189d4503779e556a04e99908ddd916af33ea7f38fe",
+    "PRIVATE_INTEGRATION_PLAN_RU.md": "89d4b6adb5fef24af4e1aef1873a57eb97a7ad21ce6b185015f99f540830306d",
+    "reports.json": "8be8a0be34e4b392711c1052ed0fe1aedc5026a6af0f7319a9b910b85cd7994f"
+  },
+  "independent_log_audit": "PASS; 3 manipulated reports rejected",
+  "source": "connected GitHub job logs; JSON extracted from log records",
+  "different_uid": "BLOCKED",
+  "filesystem_isolation": "NOT_VERIFIED",
+  "mount_namespace": "BLOCKED (CI-001)",
+  "production_security": "NOT_VERIFIED",
+  "SCIENTIFICALLY_VALIDATED": "NO",
+  "CONFIRMATORY_SET_USED": false,
+  "NEW_LIVE_MODEL_CALLS": 0
+}

@@ -1,0 +1,222 @@
+﻿2026-11-14T10:19:00.3355874Z Current runner version: '2.338.2'
+2026-11-14T10:19:00.3377852Z ##[group]Runner Image Provisioner
+2026-11-14T10:19:00.3378607Z Hosted Compute Agent
+2026-11-14T10:19:00.3379168Z Version: 20261103.629
+2026-11-14T10:19:00.3379997Z Commit: 15dbd9ccb5dbf34fae002b6ed1a2670f52df37bc
+2026-11-14T10:19:00.3380624Z Build Date: 2026-11-03T17:26:59Z
+2026-11-14T10:19:00.3381278Z Worker ID: {5306a7d3-fde5-47d7-a1e1-09c184cd8722}
+2026-11-14T10:19:00.3381876Z Region: eastus2
+2026-11-14T10:19:00.3382343Z Cloud: Azure
+2026-11-14T10:19:00.3382873Z ##[endgroup]
+2026-11-14T10:19:00.3384461Z ##[group]Operating System
+2026-11-14T10:19:00.3385174Z Ubuntu
+2026-11-14T10:19:00.3385837Z 24.04.5
+2026-11-14T10:19:00.3386444Z LTS
+2026-11-14T10:19:00.3387133Z ##[endgroup]
+2026-11-14T10:19:00.3387793Z ##[group]Runner Image
+2026-11-14T10:19:00.3388516Z Image: ubuntu-24.04
+2026-11-14T10:19:00.3389231Z Version: 20261111.370.1
+2026-11-14T10:19:00.3391066Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261111.370/images/ubuntu/Ubuntu2404-Readme.md
+2026-11-14T10:19:00.3393065Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261111.370
+2026-11-14T10:19:00.3394351Z ##[endgroup]
+2026-11-14T10:19:00.3395669Z ##[group]GITHUB_TOKEN Permissions
+2026-11-14T10:19:00.3397927Z Contents: read
+2026-11-14T10:19:00.3398675Z Metadata: read
+2026-11-14T10:19:00.3399399Z ##[endgroup]
+2026-11-14T10:19:00.3402088Z Secret source: Actions
+2026-11-14T10:19:00.3403195Z Cache mode: write
+2026-11-14T10:19:00.3404639Z Prepare workflow directory
+2026-11-14T10:19:00.3816347Z Prepare all required actions
+2026-11-14T10:19:00.3872710Z Getting action download info
+2026-11-14T10:19:00.5905579Z Download action repository 'actions/checkout@11d5960a326750d5838078e36cf38b85af677262' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-11-14T10:19:00.8084526Z Download action repository 'actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+2026-11-14T10:19:00.9997076Z Complete job name: verify
+2026-11-14T10:19:01.0726136Z ##[group]Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+2026-11-14T10:19:01.0727041Z with:
+2026-11-14T10:19:01.0727433Z   ref: b995d10090760a8fc41a87c5efa7d0548b184b16
+2026-11-14T10:19:01.0727936Z   persist-credentials: false
+2026-11-14T10:19:01.0728421Z   repository: artemidamoon2223-collab/SOMA-Public-Tests
+2026-11-14T10:19:01.0731810Z   token: ***
+2026-11-14T10:19:01.0732176Z   ssh-strict: true
+2026-11-14T10:19:01.0732542Z   ssh-user: git
+2026-11-14T10:19:01.0732895Z   clean: true
+2026-11-14T10:19:01.0733265Z   sparse-checkout-cone-mode: true
+2026-11-14T10:19:01.0733693Z   fetch-depth: 1
+2026-11-14T10:19:01.0734047Z   fetch-tags: false
+2026-11-14T10:19:01.0734421Z   show-progress: true
+2026-11-14T10:19:01.0734792Z   lfs: false
+2026-11-14T10:19:01.0735148Z   submodules: false
+2026-11-14T10:19:01.0735517Z   set-safe-directory: true
+2026-11-14T10:19:01.0735930Z   allow-unsafe-pr-checkout: false
+2026-11-14T10:19:01.0736549Z ##[endgroup]
+2026-11-14T10:19:01.6954994Z Syncing repository: artemidamoon2223-collab/SOMA-Public-Tests
+2026-11-14T10:19:01.6957161Z ##[group]Getting Git version info
+2026-11-14T10:19:01.6957902Z Working directory is '/home/runner/work/SOMA-Public-Tests/SOMA-Public-Tests'
+2026-11-14T10:19:01.6959442Z [command]/usr/bin/git version
+2026-11-14T10:19:01.7538595Z git version 2.56.1
+2026-11-14T10:19:01.7556894Z ##[endgroup]
+2026-11-14T10:19:01.7571992Z Temporarily overriding HOME='/home/runner/work/_temp/b2e324cc-b7af-4151-a13c-973892e0a8d8' before making global git config changes
+2026-11-14T10:19:01.7576417Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-14T10:19:01.7578396Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/SOMA-Public-Tests/SOMA-Public-Tests
+2026-11-14T10:19:01.7663700Z Deleting the contents of '/home/runner/work/SOMA-Public-Tests/SOMA-Public-Tests'
+2026-11-14T10:19:01.7669949Z ##[group]Initializing the repository
+2026-11-14T10:19:01.7673297Z [command]/usr/bin/git init /home/runner/work/SOMA-Public-Tests/SOMA-Public-Tests
+2026-11-14T10:19:01.7905282Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-14T10:19:01.7906289Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-14T10:19:01.7907431Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-14T10:19:01.7908268Z hint: call:
+2026-11-14T10:19:01.7908752Z hint:
+2026-11-14T10:19:01.7909267Z hint: 	git config --global init.defaultBranch <name>
+2026-11-14T10:19:01.7910251Z hint:
+2026-11-14T10:19:01.7911095Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-14T10:19:01.7912449Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-14T10:19:01.7913439Z hint:
+2026-11-14T10:19:01.7913860Z hint: 	git branch -m <name>
+2026-11-14T10:19:01.7914320Z hint:
+2026-11-14T10:19:01.7914919Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-14T10:19:01.7916125Z Initialized empty Git repository in /home/runner/work/SOMA-Public-Tests/SOMA-Public-Tests/.git/
+2026-11-14T10:19:01.7922311Z [command]/usr/bin/git remote add origin https://github.com/artemidamoon2223-collab/SOMA-Public-Tests
+2026-11-14T10:19:01.7973401Z ##[endgroup]
+2026-11-14T10:19:01.7974636Z ##[group]Disabling automatic garbage collection
+2026-11-14T10:19:01.7976205Z [command]/usr/bin/git config --local gc.auto 0
+2026-11-14T10:19:01.8012336Z ##[endgroup]
+2026-11-14T10:19:01.8013567Z ##[group]Setting up auth
+2026-11-14T10:19:01.8018384Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-14T10:19:01.8056291Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-14T10:19:01.8913952Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-14T10:19:01.8954838Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-14T10:19:01.9163897Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-14T10:19:01.9201757Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-14T10:19:01.9407492Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-14T10:19:01.9450448Z ##[endgroup]
+2026-11-14T10:19:01.9451610Z ##[group]Fetching the repository
+2026-11-14T10:19:01.9460986Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin b995d10090760a8fc41a87c5efa7d0548b184b16
+2026-11-14T10:19:02.3407296Z From https://github.com/artemidamoon2223-collab/SOMA-Public-Tests
+2026-11-14T10:19:02.3408687Z  * branch            b995d10090760a8fc41a87c5efa7d0548b184b16 -> FETCH_HEAD
+2026-11-14T10:19:02.3411140Z ##[endgroup]
+2026-11-14T10:19:02.3412009Z ##[group]Determining the checkout info
+2026-11-14T10:19:02.3413071Z ##[endgroup]
+2026-11-14T10:19:02.3419204Z [command]/usr/bin/git sparse-checkout disable
+2026-11-14T10:19:02.3476410Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-11-14T10:19:02.3510906Z ##[group]Checking out the ref
+2026-11-14T10:19:02.3514226Z [command]/usr/bin/git checkout --progress --force b995d10090760a8fc41a87c5efa7d0548b184b16
+2026-11-14T10:19:02.3567420Z Note: switching to 'b995d10090760a8fc41a87c5efa7d0548b184b16'.
+2026-11-14T10:19:02.3568493Z 
+2026-11-14T10:19:02.3569232Z You are in 'detached HEAD' state. You can look around, make experimental
+2026-11-14T10:19:02.3571036Z changes and commit them, and you can discard any commits you make in this
+2026-11-14T10:19:02.3572358Z state without impacting any branches by switching back to a branch.
+2026-11-14T10:19:02.3573384Z 
+2026-11-14T10:19:02.3573934Z If you want to create a new branch to retain commits you create, you may
+2026-11-14T10:19:02.3575395Z do so (now or later) by using -c with the switch command. Example:
+2026-11-14T10:19:02.3576386Z 
+2026-11-14T10:19:02.3576708Z   git switch -c <new-branch-name>
+2026-11-14T10:19:02.3577356Z 
+2026-11-14T10:19:02.3577789Z Or undo this operation with:
+2026-11-14T10:19:02.3578468Z 
+2026-11-14T10:19:02.3578870Z   git switch -
+2026-11-14T10:19:02.3579440Z 
+2026-11-14T10:19:02.3580388Z Turn off this advice by setting config variable advice.detachedHead to false
+2026-11-14T10:19:02.3581496Z 
+2026-11-14T10:19:02.3582420Z HEAD is now at b995d10 Freeze CI-002 public three-process IPC candidate and adversarial driver
+2026-11-14T10:19:02.3586174Z ##[endgroup]
+2026-11-14T10:19:02.3617479Z [command]/usr/bin/git log -1 --format=%H
+2026-11-14T10:19:02.3646477Z b995d10090760a8fc41a87c5efa7d0548b184b16
+2026-11-14T10:19:02.3655824Z ##[group]Removing auth
+2026-11-14T10:19:02.3658981Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-14T10:19:02.3693951Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-14T10:19:02.3896926Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-14T10:19:02.3927455Z http.https://github.com/.extraheader
+2026-11-14T10:19:02.3934316Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-11-14T10:19:02.3974096Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-14T10:19:02.4175008Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-14T10:19:02.4211194Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-14T10:19:02.4406584Z ##[endgroup]
+2026-11-14T10:19:02.4772821Z ##[group]Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+2026-11-14T10:19:02.4774160Z with:
+2026-11-14T10:19:02.4774885Z   python-version: 3.12
+2026-11-14T10:19:02.4775696Z   check-latest: false
+2026-11-14T10:19:02.4783134Z   token: ***
+2026-11-14T10:19:02.4783891Z   update-environment: true
+2026-11-14T10:19:02.4851376Z   allow-prereleases: false
+2026-11-14T10:19:02.4852638Z   freethreaded: false
+2026-11-14T10:19:02.4853476Z ##[endgroup]
+2026-11-14T10:19:02.6008128Z ##[group]Installed versions
+2026-11-14T10:19:02.6724702Z (node:2196) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-14T10:19:02.6727393Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-14T10:19:02.6729233Z Successfully set up CPython (3.12.16)
+2026-11-14T10:19:02.6731456Z ##[endgroup]
+2026-11-14T10:19:02.7058108Z ##[group]Run set -euo pipefail
+2026-11-14T10:19:02.7059765Z [36;1mset -euo pipefail[0m
+2026-11-14T10:19:02.7060994Z [36;1mulimit -c 0[0m
+2026-11-14T10:19:02.7062479Z [36;1mtimeout --kill-after=5s 90s python -B ipc002/verify.py[0m
+2026-11-14T10:19:02.7064574Z [36;1mtimeout --kill-after=5s 90s python -B ipc002/verify.py[0m
+2026-11-14T10:19:02.7101412Z shell: /usr/bin/bash -e {0}
+2026-11-14T10:19:02.7102268Z env:
+2026-11-14T10:19:02.7103153Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+2026-11-14T10:19:02.7104619Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+2026-11-14T10:19:02.7106060Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+2026-11-14T10:19:02.7107366Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+2026-11-14T10:19:02.7108987Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+2026-11-14T10:19:02.7110514Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+2026-11-14T10:19:02.7112071Z   SOURCE_SHA: b995d10090760a8fc41a87c5efa7d0548b184b16
+2026-11-14T10:19:02.7113118Z ##[endgroup]
+2026-11-14T10:19:03.3439916Z CASE {"name": "three_process_authorized", "status": "PASS", "detail": {"distinct_pids": true}}
+2026-11-14T10:19:03.3442684Z CASE {"name": "unauthorized_operation", "status": "PASS", "detail": {"expected": "DENIED_OPERATION", "actual": "DENIED_OPERATION", "all_servers_alive": true}}
+2026-11-14T10:19:03.3445387Z CASE {"name": "forged_identity", "status": "PASS", "detail": {"expected": "FORGED_IDENTITY", "actual": "FORGED_IDENTITY", "all_servers_alive": true}}
+2026-11-14T10:19:03.3450536Z CASE {"name": "replay", "status": "PASS", "detail": {"expected": "REPLAY", "actual": "REPLAY", "all_servers_alive": true}}
+2026-11-14T10:19:03.3459997Z CASE {"name": "altered_ticket", "status": "PASS", "detail": {"expected": "BAD_MAC", "actual": "BAD_MAC", "all_servers_alive": true}}
+2026-11-14T10:19:03.3470516Z CASE {"name": "invalid_mac", "status": "PASS", "detail": {"expected": "BAD_MAC", "actual": "BAD_MAC", "all_servers_alive": true}}
+2026-11-14T10:19:05.5487104Z CASE {"name": "expired_grant", "status": "PASS", "detail": {"expected": "EXPIRED", "actual": "EXPIRED", "all_servers_alive": true}}
+2026-11-14T10:19:05.5499438Z CASE {"name": "wrong_peer", "status": "PASS", "detail": {"expected": "WRONG_PEER", "actual": "WRONG_PEER", "all_servers_alive": true}}
+2026-11-14T10:19:05.5970107Z CASE {"name": "worker_permission_escalation", "status": "PASS", "detail": {"expected": "WRONG_PEER", "actual": "WRONG_PEER", "all_servers_alive": true}}
+2026-11-14T10:19:05.5975170Z CASE {"name": "malformed_message", "status": "PASS", "detail": {"expected": "MALFORMED", "actual": "MALFORMED", "all_servers_alive": true}}
+2026-11-14T10:19:05.6068454Z CASE {"name": "concurrent_one_execution", "status": "PASS", "detail": {"codes": ["OK", "REPLAY", "REPLAY", "REPLAY"]}}
+2026-11-14T10:19:05.6072104Z CASE {"name": "durable_identity_conflict", "status": "PASS", "detail": {"expected": "IDENTITY_CONFLICT", "actual": "IDENTITY_CONFLICT", "all_servers_alive": true}}
+2026-11-14T10:19:05.6507145Z CASE {"name": "controller_restart_identity", "status": "PASS", "detail": {"expected": "IDENTITY_CONFLICT", "actual": "IDENTITY_CONFLICT", "all_servers_alive": true}}
+2026-11-14T10:19:05.6935476Z CASE {"name": "completed_identity_restart", "status": "PASS", "detail": {"expected": "REPLAY", "actual": "REPLAY", "all_servers_alive": true}}
+2026-11-14T10:19:05.7375912Z CASE {"name": "sigkill_exact_outcome", "status": "PASS", "detail": {"exit_code": -9, "response": "DISCONNECTED"}}
+2026-11-14T10:19:05.7787767Z CASE {"name": "unknown_no_replay_0", "status": "PASS", "detail": {"expected": "UNKNOWN_OUTCOME", "actual": "UNKNOWN_OUTCOME", "all_servers_alive": true}}
+2026-11-14T10:19:05.7796481Z CASE {"name": "unknown_no_replay_1", "status": "PASS", "detail": {"expected": "UNKNOWN_OUTCOME", "actual": "UNKNOWN_OUTCOME", "all_servers_alive": true}}
+2026-11-14T10:19:05.7798193Z CASE {"name": "durable_execution_counts", "status": "PASS", "detail": {"executions": ["normal", "concurrent", "uncertain"]}}
+2026-11-14T10:19:05.7820410Z CASE {"name": "post_attack_legitimate_request", "status": "PASS", "detail": {"servers_alive": true}}
+2026-11-14T10:19:05.8335935Z CASE {"name": "corrupt_state_fail_closed", "status": "PASS", "detail": {"diagnostic": "CORRUPT_STATE", "exit_code": 42}}
+2026-11-14T10:19:05.8385436Z REPORT_JSON {"CONFIRMATORY_SET_USED": false, "NEW_LIVE_MODEL_CALLS": 0, "SCIENTIFICALLY_VALIDATED": "NO", "limitations": {"authentication": "Fresh synthetic HMAC key in anonymous pipes only; same-UID memory isolation not claimed", "different_uid": "BLOCKED: no authorized distinct-UID execution mechanism; no sudo/setuid attempted", "filesystem_isolation": "NOT_VERIFIED: same UID can access shared filesystem; mode 0600 is not peer isolation", "mount_namespace": "BLOCKED in CI-001; no bypass/retry", "same_uid_peer_credentials": "Measured PID/UID binding only; hostile same-UID ptrace/filesystem attacker not isolated"}, "records": [{"detail": {"distinct_pids": true}, "name": "three_process_authorized", "status": "PASS"}, {"detail": {"actual": "DENIED_OPERATION", "all_servers_alive": true, "expected": "DENIED_OPERATION"}, "name": "unauthorized_operation", "status": "PASS"}, {"detail": {"actual": "FORGED_IDENTITY", "all_servers_alive": true, "expected": "FORGED_IDENTITY"}, "name": "forged_identity", "status": "PASS"}, {"detail": {"actual": "REPLAY", "all_servers_alive": true, "expected": "REPLAY"}, "name": "replay", "status": "PASS"}, {"detail": {"actual": "BAD_MAC", "all_servers_alive": true, "expected": "BAD_MAC"}, "name": "altered_ticket", "status": "PASS"}, {"detail": {"actual": "BAD_MAC", "all_servers_alive": true, "expected": "BAD_MAC"}, "name": "invalid_mac", "status": "PASS"}, {"detail": {"actual": "EXPIRED", "all_servers_alive": true, "expected": "EXPIRED"}, "name": "expired_grant", "status": "PASS"}, {"detail": {"actual": "WRONG_PEER", "all_servers_alive": true, "expected": "WRONG_PEER"}, "name": "wrong_peer", "status": "PASS"}, {"detail": {"actual": "WRONG_PEER", "all_servers_alive": true, "expected": "WRONG_PEER"}, "name": "worker_permission_escalation", "status": "PASS"}, {"detail": {"actual": "MALFORMED", "all_servers_alive": true, "expected": "MALFORMED"}, "name": "malformed_message", "status": "PASS"}, {"detail": {"codes": ["OK", "REPLAY", "REPLAY", "REPLAY"]}, "name": "concurrent_one_execution", "status": "PASS"}, {"detail": {"actual": "IDENTITY_CONFLICT", "all_servers_alive": true, "expected": "IDENTITY_CONFLICT"}, "name": "durable_identity_conflict", "status": "PASS"}, {"detail": {"actual": "IDENTITY_CONFLICT", "all_servers_alive": true, "expected": "IDENTITY_CONFLICT"}, "name": "controller_restart_identity", "status": "PASS"}, {"detail": {"actual": "REPLAY", "all_servers_alive": true, "expected": "REPLAY"}, "name": "completed_identity_restart", "status": "PASS"}, {"detail": {"exit_code": -9, "response": "DISCONNECTED"}, "name": "sigkill_exact_outcome", "status": "PASS"}, {"detail": {"actual": "UNKNOWN_OUTCOME", "all_servers_alive": true, "expected": "UNKNOWN_OUTCOME"}, "name": "unknown_no_replay_0", "status": "PASS"}, {"detail": {"actual": "UNKNOWN_OUTCOME", "all_servers_alive": true, "expected": "UNKNOWN_OUTCOME"}, "name": "unknown_no_replay_1", "status": "PASS"}, {"detail": {"executions": ["normal", "concurrent", "uncertain"]}, "name": "durable_execution_counts", "status": "PASS"}, {"detail": {"servers_alive": true}, "name": "post_attack_legitimate_request", "status": "PASS"}, {"detail": {"diagnostic": "CORRUPT_STATE", "exit_code": 42}, "name": "corrupt_state_fail_closed", "status": "PASS"}], "run_id": "43584686451", "schema": "SOMA_CI002_V1", "source_hashes": {"system.py": "84086f0beda4983238aa77d07c4ca1ed1f38ecb7d3a48adf2cd867f80b6aa371", "verify.py": "2d1fc8a30bb855b86056d4c5dc8683bb2ed0931ff30f1d99d08ebe321aec691b"}, "source_sha": "b995d10090760a8fc41a87c5efa7d0548b184b16"}
+2026-11-14T10:19:05.9832922Z CASE {"name": "three_process_authorized", "status": "PASS", "detail": {"distinct_pids": true}}
+2026-11-14T10:19:05.9835119Z CASE {"name": "unauthorized_operation", "status": "PASS", "detail": {"expected": "DENIED_OPERATION", "actual": "DENIED_OPERATION", "all_servers_alive": true}}
+2026-11-14T10:19:05.9837992Z CASE {"name": "forged_identity", "status": "PASS", "detail": {"expected": "FORGED_IDENTITY", "actual": "FORGED_IDENTITY", "all_servers_alive": true}}
+2026-11-14T10:19:05.9844226Z CASE {"name": "replay", "status": "PASS", "detail": {"expected": "REPLAY", "actual": "REPLAY", "all_servers_alive": true}}
+2026-11-14T10:19:05.9854541Z CASE {"name": "altered_ticket", "status": "PASS", "detail": {"expected": "BAD_MAC", "actual": "BAD_MAC", "all_servers_alive": true}}
+2026-11-14T10:19:05.9864246Z CASE {"name": "invalid_mac", "status": "PASS", "detail": {"expected": "BAD_MAC", "actual": "BAD_MAC", "all_servers_alive": true}}
+2026-11-14T10:19:08.1879357Z CASE {"name": "expired_grant", "status": "PASS", "detail": {"expected": "EXPIRED", "actual": "EXPIRED", "all_servers_alive": true}}
+2026-11-14T10:19:08.1901095Z CASE {"name": "wrong_peer", "status": "PASS", "detail": {"expected": "WRONG_PEER", "actual": "WRONG_PEER", "all_servers_alive": true}}
+2026-11-14T10:19:08.2368272Z CASE {"name": "worker_permission_escalation", "status": "PASS", "detail": {"expected": "WRONG_PEER", "actual": "WRONG_PEER", "all_servers_alive": true}}
+2026-11-14T10:19:08.2372425Z CASE {"name": "malformed_message", "status": "PASS", "detail": {"expected": "MALFORMED", "actual": "MALFORMED", "all_servers_alive": true}}
+2026-11-14T10:19:08.2850686Z CASE {"name": "concurrent_one_execution", "status": "PASS", "detail": {"codes": ["REPLAY", "OK", "REPLAY", "REPLAY"]}}
+2026-11-14T10:19:08.2853477Z CASE {"name": "durable_identity_conflict", "status": "PASS", "detail": {"expected": "IDENTITY_CONFLICT", "actual": "IDENTITY_CONFLICT", "all_servers_alive": true}}
+2026-11-14T10:19:08.3301932Z CASE {"name": "controller_restart_identity", "status": "PASS", "detail": {"expected": "IDENTITY_CONFLICT", "actual": "IDENTITY_CONFLICT", "all_servers_alive": true}}
+2026-11-14T10:19:08.3742193Z CASE {"name": "completed_identity_restart", "status": "PASS", "detail": {"expected": "REPLAY", "actual": "REPLAY", "all_servers_alive": true}}
+2026-11-14T10:19:08.4402354Z CASE {"name": "sigkill_exact_outcome", "status": "PASS", "detail": {"exit_code": -9, "response": "DISCONNECTED"}}
+2026-11-14T10:19:08.4798868Z CASE {"name": "unknown_no_replay_0", "status": "PASS", "detail": {"expected": "UNKNOWN_OUTCOME", "actual": "UNKNOWN_OUTCOME", "all_servers_alive": true}}
+2026-11-14T10:19:08.4806790Z CASE {"name": "unknown_no_replay_1", "status": "PASS", "detail": {"expected": "UNKNOWN_OUTCOME", "actual": "UNKNOWN_OUTCOME", "all_servers_alive": true}}
+2026-11-14T10:19:08.4807577Z CASE {"name": "durable_execution_counts", "status": "PASS", "detail": {"executions": ["normal", "concurrent", "uncertain"]}}
+2026-11-14T10:19:08.4831333Z CASE {"name": "post_attack_legitimate_request", "status": "PASS", "detail": {"servers_alive": true}}
+2026-11-14T10:19:08.5323285Z CASE {"name": "corrupt_state_fail_closed", "status": "PASS", "detail": {"diagnostic": "CORRUPT_STATE", "exit_code": 42}}
+2026-11-14T10:19:08.5372021Z REPORT_JSON {"CONFIRMATORY_SET_USED": false, "NEW_LIVE_MODEL_CALLS": 0, "SCIENTIFICALLY_VALIDATED": "NO", "limitations": {"authentication": "Fresh synthetic HMAC key in anonymous pipes only; same-UID memory isolation not claimed", "different_uid": "BLOCKED: no authorized distinct-UID execution mechanism; no sudo/setuid attempted", "filesystem_isolation": "NOT_VERIFIED: same UID can access shared filesystem; mode 0600 is not peer isolation", "mount_namespace": "BLOCKED in CI-001; no bypass/retry", "same_uid_peer_credentials": "Measured PID/UID binding only; hostile same-UID ptrace/filesystem attacker not isolated"}, "records": [{"detail": {"distinct_pids": true}, "name": "three_process_authorized", "status": "PASS"}, {"detail": {"actual": "DENIED_OPERATION", "all_servers_alive": true, "expected": "DENIED_OPERATION"}, "name": "unauthorized_operation", "status": "PASS"}, {"detail": {"actual": "FORGED_IDENTITY", "all_servers_alive": true, "expected": "FORGED_IDENTITY"}, "name": "forged_identity", "status": "PASS"}, {"detail": {"actual": "REPLAY", "all_servers_alive": true, "expected": "REPLAY"}, "name": "replay", "status": "PASS"}, {"detail": {"actual": "BAD_MAC", "all_servers_alive": true, "expected": "BAD_MAC"}, "name": "altered_ticket", "status": "PASS"}, {"detail": {"actual": "BAD_MAC", "all_servers_alive": true, "expected": "BAD_MAC"}, "name": "invalid_mac", "status": "PASS"}, {"detail": {"actual": "EXPIRED", "all_servers_alive": true, "expected": "EXPIRED"}, "name": "expired_grant", "status": "PASS"}, {"detail": {"actual": "WRONG_PEER", "all_servers_alive": true, "expected": "WRONG_PEER"}, "name": "wrong_peer", "status": "PASS"}, {"detail": {"actual": "WRONG_PEER", "all_servers_alive": true, "expected": "WRONG_PEER"}, "name": "worker_permission_escalation", "status": "PASS"}, {"detail": {"actual": "MALFORMED", "all_servers_alive": true, "expected": "MALFORMED"}, "name": "malformed_message", "status": "PASS"}, {"detail": {"codes": ["REPLAY", "OK", "REPLAY", "REPLAY"]}, "name": "concurrent_one_execution", "status": "PASS"}, {"detail": {"actual": "IDENTITY_CONFLICT", "all_servers_alive": true, "expected": "IDENTITY_CONFLICT"}, "name": "durable_identity_conflict", "status": "PASS"}, {"detail": {"actual": "IDENTITY_CONFLICT", "all_servers_alive": true, "expected": "IDENTITY_CONFLICT"}, "name": "controller_restart_identity", "status": "PASS"}, {"detail": {"actual": "REPLAY", "all_servers_alive": true, "expected": "REPLAY"}, "name": "completed_identity_restart", "status": "PASS"}, {"detail": {"exit_code": -9, "response": "DISCONNECTED"}, "name": "sigkill_exact_outcome", "status": "PASS"}, {"detail": {"actual": "UNKNOWN_OUTCOME", "all_servers_alive": true, "expected": "UNKNOWN_OUTCOME"}, "name": "unknown_no_replay_0", "status": "PASS"}, {"detail": {"actual": "UNKNOWN_OUTCOME", "all_servers_alive": true, "expected": "UNKNOWN_OUTCOME"}, "name": "unknown_no_replay_1", "status": "PASS"}, {"detail": {"executions": ["normal", "concurrent", "uncertain"]}, "name": "durable_execution_counts", "status": "PASS"}, {"detail": {"servers_alive": true}, "name": "post_attack_legitimate_request", "status": "PASS"}, {"detail": {"diagnostic": "CORRUPT_STATE", "exit_code": 42}, "name": "corrupt_state_fail_closed", "status": "PASS"}], "run_id": "43584686451", "schema": "SOMA_CI002_V1", "source_hashes": {"system.py": "84086f0beda4983238aa77d07c4ca1ed1f38ecb7d3a48adf2cd867f80b6aa371", "verify.py": "2d1fc8a30bb855b86056d4c5dc8683bb2ed0931ff30f1d99d08ebe321aec691b"}, "source_sha": "b995d10090760a8fc41a87c5efa7d0548b184b16"}
+2026-11-14T10:19:08.5541612Z Post job cleanup.
+2026-11-14T10:19:08.6521096Z (node:2239) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-14T10:19:08.6522275Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-14T10:19:08.6733333Z Post job cleanup.
+2026-11-14T10:19:08.7444819Z [command]/usr/bin/git version
+2026-11-14T10:19:08.7482455Z git version 2.56.1
+2026-11-14T10:19:08.7515772Z Temporarily overriding HOME='/home/runner/work/_temp/86af44da-86d8-4528-9ae5-1b59b1560b18' before making global git config changes
+2026-11-14T10:19:08.7516796Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-14T10:19:08.7520924Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/SOMA-Public-Tests/SOMA-Public-Tests
+2026-11-14T10:19:08.7561940Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-14T10:19:08.7600137Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-14T10:19:08.7828971Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-14T10:19:08.7862295Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-14T10:19:08.8100448Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-14T10:19:08.8141313Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-14T10:19:08.8483886Z Cleaning up orphan processes
+2026-11-14T10:19:08.8821437Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@11d5960a326750d5838078e36cf38b85af677262, actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+
