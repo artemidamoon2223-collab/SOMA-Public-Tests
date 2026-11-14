@@ -1,0 +1,1 @@
+{"negative_controls_rejected": ["missing_case", "false_success_count", "wrong_source_hash", "replay_evidence"], "report_sha256": "5349066a40aa514cea81f961cec7780ff469fdc1be887b320ec4e301ce5113f2", "scope": "report structure, source binding and evidence consistency; not production verification", "status": "PASS"}

@@ -1,0 +1,53 @@
+name: SOMA public Linux preflight
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/soma-linux-preflight.yml'
+      - 'synthetic_store.py'
+      - 'tests/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: soma-public-linux-preflight
+  cancel-in-progress: false
+
+jobs:
+  preflight:
+    if: github.repository == 'artemidamoon2223-collab/SOMA-Public-Tests' && (github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 6
+    permissions:
+      contents: read
+    steps:
+      - name: Check out this public repository only
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          persist-credentials: false
+          fetch-depth: 1
+          submodules: false
+      - name: Select Python 3.12
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: '3.12'
+      - name: Run bounded public probes
+        timeout-minutes: 3
+        env:
+          PREFLIGHT_SOURCE_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+          PYTHONDONTWRITEBYTECODE: '1'
+          OMP_NUM_THREADS: '1'
+          OPENBLAS_NUM_THREADS: '1'
+        run: |
+          set -euo pipefail
+          ulimit -c 0
+          timeout --signal=TERM --kill-after=5s 120s python -B tests/preflight.py --output results/preflight.json
+      - name: Independently check report and negative controls
+        if: always()
+        timeout-minutes: 1
+        run: |
+          set -euo pipefail
+          timeout --signal=TERM --kill-after=5s 30s python -B tests/verify_report.py results/preflight.json

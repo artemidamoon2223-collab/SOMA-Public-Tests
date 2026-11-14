@@ -1,0 +1,34 @@
+{
+  "classification": "SOURCE_VERIFIED",
+  "public_new_code_only": true,
+  "private_source_imported": false,
+  "workflow_permissions": {
+    "contents": "read",
+    "other_explicit_permissions": "none"
+  },
+  "runner": "ubuntu-24.04 standard GitHub-hosted",
+  "job_timeout_minutes": 6,
+  "suite_timeout_seconds": 120,
+  "concurrent_jobs": 1,
+  "max_child_processes": 4,
+  "extra_dependencies": [],
+  "sudo_or_privileged_retry": false,
+  "secrets_or_persisted_token": false,
+  "native_model_or_model_download": false,
+  "local_python_files_compiled": 3,
+  "local_tests": {
+    "PASS": 13,
+    "BLOCKED": 1
+  },
+  "github_actions_runtime": "NOT_VERIFIED until actual run is inspected",
+  "source_sha256": {
+    "synthetic_store.py": "7529b983bb6c3dd6833e03d51f2c63b921f52c4a8985e233bb6fdf9f8b1d8b2e",
+    "tests/preflight.py": "028136224c8516c07010019309eabcc2ba4fe800df63fa787938cb914ba3c9e9",
+    "tests/verify_report.py": "6d014ad079ab052a3ed7f018fb1ea65fe1018255a6252bc1519661964dd2db04",
+    ".github/workflows/soma-linux-preflight.yml": "9591e6f25e50b2dd8c15fe6aaa64c2e4e9ee48e4dc8c0094a6a23d1df2005f1b",
+    "README.md": "56f16e17c98a051959581b752f669f2c9727bd980ce0d3446c9956a806449c3a",
+    "AGENTS.md": "7bc5ffc2dd15e36329a989efc4118ffedde2d8f09bdbf13be9a3fe44bd60f4a1",
+    "evidence/local_attempt_1.json": "f3daec9bae3df30c46480686e52185f6e1837d99d4a82b3ff281f40bc05d9f62",
+    "evidence/local_attempt_2.json": "5f877576bab13bbf57e3ffb456da20a66eb0fa26f8245ff4892cdd3655d533bb"
+  }
+}

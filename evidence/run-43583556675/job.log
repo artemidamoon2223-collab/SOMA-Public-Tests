@@ -1,0 +1,209 @@
+﻿2026-11-14T10:05:02.1731097Z Current runner version: '2.338.2'
+2026-11-14T10:05:02.1756200Z ##[group]Runner Image Provisioner
+2026-11-14T10:05:02.1757228Z Hosted Compute Agent
+2026-11-14T10:05:02.1757854Z Version: 20261103.629
+2026-11-14T10:05:02.1758546Z Commit: 15dbd9ccb5dbf34fae002b6ed1a2670f52df37bc
+2026-11-14T10:05:02.1759350Z Build Date: 2026-11-03T17:26:59Z
+2026-11-14T10:05:02.1760049Z Worker ID: {b3359864-cbfb-41ae-ad9f-b6b8f778677d}
+2026-11-14T10:05:02.1760766Z Region: westus
+2026-11-14T10:05:02.1761382Z Cloud: Azure
+2026-11-14T10:05:02.1762291Z ##[endgroup]
+2026-11-14T10:05:02.1763897Z ##[group]Operating System
+2026-11-14T10:05:02.1764620Z Ubuntu
+2026-11-14T10:05:02.1765139Z 24.04.5
+2026-11-14T10:05:02.1765732Z LTS
+2026-11-14T10:05:02.1766295Z ##[endgroup]
+2026-11-14T10:05:02.1766886Z ##[group]Runner Image
+2026-11-14T10:05:02.1767512Z Image: ubuntu-24.04
+2026-11-14T10:05:02.1768086Z Version: 20261111.370.1
+2026-11-14T10:05:02.1769432Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261111.370/images/ubuntu/Ubuntu2404-Readme.md
+2026-11-14T10:05:02.1771042Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261111.370
+2026-11-14T10:05:02.1772491Z ##[endgroup]
+2026-11-14T10:05:02.1773686Z ##[group]GITHUB_TOKEN Permissions
+2026-11-14T10:05:02.1775613Z Contents: read
+2026-11-14T10:05:02.1776227Z Metadata: read
+2026-11-14T10:05:02.1776896Z ##[endgroup]
+2026-11-14T10:05:02.1778994Z Secret source: Actions
+2026-11-14T10:05:02.1780007Z Cache mode: write
+2026-11-14T10:05:02.1780755Z Prepare workflow directory
+2026-11-14T10:05:02.2128382Z Prepare all required actions
+2026-11-14T10:05:02.2178902Z Getting action download info
+2026-11-14T10:05:02.5907673Z Download action repository 'actions/checkout@11d5960a326750d5838078e36cf38b85af677262' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-11-14T10:05:02.7036310Z Download action repository 'actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+2026-11-14T10:05:02.8874302Z Complete job name: preflight
+2026-11-14T10:05:02.9772787Z ##[group]Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+2026-11-14T10:05:02.9773895Z with:
+2026-11-14T10:05:02.9774379Z   ref: 21c858bc619f5864c83377e2363a9496a3b34c5c
+2026-11-14T10:05:02.9774986Z   persist-credentials: false
+2026-11-14T10:05:02.9775488Z   fetch-depth: 1
+2026-11-14T10:05:02.9775936Z   submodules: false
+2026-11-14T10:05:02.9776488Z   repository: artemidamoon2223-collab/SOMA-Public-Tests
+2026-11-14T10:05:02.9780822Z   token: ***
+2026-11-14T10:05:02.9781269Z   ssh-strict: true
+2026-11-14T10:05:02.9781899Z   ssh-user: git
+2026-11-14T10:05:02.9782339Z   clean: true
+2026-11-14T10:05:02.9782787Z   sparse-checkout-cone-mode: true
+2026-11-14T10:05:02.9783321Z   fetch-tags: false
+2026-11-14T10:05:02.9783775Z   show-progress: true
+2026-11-14T10:05:02.9784251Z   lfs: false
+2026-11-14T10:05:02.9784694Z   set-safe-directory: true
+2026-11-14T10:05:02.9785218Z   allow-unsafe-pr-checkout: false
+2026-11-14T10:05:02.9786009Z ##[endgroup]
+2026-11-14T10:05:03.2573547Z Syncing repository: artemidamoon2223-collab/SOMA-Public-Tests
+2026-11-14T10:05:03.2576954Z ##[group]Getting Git version info
+2026-11-14T10:05:03.2578698Z Working directory is '/home/runner/work/SOMA-Public-Tests/SOMA-Public-Tests'
+2026-11-14T10:05:03.2581216Z [command]/usr/bin/git version
+2026-11-14T10:05:03.2662752Z git version 2.56.1
+2026-11-14T10:05:03.2689897Z ##[endgroup]
+2026-11-14T10:05:03.2706346Z Temporarily overriding HOME='/home/runner/work/_temp/61a0f433-bd55-435d-bb53-b38f37d7676f' before making global git config changes
+2026-11-14T10:05:03.2710069Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-14T10:05:03.2715003Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/SOMA-Public-Tests/SOMA-Public-Tests
+2026-11-14T10:05:03.2780449Z Deleting the contents of '/home/runner/work/SOMA-Public-Tests/SOMA-Public-Tests'
+2026-11-14T10:05:03.2797515Z ##[group]Initializing the repository
+2026-11-14T10:05:03.2803564Z [command]/usr/bin/git init /home/runner/work/SOMA-Public-Tests/SOMA-Public-Tests
+2026-11-14T10:05:03.2947155Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-14T10:05:03.2961183Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-14T10:05:03.2964088Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-14T10:05:03.2981354Z hint: call:
+2026-11-14T10:05:03.2982530Z hint:
+2026-11-14T10:05:03.2983584Z hint: 	git config --global init.defaultBranch <name>
+2026-11-14T10:05:03.2984984Z hint:
+2026-11-14T10:05:03.2986375Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-14T10:05:03.2988566Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-14T10:05:03.2990207Z hint:
+2026-11-14T10:05:03.2991118Z hint: 	git branch -m <name>
+2026-11-14T10:05:03.2998941Z hint:
+2026-11-14T10:05:03.3000851Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-14T10:05:03.3004467Z Initialized empty Git repository in /home/runner/work/SOMA-Public-Tests/SOMA-Public-Tests/.git/
+2026-11-14T10:05:03.3010705Z [command]/usr/bin/git remote add origin https://github.com/artemidamoon2223-collab/SOMA-Public-Tests
+2026-11-14T10:05:03.3041047Z ##[endgroup]
+2026-11-14T10:05:03.3042763Z ##[group]Disabling automatic garbage collection
+2026-11-14T10:05:03.3046655Z [command]/usr/bin/git config --local gc.auto 0
+2026-11-14T10:05:03.3083871Z ##[endgroup]
+2026-11-14T10:05:03.3085236Z ##[group]Setting up auth
+2026-11-14T10:05:03.3090476Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-14T10:05:03.3130489Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-14T10:05:03.3558653Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-14T10:05:03.3622194Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-14T10:05:03.3855169Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-14T10:05:03.3905480Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-14T10:05:03.4158107Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-14T10:05:03.4215200Z ##[endgroup]
+2026-11-14T10:05:03.4216934Z ##[group]Fetching the repository
+2026-11-14T10:05:03.4231003Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin 21c858bc619f5864c83377e2363a9496a3b34c5c
+2026-11-14T10:05:03.7900344Z From https://github.com/artemidamoon2223-collab/SOMA-Public-Tests
+2026-11-14T10:05:03.7901907Z  * branch            21c858bc619f5864c83377e2363a9496a3b34c5c -> FETCH_HEAD
+2026-11-14T10:05:03.7905572Z ##[endgroup]
+2026-11-14T10:05:03.7906465Z ##[group]Determining the checkout info
+2026-11-14T10:05:03.7909225Z ##[endgroup]
+2026-11-14T10:05:03.7917165Z [command]/usr/bin/git sparse-checkout disable
+2026-11-14T10:05:03.7991441Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-11-14T10:05:03.8030681Z ##[group]Checking out the ref
+2026-11-14T10:05:03.8034627Z [command]/usr/bin/git checkout --progress --force 21c858bc619f5864c83377e2363a9496a3b34c5c
+2026-11-14T10:05:03.8090423Z Note: switching to '21c858bc619f5864c83377e2363a9496a3b34c5c'.
+2026-11-14T10:05:03.8091820Z 
+2026-11-14T10:05:03.8092328Z You are in 'detached HEAD' state. You can look around, make experimental
+2026-11-14T10:05:03.8093437Z changes and commit them, and you can discard any commits you make in this
+2026-11-14T10:05:03.8094447Z state without impacting any branches by switching back to a branch.
+2026-11-14T10:05:03.8095332Z 
+2026-11-14T10:05:03.8095742Z If you want to create a new branch to retain commits you create, you may
+2026-11-14T10:05:03.8096667Z do so (now or later) by using -c with the switch command. Example:
+2026-11-14T10:05:03.8097279Z 
+2026-11-14T10:05:03.8097721Z   git switch -c <new-branch-name>
+2026-11-14T10:05:03.8098503Z 
+2026-11-14T10:05:03.8099006Z Or undo this operation with:
+2026-11-14T10:05:03.8099763Z 
+2026-11-14T10:05:03.8100208Z   git switch -
+2026-11-14T10:05:03.8100790Z 
+2026-11-14T10:05:03.8101909Z Turn off this advice by setting config variable advice.detachedHead to false
+2026-11-14T10:05:03.8103182Z 
+2026-11-14T10:05:03.8104135Z HEAD is now at 21c858b Add bounded public Linux capability probes and synthetic invariants
+2026-11-14T10:05:03.8107924Z ##[endgroup]
+2026-11-14T10:05:03.8154215Z [command]/usr/bin/git log -1 --format=%H
+2026-11-14T10:05:03.8188237Z 21c858bc619f5864c83377e2363a9496a3b34c5c
+2026-11-14T10:05:03.8202004Z ##[group]Removing auth
+2026-11-14T10:05:03.8204593Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-14T10:05:03.8245303Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-14T10:05:03.8503651Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-14T10:05:03.8544486Z http.https://github.com/.extraheader
+2026-11-14T10:05:03.8555569Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-11-14T10:05:03.8605072Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-14T10:05:03.8879811Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-14T10:05:03.8925363Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-14T10:05:03.9171067Z ##[endgroup]
+2026-11-14T10:05:03.9628498Z ##[group]Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+2026-11-14T10:05:03.9630360Z with:
+2026-11-14T10:05:03.9631337Z   python-version: 3.12
+2026-11-14T10:05:03.9632686Z   check-latest: false
+2026-11-14T10:05:03.9643756Z   token: ***
+2026-11-14T10:05:03.9644785Z   update-environment: true
+2026-11-14T10:05:03.9645999Z   allow-prereleases: false
+2026-11-14T10:05:03.9647321Z   freethreaded: false
+2026-11-14T10:05:03.9648387Z ##[endgroup]
+2026-11-14T10:05:04.1084443Z ##[group]Installed versions
+2026-11-14T10:05:04.1194431Z (node:2435) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-14T10:05:04.1198474Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-14T10:05:04.1201425Z Successfully set up CPython (3.12.16)
+2026-11-14T10:05:04.1205295Z ##[endgroup]
+2026-11-14T10:05:04.1448268Z ##[group]Run set -euo pipefail
+2026-11-14T10:05:04.1450254Z [36;1mset -euo pipefail[0m
+2026-11-14T10:05:04.1452228Z [36;1mulimit -c 0[0m
+2026-11-14T10:05:04.1455493Z [36;1mtimeout --signal=TERM --kill-after=5s 120s python -B tests/preflight.py --output results/preflight.json[0m
+2026-11-14T10:05:04.1500560Z shell: /usr/bin/bash -e {0}
+2026-11-14T10:05:04.1502381Z env:
+2026-11-14T10:05:04.1503903Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+2026-11-14T10:05:04.1506310Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+2026-11-14T10:05:04.1508284Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+2026-11-14T10:05:04.1510011Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+2026-11-14T10:05:04.1512099Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+2026-11-14T10:05:04.1513950Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+2026-11-14T10:05:04.1517313Z   PREFLIGHT_SOURCE_SHA: 21c858bc619f5864c83377e2363a9496a3b34c5c
+2026-11-14T10:05:04.1520635Z   PYTHONDONTWRITEBYTECODE: 1
+2026-11-14T10:05:04.1523115Z   OMP_NUM_THREADS: 1
+2026-11-14T10:05:04.1525052Z   OPENBLAS_NUM_THREADS: 1
+2026-11-14T10:05:04.1526791Z ##[endgroup]
+2026-11-14T10:05:04.2825695Z CASE_JSON {"category": "capability", "detail": {"architecture": "x86_64", "cpu_affinity_count": 4, "cpu_count": 4, "distribution": {"BUG_REPORT_URL": "https://bugs.launchpad.net/ubuntu/", "HOME_URL": "https://www.ubuntu.com/", "ID": "ubuntu", "ID_LIKE": "debian", "LOGO": "ubuntu-logo", "NAME": "Ubuntu", "PRETTY_NAME": "Ubuntu 24.04.5 LTS", "PRIVACY_POLICY_URL": "https://www.ubuntu.com/legal/terms-and-policies/privacy-policy", "SUPPORT_URL": "https://help.ubuntu.com/", "UBUNTU_CODENAME": "noble", "VERSION": "24.04.5 LTS (Noble Numbat)", "VERSION_CODENAME": "noble", "VERSION_ID": "24.04"}, "euid": 1001, "kernel": "7.0.0-1017-azure", "production_isolation_verified": false, "python": "3.12.16", "ram": {"MemAvailable_kib": 15420612, "MemTotal_kib": 16367520}, "uid": 1001}, "name": "platform_inventory", "seconds": 0.0016, "status": "PASS"}
+2026-11-14T10:05:04.3496086Z CASE_JSON {"category": "capability", "detail": {"af_unix": true, "bidirectional_peer_pid_uid_gid": true, "cross_uid_authorization": "NOT_VERIFIED"}, "name": "af_unix_peer_credentials", "seconds": 0.0677, "status": "PASS"}
+2026-11-14T10:05:04.4115095Z CASE_JSON {"category": "capability", "detail": {"hostile_code_sandbox": "NOT_VERIFIED", "pid_session_cwd_environment_separation": true}, "name": "process_separation", "seconds": 0.062, "status": "PASS"}
+2026-11-14T10:05:04.5600091Z CASE_JSON {"category": "capability", "detail": {"atomic_reader_view": true, "cross_uid_permission_boundary": "NOT_VERIFIED", "interprocess_lock": true, "mode_0600": true}, "name": "permissions_locks_atomic_replace", "seconds": 0.1485, "status": "PASS"}
+2026-11-14T10:05:04.6760825Z CASE_JSON {"category": "capability", "detail": {"committed_survives_sigkill": true, "power_loss_or_storage_failure": "NOT_VERIFIED", "uncommitted_rollback": true}, "name": "sqlite_sigkill_recovery", "seconds": 0.1157, "status": "PASS"}
+2026-11-14T10:05:04.8072473Z CASE_JSON {"category": "capability", "detail": {"committed_unique_rows": 60, "processes": 4}, "name": "sqlite_concurrent_writes", "seconds": 0.1314, "status": "PASS"}
+2026-11-14T10:05:07.2921346Z CASE_JSON {"category": "capability", "detail": {"cpu_limit_signal": "SIGXCPU", "descriptors": {"cleanup_recovered": true, "descriptor_limit_enforced": true}, "file_size": {"file_size_limit_enforced": true}, "global_exhaustion_attempted": false, "memory": {"memory_limit_enforced": true}}, "name": "resource_limit_enforcement", "seconds": 2.4848, "status": "PASS"}
+2026-11-14T10:05:07.3262578Z CASE_JSON {"category": "optional_capability", "detail": {"mount_operations_tested": false, "new_namespaces": ["user"], "privilege_escalation": false}, "name": "unprivileged_user_namespace", "seconds": 0.0342, "status": "PASS"}
+2026-11-14T10:05:07.3282231Z CASE_JSON {"category": "optional_capability", "detail": {"exit_code": 1, "no_privileged_retry": true, "stderr": "unshare: cannot change root filesystem propagation: Permission denied"}, "name": "unprivileged_mount_namespace", "seconds": 0.0019, "status": "BLOCKED"}
+2026-11-14T10:05:07.3341220Z CASE_JSON {"category": "synthetic_invariant", "detail": {"duplicate_execution_rejected": true, "rebind_rejected": true, "same_id_same_request_idempotent": true, "unauthorized_operation_has_no_row": true}, "name": "durable_action_identity_and_authorization", "seconds": 0.006, "status": "PASS"}
+2026-11-14T10:05:07.5889823Z CASE_JSON {"category": "synthetic_invariant", "detail": {"restart_attempts": 3, "side_effect_count": 1, "sigkill_verified": true, "unknown_remained_blocked": true}, "name": "unknown_outcome_never_replays", "seconds": 0.2549, "status": "PASS"}
+2026-11-14T10:05:07.6949145Z CASE_JSON {"category": "synthetic_invariant", "detail": {"concurrent_processes": 4, "executions": 1}, "name": "concurrent_action_claims", "seconds": 0.1058, "status": "PASS"}
+2026-11-14T10:05:07.7026629Z CASE_JSON {"category": "synthetic_invariant", "detail": {"authenticated_journal": false, "coordinated_journal_anchor_rollback_detection": "NOT_VERIFIED", "existing_prefix_unchanged": true, "negative_controls_rejected": ["edit", "truncate", "missing_anchor", "wrong_anchor", "torn_append"]}, "name": "append_only_journal_and_tamper_controls", "seconds": 0.0078, "status": "PASS"}
+2026-11-14T10:05:07.8736962Z CASE_JSON {"category": "synthetic_invariant", "detail": {"complete_unique_records": 48, "processes": 4}, "name": "concurrent_journal_appends", "seconds": 0.1709, "status": "PASS"}
+2026-11-14T10:05:07.8775115Z REPORT_JSON {"CONFIRMATORY_SET_USED": false, "NEW_LIVE_MODEL_CALLS": 0, "SCIENTIFICALLY_VALIDATED": "NO", "commit_sha": "21c858bc619f5864c83377e2363a9496a3b34c5c", "counts": {"BLOCKED": 1, "PASS": 13}, "execution_environment": "github_actions", "github_run_attempt": "1", "github_run_id": "43583556675", "production_isolation_verified": false, "results": [{"category": "capability", "detail": {"architecture": "x86_64", "cpu_affinity_count": 4, "cpu_count": 4, "distribution": {"BUG_REPORT_URL": "https://bugs.launchpad.net/ubuntu/", "HOME_URL": "https://www.ubuntu.com/", "ID": "ubuntu", "ID_LIKE": "debian", "LOGO": "ubuntu-logo", "NAME": "Ubuntu", "PRETTY_NAME": "Ubuntu 24.04.5 LTS", "PRIVACY_POLICY_URL": "https://www.ubuntu.com/legal/terms-and-policies/privacy-policy", "SUPPORT_URL": "https://help.ubuntu.com/", "UBUNTU_CODENAME": "noble", "VERSION": "24.04.5 LTS (Noble Numbat)", "VERSION_CODENAME": "noble", "VERSION_ID": "24.04"}, "euid": 1001, "kernel": "7.0.0-1017-azure", "production_isolation_verified": false, "python": "3.12.16", "ram": {"MemAvailable_kib": 15420612, "MemTotal_kib": 16367520}, "uid": 1001}, "name": "platform_inventory", "seconds": 0.0016, "status": "PASS"}, {"category": "capability", "detail": {"af_unix": true, "bidirectional_peer_pid_uid_gid": true, "cross_uid_authorization": "NOT_VERIFIED"}, "name": "af_unix_peer_credentials", "seconds": 0.0677, "status": "PASS"}, {"category": "capability", "detail": {"hostile_code_sandbox": "NOT_VERIFIED", "pid_session_cwd_environment_separation": true}, "name": "process_separation", "seconds": 0.062, "status": "PASS"}, {"category": "capability", "detail": {"atomic_reader_view": true, "cross_uid_permission_boundary": "NOT_VERIFIED", "interprocess_lock": true, "mode_0600": true}, "name": "permissions_locks_atomic_replace", "seconds": 0.1485, "status": "PASS"}, {"category": "capability", "detail": {"committed_survives_sigkill": true, "power_loss_or_storage_failure": "NOT_VERIFIED", "uncommitted_rollback": true}, "name": "sqlite_sigkill_recovery", "seconds": 0.1157, "status": "PASS"}, {"category": "capability", "detail": {"committed_unique_rows": 60, "processes": 4}, "name": "sqlite_concurrent_writes", "seconds": 0.1314, "status": "PASS"}, {"category": "capability", "detail": {"cpu_limit_signal": "SIGXCPU", "descriptors": {"cleanup_recovered": true, "descriptor_limit_enforced": true}, "file_size": {"file_size_limit_enforced": true}, "global_exhaustion_attempted": false, "memory": {"memory_limit_enforced": true}}, "name": "resource_limit_enforcement", "seconds": 2.4848, "status": "PASS"}, {"category": "optional_capability", "detail": {"mount_operations_tested": false, "new_namespaces": ["user"], "privilege_escalation": false}, "name": "unprivileged_user_namespace", "seconds": 0.0342, "status": "PASS"}, {"category": "optional_capability", "detail": {"exit_code": 1, "no_privileged_retry": true, "stderr": "unshare: cannot change root filesystem propagation: Permission denied"}, "name": "unprivileged_mount_namespace", "seconds": 0.0019, "status": "BLOCKED"}, {"category": "synthetic_invariant", "detail": {"duplicate_execution_rejected": true, "rebind_rejected": true, "same_id_same_request_idempotent": true, "unauthorized_operation_has_no_row": true}, "name": "durable_action_identity_and_authorization", "seconds": 0.006, "status": "PASS"}, {"category": "synthetic_invariant", "detail": {"restart_attempts": 3, "side_effect_count": 1, "sigkill_verified": true, "unknown_remained_blocked": true}, "name": "unknown_outcome_never_replays", "seconds": 0.2549, "status": "PASS"}, {"category": "synthetic_invariant", "detail": {"concurrent_processes": 4, "executions": 1}, "name": "concurrent_action_claims", "seconds": 0.1058, "status": "PASS"}, {"category": "synthetic_invariant", "detail": {"authenticated_journal": false, "coordinated_journal_anchor_rollback_detection": "NOT_VERIFIED", "existing_prefix_unchanged": true, "negative_controls_rejected": ["edit", "truncate", "missing_anchor", "wrong_anchor", "torn_append"]}, "name": "append_only_journal_and_tamper_controls", "seconds": 0.0078, "status": "PASS"}, {"category": "synthetic_invariant", "detail": {"complete_unique_records": 48, "processes": 4}, "name": "concurrent_journal_appends", "seconds": 0.1709, "status": "PASS"}], "schema": "SOMA_PUBLIC_CI_001_V1", "scope": "PUBLIC_SYNTHETIC_ONLY", "source_sha256": {"synthetic_store.py": "7529b983bb6c3dd6833e03d51f2c63b921f52c4a8985e233bb6fdf9f8b1d8b2e", "tests/preflight.py": "028136224c8516c07010019309eabcc2ba4fe800df63fa787938cb914ba3c9e9", "tests/verify_report.py": "6d014ad079ab052a3ed7f018fb1ea65fe1018255a6252bc1519661964dd2db04"}}
+2026-11-14T10:05:07.8913336Z ##[group]Run set -euo pipefail
+2026-11-14T10:05:07.8913748Z [36;1mset -euo pipefail[0m
+2026-11-14T10:05:07.8914287Z [36;1mtimeout --signal=TERM --kill-after=5s 30s python -B tests/verify_report.py results/preflight.json[0m
+2026-11-14T10:05:07.8936492Z shell: /usr/bin/bash -e {0}
+2026-11-14T10:05:07.8936806Z env:
+2026-11-14T10:05:07.8937136Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+2026-11-14T10:05:07.8937663Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+2026-11-14T10:05:07.8938159Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+2026-11-14T10:05:07.8938605Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+2026-11-14T10:05:07.8939047Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+2026-11-14T10:05:07.8939502Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+2026-11-14T10:05:07.8939893Z ##[endgroup]
+2026-11-14T10:05:07.9285412Z VERIFICATION_JSON {"negative_controls_rejected": ["missing_case", "false_success_count", "wrong_source_hash", "replay_evidence"], "report_sha256": "5349066a40aa514cea81f961cec7780ff469fdc1be887b320ec4e301ce5113f2", "scope": "report structure, source binding and evidence consistency; not production verification", "status": "PASS"}
+2026-11-14T10:05:07.9448088Z Post job cleanup.
+2026-11-14T10:05:08.0672439Z (node:2491) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-14T10:05:08.0673425Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-14T10:05:08.1002481Z Post job cleanup.
+2026-11-14T10:05:08.2045576Z [command]/usr/bin/git version
+2026-11-14T10:05:08.2103650Z git version 2.56.1
+2026-11-14T10:05:08.2126041Z Temporarily overriding HOME='/home/runner/work/_temp/a9a1a2df-e71d-48a2-8751-e4c73aca534a' before making global git config changes
+2026-11-14T10:05:08.2130356Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-14T10:05:08.2133984Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/SOMA-Public-Tests/SOMA-Public-Tests
+2026-11-14T10:05:08.2184405Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-14T10:05:08.2239891Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-14T10:05:08.2535963Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-14T10:05:08.2581808Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-14T10:05:08.2864211Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-14T10:05:08.2912790Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-14T10:05:08.3324682Z Cleaning up orphan processes
+2026-11-14T10:05:08.3759166Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@11d5960a326750d5838078e36cf38b85af677262, actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

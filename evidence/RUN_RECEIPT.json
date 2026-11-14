@@ -1,0 +1,53 @@
+{
+  "classification": "RUNTIME_VERIFIED",
+  "source_commit_sha": "21c858bc619f5864c83377e2363a9496a3b34c5c",
+  "run_id": 43583556675,
+  "job_id": 132413192068,
+  "repository": "artemidamoon2223-collab/SOMA-Public-Tests",
+  "branch": "ci/public-linux-preflight-001",
+  "pull_request": 1,
+  "run_url": "https://github.com/artemidamoon2223-collab/SOMA-Public-Tests/actions/runs/43583556675",
+  "conclusion": "success",
+  "counts": {
+    "PASS": 13,
+    "BLOCKED": 1
+  },
+  "job_exit_codes": {
+    "bounded_probes": 0,
+    "independent_report_verifier": 0
+  },
+  "exit_code_evidence": "Both shell steps completed successfully with set -e and no continue-on-error; logs and jobs API preserved",
+  "report_from_log_notice": "REPORT_JSON bytes copied from the actual job log. This is a log-derived JSON serialization, not a download of the original runner filesystem JSON. verification_from_log.json retains the original file hash; verification.json is the separate local semantic check of the extracted JSON.",
+  "log_notice": "job.log preserves exact decoded text returned by the connected GitHub job-log API",
+  "files": {
+    "jobs_api.json": {
+      "bytes": 3335,
+      "sha256": "b575b80c98482f140feb1e767cc0a1c3a3e396335fc41320f19e46237b07de8b"
+    },
+    "job.log": {
+      "bytes": 25326,
+      "sha256": "c175e82718892f9d6ed704858328b5f597cfe2391f2a31e8ee1a331504bbdd87"
+    },
+    "run_api.json": {
+      "bytes": 374,
+      "sha256": "bf487f7b9ee1576284dc6719d4488600f57796d8d295874c8068e691f41f7842"
+    },
+    "verification_from_log.json": {
+      "bytes": 314,
+      "sha256": "6053d3735aaaab001db89150004288d2ac5650714f0e376ce1df9b3be9a45aac"
+    },
+    "report_from_log.json": {
+      "bytes": 4636,
+      "sha256": "b95f3263f28fc1376f74274ceb6f7bb11bd41d1df498be7250a573862af1c441"
+    },
+    "verification.json": {
+      "bytes": 344,
+      "sha256": "27f547ccf3a6ac6ddd93af92832b3a49a647e030aceabc5e0feaf5c5b5e91374"
+    }
+  },
+  "production_soma_verified": false,
+  "private_source_imported": false,
+  "SCIENTIFICALLY_VALIDATED": "NO",
+  "CONFIRMATORY_SET_USED": false,
+  "NEW_LIVE_MODEL_CALLS": 0
+}
