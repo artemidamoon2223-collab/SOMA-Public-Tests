@@ -1,0 +1,33 @@
+name: SOMA IPC verification
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    paths: ['ipc002/**', '.github/workflows/soma-ipc-verification.yml']
+permissions:
+  contents: read
+concurrency:
+  group: soma-ipc002
+  cancel-in-progress: false
+jobs:
+  verify:
+    if: github.head_ref == 'ci/ipc-verification-002' && github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - name: Frozen candidate adversarial execution twice
+        env:
+          SOURCE_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          set -euo pipefail
+          ulimit -c 0
+          timeout --kill-after=5s 90s python -B ipc002/verify.py
+          timeout --kill-after=5s 90s python -B ipc002/verify.py
