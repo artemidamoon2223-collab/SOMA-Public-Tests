@@ -60,3 +60,7 @@ be rejected. This is an independent code path, not an external security audit.
 SCIENTIFICALLY_VALIDATED=NO
 CONFIRMATORY_SET_USED=FALSE
 NEW_LIVE_MODEL_CALLS=0
+
+## First verified GitHub run
+
+See [Russian capability report](evidence/REPORT_RU.md), [run receipt](evidence/RUN_RECEIPT.json) and [actual logs](https://github.com/artemidamoon2223-collab/SOMA-Public-Tests/actions/runs/43583556675). Result: 13 PASS, 1 BLOCKED (unprivileged mount namespace). The source commit is `21c858bc619f5864c83377e2363a9496a3b34c5c`; subsequent evidence-only commits do not change tested source.

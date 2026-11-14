@@ -1,0 +1,56 @@
+{
+  "commit_sha": "21c858bc619f5864c83377e2363a9496a3b34c5c",
+  "files": [
+    {
+      "path": ".github/workflows/soma-linux-preflight.yml",
+      "git_blob_sha1": "f5f3048bd258b2718ecb7c0f5bf4c7e3ed98870a",
+      "sha256": "9591e6f25e50b2dd8c15fe6aaa64c2e4e9ee48e4dc8c0094a6a23d1df2005f1b"
+    },
+    {
+      "path": ".gitignore",
+      "git_blob_sha1": "6f596e17917419c463b0d15bf1f0bce19b8918eb",
+      "sha256": "114f3cdc2057d610cbc810f69cbc4f195acec0cd15dd54e9b154cf5f6657fc24"
+    },
+    {
+      "path": "AGENTS.md",
+      "git_blob_sha1": "7df8249109825b8ecfa5a9d25e7076e649efae49",
+      "sha256": "7bc5ffc2dd15e36329a989efc4118ffedde2d8f09bdbf13be9a3fe44bd60f4a1"
+    },
+    {
+      "path": "README.md",
+      "git_blob_sha1": "52cde8f7e8c680e28b3f0c7e526d20d4e7f20db4",
+      "sha256": "56f16e17c98a051959581b752f669f2c9727bd980ce0d3446c9956a806449c3a"
+    },
+    {
+      "path": "evidence/local_attempt_1.json",
+      "git_blob_sha1": "bddaefdbacc25882d661ae29c49fb34125863186",
+      "sha256": "f3daec9bae3df30c46480686e52185f6e1837d99d4a82b3ff281f40bc05d9f62"
+    },
+    {
+      "path": "evidence/local_attempt_2.json",
+      "git_blob_sha1": "57888774cd239d98c39812506d4b238dacbcf0ef",
+      "sha256": "5f877576bab13bbf57e3ffb456da20a66eb0fa26f8245ff4892cdd3655d533bb"
+    },
+    {
+      "path": "evidence/source_review.json",
+      "git_blob_sha1": "6a119afb305c4d3f709c58885fd336f111b7c84c",
+      "sha256": "74d83c48fdaa0ec9bddf25e9157708d918e57dabb077fbef7694e3c5aa121f06"
+    },
+    {
+      "path": "synthetic_store.py",
+      "git_blob_sha1": "a7e9b12a7acffbbf0189ae547a190aef6bae9fc6",
+      "sha256": "7529b983bb6c3dd6833e03d51f2c63b921f52c4a8985e233bb6fdf9f8b1d8b2e"
+    },
+    {
+      "path": "tests/preflight.py",
+      "git_blob_sha1": "2e05bc6ff7048df1025c2a6a5fb1ff9ec59810ea",
+      "sha256": "028136224c8516c07010019309eabcc2ba4fe800df63fa787938cb914ba3c9e9"
+    },
+    {
+      "path": "tests/verify_report.py",
+      "git_blob_sha1": "47773175adf75005269e6825d2498a48d6b427e5",
+      "sha256": "6d014ad079ab052a3ed7f018fb1ea65fe1018255a6252bc1519661964dd2db04"
+    }
+  ],
+  "byte_comparison": "PASS"
+}
