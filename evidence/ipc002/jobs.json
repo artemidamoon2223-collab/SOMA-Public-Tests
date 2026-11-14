@@ -1,0 +1,89 @@
+{
+  "total_count": 1,
+  "jobs": [
+    {
+      "id": 132416544114,
+      "run_id": 43584686451,
+      "workflow_name": "SOMA IPC verification",
+      "head_branch": "ci/ipc-verification-002",
+      "run_url": "https://api.github.com/repos/artemidamoon2223-collab/SOMA-Public-Tests/actions/runs/43584686451",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOVt2I_c8AAAAe1KQdcg",
+      "head_sha": "b995d10090760a8fc41a87c5efa7d0548b184b16",
+      "url": "https://api.github.com/repos/artemidamoon2223-collab/SOMA-Public-Tests/actions/jobs/132416544114",
+      "html_url": "https://github.com/artemidamoon2223-collab/SOMA-Public-Tests/actions/runs/43584686451/job/132416544114",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-14T10:18:58Z",
+      "started_at": "2026-11-14T10:18:59Z",
+      "completed_at": "2026-11-14T10:19:10Z",
+      "name": "verify",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-14T10:19:00Z",
+          "completed_at": "2026-11-14T10:19:01Z"
+        },
+        {
+          "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-14T10:19:01Z",
+          "completed_at": "2026-11-14T10:19:02Z"
+        },
+        {
+          "name": "Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-14T10:19:02Z",
+          "completed_at": "2026-11-14T10:19:02Z"
+        },
+        {
+          "name": "Frozen candidate adversarial execution twice",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-14T10:19:02Z",
+          "completed_at": "2026-11-14T10:19:08Z"
+        },
+        {
+          "name": "Post Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-11-14T10:19:08Z",
+          "completed_at": "2026-11-14T10:19:08Z"
+        },
+        {
+          "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-11-14T10:19:08Z",
+          "completed_at": "2026-11-14T10:19:08Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-11-14T10:19:08Z",
+          "completed_at": "2026-11-14T10:19:08Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/artemidamoon2223-collab/SOMA-Public-Tests/check-runs/132416544114",
+      "labels": [
+        "ubuntu-24.04"
+      ],
+      "runner_id": 1000006084,
+      "runner_name": "GitHub Actions 1000006084",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    }
+  ]
+}
