@@ -1,0 +1,513 @@
+{
+  "schema": "public-ci005/1",
+  "github": {
+    "run": 44241832039,
+    "job": 134591327810,
+    "url": "https://github.com/artemidamoon2223-collab/SOMA-Public-Tests/actions/runs/44241832039",
+    "job_url": "https://github.com/artemidamoon2223-collab/SOMA-Public-Tests/actions/runs/44241832039/job/134591327810",
+    "commit": "5d8b5f7b62e7966f579574f795adb96b7f541f5c",
+    "event": "push",
+    "attempt": 1,
+    "conclusion": "success",
+    "runner": [
+      "ubuntu-24.04"
+    ],
+    "started": "2026-11-18T05:06:00Z",
+    "finished": "2026-11-18T05:06:11Z",
+    "steps": [
+      [
+        "Set up job",
+        "success"
+      ],
+      [
+        "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+        "success"
+      ],
+      [
+        "Evaluate schedules and audit receipts",
+        "success"
+      ],
+      [
+        "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+        "success"
+      ],
+      [
+        "Complete job",
+        "success"
+      ]
+    ]
+  },
+  "report": {
+    "schema": 1,
+    "commit": "5d8b5f7b62e7966f579574f795adb96b7f541f5c",
+    "matrix": "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",
+    "trace": [
+      {
+        "label": "honest-world-hidden",
+        "role": "left",
+        "turn": 1,
+        "local": [
+          "tiles-v1",
+          "left",
+          1,
+          "ABA"
+        ],
+        "peer": null,
+        "verdict": [
+          "UNKNOWN",
+          0
+        ],
+        "exit": 0,
+        "stderr": "",
+        "proof": null,
+        "input_digest": "dd0790881c056c9adea3a1c207debc104cd32e043ea21f9f8439ceb50c2aebab",
+        "remote_fixture": [
+          "tiles-v1",
+          "right",
+          1,
+          "ABA"
+        ]
+      },
+      {
+        "label": "forked-world-hidden",
+        "role": "left",
+        "turn": 1,
+        "local": [
+          "tiles-v1",
+          "left",
+          1,
+          "ABA"
+        ],
+        "peer": null,
+        "verdict": [
+          "UNKNOWN",
+          0
+        ],
+        "exit": 0,
+        "stderr": "",
+        "proof": null,
+        "input_digest": "dd0790881c056c9adea3a1c207debc104cd32e043ea21f9f8439ceb50c2aebab",
+        "remote_fixture": [
+          "tiles-v1",
+          "right",
+          1,
+          "ABB"
+        ]
+      },
+      {
+        "label": "other-observer-hidden",
+        "role": "right",
+        "turn": 1,
+        "local": [
+          "tiles-v1",
+          "right",
+          1,
+          "ABB"
+        ],
+        "peer": null,
+        "verdict": [
+          "UNKNOWN",
+          0
+        ],
+        "exit": 0,
+        "stderr": "",
+        "proof": null,
+        "input_digest": "fe31246bea3b3a4f72beebe0fd661207e2f87afad0f98ec714bff0bd7e6f725c",
+        "remote_fixture": [
+          "tiles-v1",
+          "left",
+          1,
+          "ABA"
+        ]
+      },
+      {
+        "label": "reflection",
+        "role": "right",
+        "turn": 1,
+        "local": [
+          "tiles-v1",
+          "right",
+          1,
+          "ABB"
+        ],
+        "peer": [
+          "tiles-v1",
+          "right",
+          1,
+          "ABB"
+        ],
+        "verdict": [
+          "INVALID",
+          0
+        ],
+        "exit": 3,
+        "stderr": "",
+        "proof": null,
+        "input_digest": "7a65bd49135ebbe112cdd558359a615f519a8512fb6e4c1a2bd92f04c87ca05c",
+        "remote_fixture": [
+          "tiles-v1",
+          "left",
+          1,
+          "ABA"
+        ]
+      },
+      {
+        "label": "altered",
+        "role": "right",
+        "turn": 1,
+        "local": [
+          "tiles-v1",
+          "right",
+          1,
+          "ABB"
+        ],
+        "peer": [
+          "tiles-v1",
+          "left",
+          1,
+          "AAA"
+        ],
+        "verdict": [
+          "INVALID",
+          0
+        ],
+        "exit": 3,
+        "stderr": "",
+        "proof": null,
+        "input_digest": "136095cbdcf2e4fceba1903b863e101c6d8a8af8ae653f96275f53597e365bc7",
+        "remote_fixture": [
+          "tiles-v1",
+          "left",
+          1,
+          "ABA"
+        ]
+      },
+      {
+        "label": "delivered-right",
+        "role": "right",
+        "turn": 1,
+        "local": [
+          "tiles-v1",
+          "right",
+          1,
+          "ABB"
+        ],
+        "peer": [
+          "tiles-v1",
+          "left",
+          1,
+          "ABA"
+        ],
+        "verdict": [
+          "FORK",
+          3
+        ],
+        "exit": 0,
+        "stderr": "",
+        "proof": [
+          1,
+          [
+            "tiles-v1",
+            "right",
+            1,
+            "ABB"
+          ],
+          [
+            "tiles-v1",
+            "left",
+            1,
+            "ABA"
+          ],
+          "dc682bf90773694a28174169134e8335e6c321706eb4cf59e33bb0e7e15684bf"
+        ],
+        "input_digest": "ca9c4e0c4f6d820446105b046113667dc758410543c6a67529020c900563afa5",
+        "remote_fixture": [
+          "tiles-v1",
+          "left",
+          1,
+          "ABA"
+        ]
+      },
+      {
+        "label": "still-hidden-left",
+        "role": "left",
+        "turn": 1,
+        "local": [
+          "tiles-v1",
+          "left",
+          1,
+          "ABA"
+        ],
+        "peer": null,
+        "verdict": [
+          "UNKNOWN",
+          0
+        ],
+        "exit": 0,
+        "stderr": "",
+        "proof": null,
+        "input_digest": "dd0790881c056c9adea3a1c207debc104cd32e043ea21f9f8439ceb50c2aebab",
+        "remote_fixture": [
+          "tiles-v1",
+          "right",
+          1,
+          "ABB"
+        ]
+      },
+      {
+        "label": "delivered-left",
+        "role": "left",
+        "turn": 1,
+        "local": [
+          "tiles-v1",
+          "left",
+          1,
+          "ABA"
+        ],
+        "peer": [
+          "tiles-v1",
+          "right",
+          1,
+          "ABB"
+        ],
+        "verdict": [
+          "FORK",
+          3
+        ],
+        "exit": 0,
+        "stderr": "",
+        "proof": [
+          1,
+          [
+            "tiles-v1",
+            "left",
+            1,
+            "ABA"
+          ],
+          [
+            "tiles-v1",
+            "right",
+            1,
+            "ABB"
+          ],
+          "64cc70f9037d04225df92a5bed5f522f58db743e6078201c6c5a8ea987c1df2a"
+        ],
+        "input_digest": "b01a7851b7aa6ba55229b4722f4fabea8391eceff45c0ae206b508cba72a6e00",
+        "remote_fixture": [
+          "tiles-v1",
+          "right",
+          1,
+          "ABB"
+        ]
+      },
+      {
+        "label": "restart-left-withheld",
+        "role": "left",
+        "turn": 2,
+        "local": [
+          "tiles-v1",
+          "left",
+          2,
+          "A"
+        ],
+        "peer": null,
+        "verdict": [
+          "KNOWN_FORK",
+          3
+        ],
+        "exit": 0,
+        "stderr": "",
+        "proof": [
+          1,
+          [
+            "tiles-v1",
+            "left",
+            1,
+            "ABA"
+          ],
+          [
+            "tiles-v1",
+            "right",
+            1,
+            "ABB"
+          ],
+          "64cc70f9037d04225df92a5bed5f522f58db743e6078201c6c5a8ea987c1df2a"
+        ],
+        "input_digest": "da65e58fd1aec761ee5b10106454de46c34cdf94d10ef78d628b5aba7f3dae9a",
+        "remote_fixture": [
+          "tiles-v1",
+          "right",
+          2,
+          "A"
+        ]
+      },
+      {
+        "label": "restart-right-withheld",
+        "role": "right",
+        "turn": 2,
+        "local": [
+          "tiles-v1",
+          "right",
+          2,
+          "A"
+        ],
+        "peer": null,
+        "verdict": [
+          "KNOWN_FORK",
+          3
+        ],
+        "exit": 0,
+        "stderr": "",
+        "proof": [
+          1,
+          [
+            "tiles-v1",
+            "right",
+            1,
+            "ABB"
+          ],
+          [
+            "tiles-v1",
+            "left",
+            1,
+            "ABA"
+          ],
+          "dc682bf90773694a28174169134e8335e6c321706eb4cf59e33bb0e7e15684bf"
+        ],
+        "input_digest": "7a56bf1f2e590feab21fda3343840ddab2270b9e45bf59f8df99b1a25681d722",
+        "remote_fixture": [
+          "tiles-v1",
+          "left",
+          2,
+          "A"
+        ]
+      },
+      {
+        "label": "old-round",
+        "role": "left",
+        "turn": 2,
+        "local": [
+          "tiles-v1",
+          "left",
+          2,
+          "AB"
+        ],
+        "peer": [
+          "tiles-v1",
+          "right",
+          1,
+          "ABB"
+        ],
+        "verdict": [
+          "STALE",
+          0
+        ],
+        "exit": 3,
+        "stderr": "",
+        "proof": null,
+        "input_digest": "46c4669c22017d0128c83f5a5160df812a22382ca4af76ae3619ca7cbc776807",
+        "remote_fixture": null
+      },
+      {
+        "label": "prefix",
+        "role": "left",
+        "turn": 2,
+        "local": [
+          "tiles-v1",
+          "left",
+          2,
+          "AB"
+        ],
+        "peer": [
+          "tiles-v1",
+          "right",
+          2,
+          "ABA"
+        ],
+        "verdict": [
+          "PREFIX",
+          0
+        ],
+        "exit": 0,
+        "stderr": "",
+        "proof": null,
+        "input_digest": "f2b9adb71e1b5beea6f9fca2e1974a7b80721c2c75e0692fdd543369129bed12",
+        "remote_fixture": [
+          "tiles-v1",
+          "right",
+          2,
+          "ABA"
+        ]
+      },
+      {
+        "label": "equal",
+        "role": "left",
+        "turn": 2,
+        "local": [
+          "tiles-v1",
+          "left",
+          2,
+          "AB"
+        ],
+        "peer": [
+          "tiles-v1",
+          "right",
+          2,
+          "AB"
+        ],
+        "verdict": [
+          "EQUAL",
+          0
+        ],
+        "exit": 0,
+        "stderr": "",
+        "proof": null,
+        "input_digest": "74bf6869cbc50a63e702f0d30b30d57233874006e41b74a0d8ab05bfe0072596",
+        "remote_fixture": [
+          "tiles-v1",
+          "right",
+          2,
+          "AB"
+        ]
+      }
+    ],
+    "independence": "NOT_VERIFIED",
+    "files": {
+      ".github/workflows/soma-views-005.yml": "75bc853506fe4f884978e4f023c80bd707bfeccd51330a5fd40fe7482dcfb0ae",
+      "views005/README.md": "05b9b96e28c1ac418d24f60fad7d6acc79942ac362a757ea5e6fba3f90a0c3b9",
+      "views005/witness.py": "17a6c7f5b03ea41ce87b707a33870dd4e598d4425620e529e644e7b26b9f2fba",
+      "views005/experiment.py": "24b1ebbfeda1b19a5228d824efd8e923e88ca3fd1a5f25a14bec8d401a4601a9",
+      "views005/audit.py": "9e964fd57369a5a9989547f40712babaaff63c257af0967c4d26feb03ba06aa8"
+    }
+  },
+  "audit": {
+    "schedules": 900,
+    "decisions": {
+      "UNKNOWN": 900,
+      "EQUAL": 60,
+      "PREFIX": 272,
+      "FORK": 568
+    },
+    "trace": 13,
+    "rejected": [
+      "unaudited delivery",
+      "silence claimed equal",
+      "hidden world substituted",
+      "changed retained proof",
+      "subprocess crash",
+      "independence overstated"
+    ]
+  },
+  "decoded_job_log_sha256": "77e966b11f35ebf9e3974745142c428d979729841995a7020f97d0ba7b7206d5",
+  "matrix_tsv_sha256": "2adfa48c56fd8ff8288a9c10a9c6d4b3533795288783de5e3b15de4183ebd189",
+  "off_runner": {
+    "oracle_exit": 0,
+    "source_files": 5,
+    "matching_trace_lines": 13,
+    "unique_schedules": 900,
+    "mismatches": 0
+  },
+  "SCIENTIFICALLY_VALIDATED": "NO",
+  "CONFIRMATORY_SET_USED": false,
+  "NEW_LIVE_MODEL_CALLS": 0
+}
