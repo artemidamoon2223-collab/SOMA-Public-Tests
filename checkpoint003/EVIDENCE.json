@@ -1,0 +1,175 @@
+{
+  "classification": "RUNTIME_VERIFIED",
+  "counts": {
+    "FAIL": 0,
+    "PASS": 12
+  },
+  "independent_log_audit": {
+    "controls_rejected": [
+      "missing_case",
+      "arbitrary_child_crash",
+      "false_rollback_accept",
+      "wrong_source_hash"
+    ],
+    "status": "PASS"
+  },
+  "report": {
+    "CONFIRMATORY_SET_USED": false,
+    "NEW_LIVE_MODEL_CALLS": 0,
+    "SCIENTIFICALLY_VALIDATED": "NO",
+    "euid": 1001,
+    "programs": {
+      "checkpoint.py": "a5e10c93da4a3f797c344f2d7bb8a54bea6ffb43f6b1855ed19def20fcf3415b",
+      "verify.py": "36472c743fd4638c104475812229f49ae67c6863ca3de766daace474373ffb80"
+    },
+    "python": "3.12.16",
+    "records": [
+      {
+        "actual": "ACCEPT",
+        "case": "current",
+        "crash_exit": null,
+        "exit": 0,
+        "expected": "ACCEPT",
+        "unchanged": true
+      },
+      {
+        "actual": "ACCEPT",
+        "case": "trusted_advance",
+        "crash_exit": null,
+        "exit": 0,
+        "expected": "ACCEPT",
+        "unchanged": true
+      },
+      {
+        "actual": "ROLLBACK",
+        "case": "paired_rollback",
+        "crash_exit": null,
+        "exit": 3,
+        "expected": "ROLLBACK",
+        "unchanged": true
+      },
+      {
+        "actual": "FORK",
+        "case": "same_generation_fork",
+        "crash_exit": null,
+        "exit": 3,
+        "expected": "FORK",
+        "unchanged": true
+      },
+      {
+        "actual": "UNCONFIRMED_ADVANCE",
+        "case": "paired_unconfirmed_advance",
+        "crash_exit": null,
+        "exit": 3,
+        "expected": "UNCONFIRMED_ADVANCE",
+        "unchanged": true
+      },
+      {
+        "actual": "MISSING_TRUST",
+        "case": "no_trust_input",
+        "crash_exit": null,
+        "exit": 3,
+        "expected": "MISSING_TRUST",
+        "unchanged": true
+      },
+      {
+        "actual": "INVALID_TRUST",
+        "case": "malformed_trust_input",
+        "crash_exit": null,
+        "exit": 3,
+        "expected": "INVALID_TRUST",
+        "unchanged": true
+      },
+      {
+        "actual": "MISSING_LOCAL",
+        "case": "missing_anchor",
+        "crash_exit": null,
+        "exit": 3,
+        "expected": "MISSING_LOCAL",
+        "unchanged": true
+      },
+      {
+        "actual": "INVALID_LOCAL",
+        "case": "corrupt_local_anchor",
+        "crash_exit": null,
+        "exit": 3,
+        "expected": "INVALID_LOCAL",
+        "unchanged": true
+      },
+      {
+        "actual": "INVALID_LOCAL",
+        "case": "oversize_journal",
+        "crash_exit": null,
+        "exit": 3,
+        "expected": "INVALID_LOCAL",
+        "unchanged": true
+      },
+      {
+        "actual": "INVALID_LOCAL",
+        "case": "corrupt_local_journal",
+        "crash_exit": null,
+        "exit": 3,
+        "expected": "INVALID_LOCAL",
+        "unchanged": true
+      },
+      {
+        "actual": "LOCAL_MISMATCH",
+        "case": "sigkill_between_writes",
+        "crash_exit": -9,
+        "exit": 3,
+        "expected": "LOCAL_MISMATCH",
+        "unchanged": true
+      }
+    ],
+    "run_id": "44233997442",
+    "schema": "SOMA_PUBLIC_CHECKPOINT_003_V1",
+    "source_sha": "3fab9605d6567c34911fd9a2dc8e81d05a56011d"
+  },
+  "run": {
+    "conclusion": "success",
+    "event": "push",
+    "job_id": 134565599263,
+    "job_labels": [
+      "ubuntu-24.04"
+    ],
+    "log_permissions": [
+      "Contents: read",
+      "Metadata: read"
+    ],
+    "run_id": 44233997442,
+    "source_sha": "3fab9605d6567c34911fd9a2dc8e81d05a56011d",
+    "steps": [
+      {
+        "conclusion": "success",
+        "name": "Set up job"
+      },
+      {
+        "conclusion": "success",
+        "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262"
+      },
+      {
+        "conclusion": "success",
+        "name": "Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065"
+      },
+      {
+        "conclusion": "success",
+        "name": "Verify frozen checkpoint fixture"
+      },
+      {
+        "conclusion": "success",
+        "name": "Post Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065"
+      },
+      {
+        "conclusion": "success",
+        "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262"
+      },
+      {
+        "conclusion": "success",
+        "name": "Complete job"
+      }
+    ],
+    "url": "https://github.com/artemidamoon2223-collab/SOMA-Public-Tests/actions/runs/44233997442",
+    "workflow": ".github/workflows/soma-checkpoint-003.yml"
+  },
+  "workflow_sha256": "886680677408e9a064a719dd1260f55b8a77b4316fe2ccf42ebd09435ca4738a"
+}
