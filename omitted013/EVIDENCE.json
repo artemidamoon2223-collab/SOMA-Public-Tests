@@ -1,0 +1,77 @@
+{
+  "run": 44417353627,
+  "job": 135201015324,
+  "attempt": 1,
+  "report": {
+    "sha": "80fdc616a86c8cd0030c41cbb794fefcba78d352",
+    "rows": "eJztWE1vgzAM/SsoF1Ypmsp2YDvsl1A0MTXd2FCoGnqYtB8/EFnb0LhMhBDz0VuTkNjP9suLo2hNnx5oFJH9Id+lGbv/FDkncuCNEUq2bJccs0LImXUcx9TicnqeUz96DoCtDizZlqsFK4qUvwvvxatG7nxla3/l/cjxyw381YaTljOrU+eO0mlY8GQvPvJCj54yW/7n+esX+yZnEB+tg8iPWdYNOnmcYEKkOe8fuYt9r4FTDj2lXVgjVvtUW6ci7CiwMstw2lXZEwTXyCGJK8VolEw2HcfpavB2XSLi7XH51CV8AMc2aK/2TjfYypcYyzvU3yRQWJs+qktCfLyvoy88EcBM/IBQQ1rwRuITqU82pWK3Ascr7Hqj6RAlTS8qrDcV1hZ5a8txvsfnjlJ/ShHnVY5ZYgDis9/ca+V7MOMWOTuhXCuLNNDpBDAx/vjGxQcQUgAiDQAbiOhOnRkiS9PVHLmBm642A2tCVtbtMpX7luPaTe4PkGwQnYEPQfe0ZEjUiD2bQv91kEp32n8doCqNBOus74BwfFX/Tz4boWfjb8UOJ/fctWIXbYbQqFsVP8GnpiEHThARxx3WuYuIKXVYF8GK1K7y9wujzIdN"
+  },
+  "audit": {
+    "groups": {
+      "closed/ordinary": {
+        "probe_starts": 8,
+        "checks": 8,
+        "correct": 16
+      },
+      "expand_on_contradiction/ordinary": {
+        "probe_starts": 8,
+        "checks": 8,
+        "correct": 16
+      },
+      "verify_known/ordinary": {
+        "probe_starts": 20,
+        "checks": 20,
+        "correct": 16
+      },
+      "inspect_first/ordinary": {
+        "probe_starts": 8,
+        "checks": 32,
+        "correct": 16
+      },
+      "closed/coincident": {
+        "probe_starts": 4,
+        "checks": 4,
+        "wrong": 12
+      },
+      "expand_on_contradiction/coincident": {
+        "probe_starts": 4,
+        "checks": 4,
+        "wrong": 12
+      },
+      "verify_known/coincident": {
+        "probe_starts": 16,
+        "checks": 16,
+        "abstain": 12
+      },
+      "inspect_first/coincident": {
+        "probe_starts": 12,
+        "checks": 24,
+        "correct": 12
+      },
+      "closed/contradiction": {
+        "checks": 0,
+        "abstain": 12
+      },
+      "expand_on_contradiction/contradiction": {
+        "probe_starts": 12,
+        "checks": 24,
+        "correct": 12
+      },
+      "verify_known/contradiction": {
+        "checks": 0,
+        "abstain": 12
+      },
+      "inspect_first/contradiction": {
+        "probe_starts": 12,
+        "checks": 24,
+        "correct": 12
+      }
+    },
+    "application_starts": 184
+  },
+  "off_runner_exit": 0,
+  "corrupted_receipts_rejected": 3,
+  "SCIENTIFICALLY_VALIDATED": "NO",
+  "CONFIRMATORY_SET_USED": false,
+  "NEW_LIVE_MODEL_CALLS": 0
+}
