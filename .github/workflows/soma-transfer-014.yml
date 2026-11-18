@@ -1,0 +1,42 @@
+name: Selecting and transferring an investigation rule
+on:
+  push:
+    branches: ['ci/rule-transfer-014']
+    paths:
+      - 'transfer014/*.py'
+      - '.github/workflows/soma-transfer-014.yml'
+permissions:
+  contents: read
+concurrency:
+  group: rule-transfer-014
+  cancel-in-progress: false
+jobs:
+  verify:
+    if: github.repository == 'artemidamoon2223-collab/SOMA-Public-Tests'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 1
+          persist-credentials: false
+      - name: Evaluate schedules and audit receipts
+        env:
+          SOURCE_SHA: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+          umask 077
+          test "$(git rev-parse HEAD)" = "$SOURCE_SHA"
+          /usr/bin/python3 -I -c 'import sys; assert sys.version_info[:2] == (3, 12); print(sys.version)'
+          ulimit -t 30 -v 524288 -f 4096 -n 128 -u 128
+          receipts=$(mktemp -d)
+          freeze="$receipts/chosen.json"
+          timeout -k 3 60 /usr/bin/python3 -I -B transfer014/run.py train "$freeze" | tee "$receipts/train.log"
+          sed 's/^FREEZE //' "$receipts/train.log" > "$receipts/train.json"
+          FREEZE_HASH=$(/usr/bin/python3 -I -B transfer014/audit.py "$receipts/train.json" "$SOURCE_SHA")
+          export FREEZE_HASH
+          chmod 400 "$freeze"
+          timeout -k 3 60 /usr/bin/python3 -I -B transfer014/run.py transfer "$freeze" | tee "$receipts/transfer.log"
+          sed 's/^TRANSFER //' "$receipts/transfer.log" > "$receipts/transfer.json"
+          /usr/bin/python3 -I -B transfer014/audit.py "$receipts/train.json" "$SOURCE_SHA" "$receipts/transfer.json"

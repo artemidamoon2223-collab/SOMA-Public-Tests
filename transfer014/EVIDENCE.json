@@ -1,0 +1,172 @@
+{
+  "tested_commit": "68c3e9eaae48d428ea469466a9dc5014a2a7ce55",
+  "run": "https://github.com/artemidamoon2223-collab/SOMA-Public-Tests/actions/runs/44419348445",
+  "job": 135207901227,
+  "attempt": 1,
+  "runner": "ubuntu-24.04",
+  "score_order": [
+    "selected",
+    "full_check_baseline"
+  ],
+  "training": {
+    "freeze": {
+      "sha": "68c3e9eaae48d428ea469466a9dc5014a2a7ce55",
+      "rules": [
+        [
+          "inspect",
+          "always"
+        ],
+        [
+          "inspect",
+          "unresolved"
+        ],
+        [
+          "inspect",
+          "different"
+        ],
+        [
+          "inspect",
+          "never"
+        ],
+        [
+          "probe",
+          "always"
+        ],
+        [
+          "probe",
+          "unresolved"
+        ],
+        [
+          "probe",
+          "different"
+        ],
+        [
+          "probe",
+          "never"
+        ]
+      ],
+      "scores": [
+        {
+          "wrong": 0,
+          "correct": 12,
+          "abstain": 12,
+          "checks": 48
+        },
+        {
+          "wrong": 0,
+          "correct": 12,
+          "abstain": 12,
+          "checks": 40
+        },
+        {
+          "wrong": 0,
+          "correct": 8,
+          "abstain": 16,
+          "checks": 28
+        },
+        {
+          "wrong": 0,
+          "correct": 8,
+          "abstain": 16,
+          "checks": 24
+        },
+        {
+          "wrong": 0,
+          "correct": 12,
+          "abstain": 12,
+          "checks": 48
+        },
+        {
+          "wrong": 0,
+          "correct": 12,
+          "abstain": 12,
+          "checks": 40
+        },
+        {
+          "wrong": 0,
+          "correct": 10,
+          "abstain": 14,
+          "checks": 28
+        },
+        {
+          "wrong": 0,
+          "correct": 8,
+          "abstain": 16,
+          "checks": 24
+        }
+      ],
+      "selected": [
+        "inspect",
+        "unresolved"
+      ],
+      "train_hash": "dc5a0ff05f78254b424d402a512e575bef8e91c819b97bc77750c9c0bc263456"
+    },
+    "hash": "4cef17f63523ba46e448443821afeafc7d19a7ca99de738e80d699e8986b8b22",
+    "rows": "eNrtmd1ugzAMhd8l1161Pg/iIjBvbRUFRqDS9vQDjRUK4ac0gpi5dwHHUB1/R44JgkB8Y5YIeJfKIOhCKRBJilqEUN8RSSZjhS+vAoLyJ87apBjn5UpE0uDhYpIyOiyXaZZEWG5oLoOIT1J/4FsV0A6HkUwrRY6+LTjLtG58pYNdUvlZ4AxRq/AhLQstr/KsZKSwem4d6nj3vDuTD4ANdy8J7gt3U4pp3A+NjajMIzUeDV5RM5A7A7JRlYkkQ2SeFU80qyCU/MLMgmbrOggZGdT5fDTXSWtVf2b8IqZ7+agAflckDDctuMe736MDvNsV1N4Amyd2jXihF0Dee/PNMj/w96arye4DR/YBX32g23Xf1h45gYcO4hG/hD1nrBz/nGSqIDe3EndG5LXdODGrX8FrSW0z8Y7afOoncyiwijoAMZ8LvOoH7qTrngyYyF0Q2W/RmUk6TE506QwlUSgn212m0kcqLfPxR4jkAfnOB+S2MmHAqQFOYEbOk7FdT8bs1Uhlxs6Dsafch8Jknr/R+f2NbqCgyMzW/20vEv4An0q2Rg=="
+  },
+  "transfer": {
+    "sha": "68c3e9eaae48d428ea469466a9dc5014a2a7ce55",
+    "freeze_hash": "4cef17f63523ba46e448443821afeafc7d19a7ca99de738e80d699e8986b8b22",
+    "rows": "eNrdmdtygjAQht8l12lHn4dxOgFTtRMTyqEzffumFVFCwqHBYX+9C5C4h0/23zVJEnYWJ8X4u1Cl5Eye8+qbcWZyqdmONzeZKUSm5MuG8cR+2EmXucwqu2KFqauTPrx+lMZu2Nkt3St8+Hl7JS9MKpmzj7PsKPRB7ln/yN9dAbO1efs7rlzX9lqLL/vlIlVynv0mF5+1nGC8rpWabkDzdOQBHruN2uPBcjEaFZVryLFAuVqJRUpjJioqbdCxWElFlR3xYLmajUrLLexgNag6ygKwCjVmw9ahNuwguFRFHS1w7f4vqavSE8/7G5yJtLRLNjNB8ceHHY7gbLJZ4zlc8uSh5EIxGaOiAYmM1t8wPIJp9YvRg1J9u1Rq7mtlZwt/7PFBfwd43D4LjyMNwZYmkG4/0K7/l53VgfM2CiSdckXhRMdufI15RaT+Oh1EuwYFzNtakHRqJmD9nmPMq/UAa9APzNWdHwalLtVv+NDLilqfGgp94K20oQpNty+AQcaj76GAcVU7Ci6OcIfhxSfAoYDpyWoUYkaUNV1kpkho2syMamW6VclRyzh1ySeLsSpTT/+Sh8Y/dZ8ZdZAhp9flGNpID5YCCQYjM0pjI3IZr85xqIRT8g+YwK8yjfK5s+CAfbVhlD9N5KfpHbMXHqcT/YfH6/KSE3e6bz2kMXz3df0Ec3ivQ08xiA+kivYkfvcDonwVNg=="
+  },
+  "audit": {
+    "scores": [
+      {
+        "correct": 34,
+        "wrong": 0,
+        "abstain": 26,
+        "checks": 92
+      },
+      {
+        "correct": 34,
+        "wrong": 0,
+        "abstain": 26,
+        "checks": 120
+      }
+    ],
+    "strata": [
+      {
+        "open": {
+          "correct": 20,
+          "wrong": 0,
+          "abstain": 0,
+          "checks": 26
+        },
+        "no_probes": {
+          "correct": 14,
+          "wrong": 0,
+          "abstain": 6,
+          "checks": 26
+        },
+        "opaque": {
+          "correct": 0,
+          "wrong": 0,
+          "abstain": 20,
+          "checks": 40
+        }
+      },
+      {
+        "open": {
+          "correct": 20,
+          "wrong": 0,
+          "abstain": 0,
+          "checks": 40
+        },
+        "no_probes": {
+          "correct": 14,
+          "wrong": 0,
+          "abstain": 6,
+          "checks": 40
+        },
+        "opaque": {
+          "correct": 0,
+          "wrong": 0,
+          "abstain": 20,
+          "checks": 40
+        }
+      }
+    ],
+    "improvement": true
+  },
+  "verification": "The auditor exited 0 both on GitHub and on the receipts extracted from the job log. Synthetic public tasks with domain-specific adapters."
+}
