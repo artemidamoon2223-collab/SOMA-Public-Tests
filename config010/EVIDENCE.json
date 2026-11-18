@@ -1,0 +1,51 @@
+{
+  "run": 44409727878,
+  "job": 135174323946,
+  "attempt": 1,
+  "report": {
+    "sha": "3833e7d0d2f059d1e0c2cf8d41f67ed13d0f6dcf",
+    "cases": "eNrt3cFy2jAQxvF38Znp0NNOeRWGQ9qSlo5LOkk4dXj3GhoaQ20Qa1nelf69lWAb2dYv+pCjXS7ns9/V1/Xjw65+ffnw4+VpWy0+fdzPls2/+eziJ6vm5YuXmq3rzc/Na7WY71erwxu6t6ofdtsv3/9t8+v56XFTr6vFdlfX++Ydk+z2sIvDOzuadXj5+IbTz+890nEHzcuf6936tNV++B7/fmjdpek88OlzXtk2vBWDP6K3u6eAVh723InErPr2vF5v3/4/xwzMwAzMwAzMwAzMiGjG+10BGSOREdKFHdkRvFcQKRERhiGYgimYgimYgimYQtgpEhHJCxEBERBhYIIpmIIpmIIpmIIplk1Jx8bxPqz2mglI/ZHO95UCl/5m6qeJ72hQCTPH+kvQ/4E11/dyczPWeOhq9p5PASiAAii6GkABFEABlFOg5mdfEw1OeO/7in/Cohyud4chFkVpYcAk+QhNy3/SvEylHHe4QJHiDqAACqAACqAACqAACqDcAyX/AyURM52kOUEy5HC9OwwSSUYWabym5f9sQIEi+e5wgSKdD5kEoAAKoAAKoAAKoACqdKBiP3t58zodsUszgdk6VIvYZE8L9Ld0wOMC97SJBwaU99vZd4jp7jh7PU57O4a52/+ld3tEZJqj1gfV3Rk22BmnKaCjRsf0xXCDS3f68oGLRLwJZFpcRmkKuOhwsX4xPI9cIi7RMc65GfjsqatANeCEuklWNubqiVgxOuNUWav/T/cNDo46AHMfwZK0CaYIZcY4ujk3Ju44yiG0JWkTHBHj7I+O3OQ5KSjPSQF5TshzfvOckOeGAJZNnpPs85yQ5+AoxzwnGeY5yT7PCXnOfp6bkqOTOHLXaWl1nJjrX465W79FBVWXRuWIaGf1i7h7CmhlLxKdf5GBGZiBGZiBGZiBGZgRxYz2lyOQ4aUo4JR23Dt3DSJFIcIwBFMwBVMwBVMwBVMIO0UiInkhIiACIgxMMAVTMAVTMAVTMMWyKenYCFhXUK4sMTNyPTDJsPRerjPHEZbvlMTLd6a1xkNXs/d8CkABFEDR1QAKoAAKoDwAFVy8WHfSolYCE0rvRS29l/2keYFK+e5wQ2qDAhRAARRAARRAARRAlQtUcPFidRBOcYIovacpvZf9swFlfvPkuMMNqQ0KUAAFUAAFUAAFUAAFULGevYyx8mGsCUzVutiSZ/HiYh8Y0NxvZ79v0t1x9nrcWEuMiqJ4sT2OKF58Yylv0FGhY/1iuMElvHixybEOxYuvLcwNLtoRjemL4RmXiEt0jHNuOgrTZRuoUhUvZq6eiBWjM06VtW4XuzIMGMWLPWSxHJjKPpQl50hb7Mr2eIrixebTWyajprxjnAWO3OQ5KSjPSQF5TshzfvOckOfUgFG82FOeE/Kc/Twn5Lkh4ymKF7vJc0KeY3T0xtHqDwRSq4I="
+  },
+  "audit": {
+    "application_runs": 180,
+    "results": {
+      "all_available/defaults_only": {
+        "correct": 30,
+        "reads": 54,
+        "wrong_source_only": 12,
+        "wrong_value": 12
+      },
+      "all_available/fixed": {
+        "correct": 36,
+        "reads": 144,
+        "abstain": 18
+      },
+      "all_available/adaptive": {
+        "correct": 54,
+        "reads": 120
+      },
+      "one_unavailable/defaults_only": {
+        "abstain": 54,
+        "reads": 216,
+        "correct": 90,
+        "wrong_source_only": 36,
+        "wrong_value": 36
+      },
+      "one_unavailable/fixed": {
+        "abstain": 150,
+        "reads": 612,
+        "correct": 66
+      },
+      "one_unavailable/adaptive": {
+        "abstain": 120,
+        "reads": 438,
+        "correct": 96
+      }
+    }
+  },
+  "off_runner_audit_exit": 0,
+  "corrupted_intervention_rejected": true,
+  "SCIENTIFICALLY_VALIDATED": "NO",
+  "CONFIRMATORY_SET_USED": false,
+  "NEW_LIVE_MODEL_CALLS": 0
+}
