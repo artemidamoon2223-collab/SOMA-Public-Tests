@@ -1,0 +1,28 @@
+{
+  "run": "https://github.com/artemidamoon2223-collab/SOMA-Public-Tests/actions/runs/44342577663",
+  "job": "https://github.com/artemidamoon2223-collab/SOMA-Public-Tests/actions/runs/44342577663/job/134936246510",
+  "attempt": 1,
+  "report": {
+    "commit": "dfbf0fb2bfdee452a368ab23eaf1c300330dd76f",
+    "traces": "eNrtW0tygzAMvRALPfc4mdwg013vXwgTcGxJlgxpYteblokQ0cPP+lm5XC6YwhSu03JB878w/73erzwSzBKYJdieFpyS5WlfuoSm9aP5YrEA96d9/9xufynEA4FJwtluwzPjXlckRELyqC330F0I3d7sq1Qk2TfY8CzLSizlfGoo44l09ncg4snu5pjI7BKq2D9UsX94JPr+4fEUiEOrcNUmM982NWzCIt8SnQLfEsO69Qdv4xsq+EYH+dagP6DHO6DcZLMkstcgSfyBQ8JZnXkKit8lJUQP8et8opxHLWJdoobYduwWImYd7WsR4Xm627g+qFgfVKwPj0Rfnw/Dgwo8VMbzv/jWnj9gHe+2BCFdAhK97u6sKQ8a8KtB99eJbaZ4KuFh4xx0MFo8JSXSZnG7gEdeH4cEpWTmVKG//iFn8QOtZoKJb2zNVFH/sI5qszqIOyvyOGDv1n1a/Np5Z+BTO59vMEuyKGOW8EyTJAPPwPNyPE/bzucJss5N0R+gzh/A5Q/krEZCpWU1Eiotq0FFvjP828Az8LwCT8f+gHv/+WfQGoQvFXr5tmXWhjYvyt1hnWxqd7jAN7Y7LOIxVaZJZ5qtsCBapVazwa92Vn3K9Dt4VNr5AlWcz5nx4IPrbTpSb7fZD9HqbWafWuptxpnAo3b++U/T/RAmNnrjKY38euRvA0+X+XXj/mD0R8f+GXgGnn77o1y9zZwtWept5gAMHjWkZ95yvc0cmnXZDzlYn5JYn76p3u6tH9LxfBXq5l1QO+/im3TJptzGfFXj81X/gG+Nz1flk72e/ICdnoVfzZAfmObjIc4rwx5PJUhs3A46nsPz8d58B04JSsnMqcLa8x+YZ/xR7g7DlB/I5z/smn4q36iOby37gxPqHziLn+L0X/Code4Puvo94PUXngN36w=="
+  },
+  "audit": {
+    "static": {
+      "correct": 216,
+      "queries": 528,
+      "abstain": 64
+    },
+    "adaptive": {
+      "correct": 264,
+      "queries": 552,
+      "abstain": 16
+    },
+    "menu_gain": {
+      "0": 46,
+      "2": 24
+    }
+  },
+  "verified_decisions": 560,
+  "off_runner_exit": 0,
+  "corrupt_reports_rejected": 2
+}
