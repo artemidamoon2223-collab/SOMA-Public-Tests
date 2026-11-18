@@ -1,0 +1,34 @@
+name: SOMA independent checkpoint fixture
+on:
+  push:
+    branches: ['ci/checkpoint-verifier-003']
+    paths:
+      - 'checkpoint003/checkpoint.py'
+      - 'checkpoint003/verify.py'
+      - '.github/workflows/soma-checkpoint-003.yml'
+permissions:
+  contents: read
+concurrency:
+  group: checkpoint-003
+  cancel-in-progress: true
+jobs:
+  verify:
+    if: github.repository == 'artemidamoon2223-collab/SOMA-Public-Tests'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 1
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - name: Verify frozen checkpoint fixture
+        env:
+          SOURCE_SHA: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+          test "$(git rev-parse HEAD)" = "$SOURCE_SHA"
+          timeout --kill-after=5s 45s python -I checkpoint003/verify.py
