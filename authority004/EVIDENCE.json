@@ -1,0 +1,426 @@
+{
+  "schema": "public-ci004-v1",
+  "github": {
+    "run": {
+      "id": 44240008286,
+      "attempt": 1,
+      "sha": "3e834a1cf545581f6fd340adedd8b536ed2179af",
+      "event": "push",
+      "status": "completed",
+      "conclusion": "success",
+      "branch": "ci/checkpoint-authority-004",
+      "url": "https://github.com/artemidamoon2223-collab/SOMA-Public-Tests/actions/runs/44240008286"
+    },
+    "job": {
+      "id": 134585297223,
+      "labels": [
+        "ubuntu-24.04"
+      ],
+      "url": "https://github.com/artemidamoon2223-collab/SOMA-Public-Tests/actions/runs/44240008286/job/134585297223",
+      "started": "2026-11-18T04:49:50Z",
+      "finished": "2026-11-18T04:49:56Z",
+      "conclusion": "success",
+      "steps": [
+        [
+          "Set up job",
+          "success"
+        ],
+        [
+          "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+          "success"
+        ],
+        [
+          "Challenge and independently audit",
+          "success"
+        ],
+        [
+          "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+          "success"
+        ],
+        [
+          "Complete job",
+          "success"
+        ]
+      ]
+    }
+  },
+  "report": {
+    "schema": 1,
+    "commit": "3e834a1cf545581f6fd340adedd8b536ed2179af",
+    "cases": [
+      {
+        "name": "writer_grant",
+        "calls": [
+          [
+            0,
+            "APPENDED",
+            ""
+          ]
+        ],
+        "durable_actions": [
+          "alpha"
+        ],
+        "sqlite": "ok"
+      },
+      {
+        "name": "wrong_writer",
+        "calls": [
+          [
+            3,
+            "UNAUTHORIZED",
+            ""
+          ]
+        ],
+        "durable_actions": [
+          "alpha"
+        ],
+        "sqlite": "ok"
+      },
+      {
+        "name": "concurrent_parent",
+        "calls": [
+          [
+            0,
+            "APPENDED",
+            ""
+          ],
+          [
+            3,
+            "PARENT_CHANGED",
+            ""
+          ]
+        ],
+        "durable_actions": [
+          "alpha",
+          "beta"
+        ],
+        "sqlite": "ok"
+      },
+      {
+        "name": "current",
+        "calls": [
+          [
+            0,
+            "ACCEPT",
+            ""
+          ]
+        ],
+        "durable_actions": [
+          "alpha",
+          "beta"
+        ],
+        "sqlite": "ok"
+      },
+      {
+        "name": "rollback_pair",
+        "calls": [
+          [
+            3,
+            "AUTHORITY_MISMATCH",
+            ""
+          ]
+        ],
+        "durable_actions": [
+          "alpha",
+          "beta"
+        ],
+        "sqlite": "ok"
+      },
+      {
+        "name": "replacement_pair",
+        "calls": [
+          [
+            3,
+            "AUTHORITY_MISMATCH",
+            ""
+          ]
+        ],
+        "durable_actions": [
+          "alpha",
+          "beta"
+        ],
+        "sqlite": "ok"
+      },
+      {
+        "name": "authenticated_stale",
+        "calls": [
+          [
+            3,
+            "STALE_CHALLENGE",
+            ""
+          ]
+        ],
+        "durable_actions": [
+          "alpha",
+          "beta"
+        ],
+        "sqlite": "ok"
+      },
+      {
+        "name": "lost_anchor_write",
+        "calls": [
+          [
+            3,
+            "LOCAL_ANCHOR",
+            ""
+          ]
+        ],
+        "durable_actions": [
+          "alpha",
+          "beta"
+        ],
+        "sqlite": "ok"
+      },
+      {
+        "name": "missing",
+        "calls": [
+          [
+            3,
+            "MISSING_OBSERVATION",
+            ""
+          ]
+        ],
+        "durable_actions": [
+          "alpha",
+          "beta"
+        ],
+        "sqlite": "ok"
+      },
+      {
+        "name": "malformed",
+        "calls": [
+          [
+            3,
+            "MALFORMED_OBSERVATION",
+            ""
+          ]
+        ],
+        "durable_actions": [
+          "alpha",
+          "beta"
+        ],
+        "sqlite": "ok"
+      },
+      {
+        "name": "altered_mac",
+        "calls": [
+          [
+            3,
+            "BAD_OBSERVATION_MAC",
+            ""
+          ]
+        ],
+        "durable_actions": [
+          "alpha",
+          "beta"
+        ],
+        "sqlite": "ok"
+      },
+      {
+        "name": "fresh_below_floor",
+        "calls": [
+          [
+            3,
+            "BELOW_FLOOR",
+            ""
+          ]
+        ],
+        "durable_actions": [
+          "alpha",
+          "beta"
+        ],
+        "sqlite": "ok"
+      },
+      {
+        "name": "common_domain_counterexample",
+        "calls": [
+          [
+            0,
+            "ACCEPT",
+            ""
+          ]
+        ],
+        "durable_actions": [
+          "alpha",
+          "beta"
+        ],
+        "sqlite": "ok"
+      },
+      {
+        "name": "conflicting_observations",
+        "calls": [
+          [
+            3,
+            "CONFLICT",
+            ""
+          ]
+        ],
+        "durable_actions": [
+          "alpha",
+          "beta"
+        ],
+        "sqlite": "ok"
+      },
+      {
+        "name": "fork_at_floor",
+        "calls": [
+          [
+            3,
+            "FLOOR_FORK",
+            ""
+          ]
+        ],
+        "durable_actions": [
+          "alpha",
+          "beta"
+        ],
+        "sqlite": "ok"
+      },
+      {
+        "name": "killed_before_commit",
+        "calls": [
+          [
+            -9,
+            "",
+            ""
+          ]
+        ],
+        "durable_actions": [
+          "alpha",
+          "beta"
+        ],
+        "sqlite": "ok"
+      },
+      {
+        "name": "restart_before_commit",
+        "calls": [
+          [
+            0,
+            "ACCEPT",
+            ""
+          ]
+        ],
+        "durable_actions": [
+          "alpha",
+          "beta"
+        ],
+        "sqlite": "ok"
+      },
+      {
+        "name": "killed_after_commit",
+        "calls": [
+          [
+            -9,
+            "",
+            ""
+          ]
+        ],
+        "durable_actions": [
+          "alpha",
+          "beta",
+          "later"
+        ],
+        "sqlite": "ok"
+      },
+      {
+        "name": "incomplete_local_recovery",
+        "calls": [
+          [
+            3,
+            "AUTHORITY_MISMATCH",
+            ""
+          ]
+        ],
+        "durable_actions": [
+          "alpha",
+          "beta",
+          "later"
+        ],
+        "sqlite": "ok"
+      },
+      {
+        "name": "restart_after_commit",
+        "calls": [
+          [
+            0,
+            "ACCEPT",
+            ""
+          ]
+        ],
+        "durable_actions": [
+          "alpha",
+          "beta",
+          "later"
+        ],
+        "sqlite": "ok"
+      },
+      {
+        "name": "reused_identity",
+        "calls": [
+          [
+            3,
+            "REUSED_ACTION",
+            ""
+          ]
+        ],
+        "durable_actions": [
+          "alpha",
+          "beta",
+          "later"
+        ],
+        "sqlite": "ok"
+      },
+      {
+        "name": "truncated_envelope",
+        "calls": [
+          [
+            3,
+            "MALFORMED_ENVELOPE",
+            ""
+          ]
+        ],
+        "durable_actions": [
+          "alpha",
+          "beta",
+          "later"
+        ],
+        "sqlite": "ok"
+      }
+    ],
+    "files": {
+      "authority004/protocol.py": "59f3def781f79cc260eb8452a1926fc9fa40ebcc95ae1d9149c18bc73783f145",
+      "authority004/challenge.py": "ed651a84dbfcc44b59c89640eae533f12bc3dc2b14eb2571b096f367562a11ba",
+      "authority004/audit.py": "6e794cb322dee77b530730685219d7d03ffe1b422acefd03203bc98279d67dae",
+      "authority004/README.md": "b67d5b661fab3c923d6a1139f70a4fbd8908b7f856bd3c96c237ed93171b497e",
+      ".github/workflows/soma-checkpoint-004.yml": "5515ec697d13ba6a81d51c3e5a8600394546d9018e84eb195363461d8bcc0779"
+    },
+    "authority_independence": "NOT_VERIFIED"
+  },
+  "auditor": {
+    "cases_pass": 22,
+    "cases_fail": 0,
+    "corrupt_reports_rejected": [
+      "omission",
+      "fake pass",
+      "wrong crash",
+      "lost commit",
+      "source substitution",
+      "unearned trust"
+    ]
+  },
+  "decoded_log_sha256": "3ead60fd1b5feb86a54fe04a67cf36ad749ac3bcb9bca63f22ff605812a7b019",
+  "decoded_log_bytes": 19912,
+  "off_runner": {
+    "verified_case_lines": 22,
+    "frozen_files_compared": 5,
+    "auditor_exit": 0
+  },
+  "limitations": [
+    "Same runner and UID",
+    "Fresh challenge and retained floor assumed",
+    "Common-domain rollback accepted"
+  ],
+  "SCIENTIFICALLY_VALIDATED": "NO",
+  "CONFIRMATORY_SET_USED": false,
+  "NEW_LIVE_MODEL_CALLS": 0
+}
