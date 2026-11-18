@@ -1,0 +1,42 @@
+{
+  "run": 44412632034,
+  "job": 135184536100,
+  "attempt": 1,
+  "report": {
+    "commit": "9f3f1086b9e3364d8ce2786052e49234287662a4",
+    "cases": "eNrtmsFygjAQhl+FyamdyTj0tFNeBTnQGq2dGB2EQ8f67gUBBSVaMCEB1oOjJCbZ/ZYsG3/fFwnn9HCkvp9/zN6C9Bvh23DBotnuh1CyYEtnw6IVe0k/hQmP99TZRdvlmrNXby6c9BWxOImEU7Y7v2WHuSDpeISHifj8mn3vt4LQA2Ei/OBsQbxlyPfsmPUof1r2OQZBtpCrVSka5mJccc3sArOBchJkFTEm8jYvu4RoEA2ikaJx0+71Nu/97QTGpVcNdgAifL1Zx8RzC0dIlqlrXBUIezFBCpfW7kMXWSNrZD0s1iDdtMFuuFB4BhR75sG4KuFqNUEKt34jA7JG1sh6WKxNnxTEUZKvtBJdWR3wbI3x9Lj/p2iJCeXjVvU2vRRNlavm8TY8ktysr+uAcq/f90I3yp0nVjxLuW03wAdL4Ve2NjXegXsMQCP81hMrnsXiE5MWe9hzdYr6ibQkADNGSgKkvi9hsmhoVWn5+XFLf+K58tl51j78dLJHWkgAxRw19JgD/TEHKmPOhlOoDlt3t9pP/URaE2G/RmIibL/BwxgSIehPhICJUNkGD2NIhKA/Ed6LOcUne8XV1KtlzyKgbivSxyeeKDRRKTRBNIgGNUCaAaESwHLVB5JEkkjSsDqnNTr8j95SPQaSRJJIsi/djJo6QXYsiroZw7oZnXhRTDNEMU0fEYEKm+EpbHqqfVAuM+HC15Qsptm86cliphtbMIbYQvlLXyUlalkmfJ5gSrNiTZayT7MykdiCMcSWxdqU4A9dUpkb"
+  },
+  "audit": {
+    "app_starts": 84,
+    "counts": {
+      "available/eager": {
+        "correct": 36,
+        "reads": 102,
+        "loader_requests": 36,
+        "reads_beyond_smallest_supporting_subset": 22
+      },
+      "available/conditional": {
+        "correct": 36,
+        "reads": 98,
+        "loader_requests": 8,
+        "reads_beyond_smallest_supporting_subset": 18
+      },
+      "hidden/eager": {
+        "correct": 28,
+        "reads": 126,
+        "loader_requests": 36,
+        "reads_beyond_smallest_supporting_subset": 34,
+        "abstain": 8
+      },
+      "hidden/conditional": {
+        "correct": 28,
+        "reads": 98,
+        "loader_requests": 8,
+        "reads_beyond_smallest_supporting_subset": 6,
+        "abstain": 8
+      }
+    }
+  },
+  "corrupt_reports_rejected": 2,
+  "off_runner_audit_exit": 0
+}
