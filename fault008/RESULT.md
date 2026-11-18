@@ -1,0 +1,7 @@
+One incorrect prediction can make the first distinguishing observation misleading. This public fixture compares three deterministic policies across all ordered pairs of four-bit hypotheses, both truths and five fault locations (including no fault). It gives each policy the same maximum of three distinct queries. All predictions are visible. The actual observations differ from the true hypothesis in at most one channel in the primary experiment. Counts describe enumerated cases, not real-world rates.
+
+The first-difference policy treating predictions as exact made 480 incorrect decisions. Under the one-error assumption, prioritizing differing channels resolved 1,632 cases with zero errors using 6,496 queries. Fixed ordering with the same error tolerance resolved 1,280 with zero errors using 7,040 queries. A separate two-error control shows an incorrect confident decision outside the assumption.
+
+The independent auditor enumerated all complete observation words consistent with each transcript and rejected two altered reports. Reproduce at the tested revision by setting SOURCE_SHA to the commit hash and running fault008/experiment.py with Python 3.12, then passing its JSON file and that SHA to fault008/audit.py. EVIDENCE.json includes the full compressed traces from the job.
+
+Tested commit: 41bfff47fd5f20119a2a4dc046cc16b066ba029b. [GitHub Actions](https://github.com/artemidamoon2223-collab/SOMA-Public-Tests/actions/runs/44341590093).
