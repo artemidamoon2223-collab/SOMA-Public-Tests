@@ -1,0 +1,38 @@
+name: Synthetic checkpoint authority
+on:
+  push:
+    branches: ['ci/checkpoint-authority-004']
+    paths:
+      - 'authority004/*.py'
+      - 'authority004/README.md'
+      - '.github/workflows/soma-checkpoint-004.yml'
+permissions:
+  contents: read
+concurrency:
+  group: checkpoint-authority-004
+  cancel-in-progress: false
+jobs:
+  verify:
+    if: github.repository == 'artemidamoon2223-collab/SOMA-Public-Tests'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 1
+          persist-credentials: false
+      - name: Challenge and independently audit
+        env:
+          SOURCE_SHA: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+          umask 077
+          test "$(git rev-parse HEAD)" = "$SOURCE_SHA"
+          /usr/bin/python3 -I -c 'import sys; assert sys.version_info[:2] == (3, 12); print(sys.version)'
+          ulimit -t 30 -v 524288 -f 4096 -n 128 -u 128
+          report="$RUNNER_TEMP/authority004.json"
+          timeout --kill-after=3 60 /usr/bin/python3 -I -B authority004/challenge.py >"$report"
+          printf 'REPORT '
+          cat "$report"
+          timeout --kill-after=3 15 /usr/bin/python3 -I -B authority004/audit.py "$report" "$SOURCE_SHA"
