@@ -1,0 +1,36 @@
+name: Partial predictions evaluation
+on:
+  push:
+    branches: ['ci/partial-predictions-007']
+    paths:
+      - 'partial007/*.py'
+      - '.github/workflows/soma-partial-007.yml'
+permissions:
+  contents: read
+concurrency:
+  group: partial-predictions-007
+  cancel-in-progress: false
+jobs:
+  verify:
+    if: github.repository == 'artemidamoon2223-collab/SOMA-Public-Tests'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 1
+          persist-credentials: false
+      - name: Evaluate schedules and audit receipts
+        env:
+          SOURCE_SHA: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+          umask 077
+          test "$(git rev-parse HEAD)" = "$SOURCE_SHA"
+          /usr/bin/python3 -I -c 'import sys; assert sys.version_info[:2] == (3, 12); print(sys.version)'
+          ulimit -t 30 -v 524288 -f 4096 -n 128 -u 128
+          report="$RUNNER_TEMP/partial007.json"
+          timeout -k 3 45 /usr/bin/python3 -I -B partial007/test.py >"$report"
+          timeout -k 3 15 /usr/bin/python3 -I -B partial007/audit.py "$report"
+          python3 -I -c 'import base64,zlib,sys; print("REPORT "+base64.b64encode(zlib.compress(open(sys.argv[1],"rb").read(),9)).decode())' "$report"
