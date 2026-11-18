@@ -1,0 +1,43 @@
+{
+  "run": 44414666399,
+  "job": 135191671581,
+  "attempt": 1,
+  "report": {
+    "sha": "774b55ef14af7579adf86734c8f2f4122a4f6a2c",
+    "rows": "eNrtmcEOgjAQRP+FMwdN1Oq3NBw0ohfiQeX/RUTA0kJBS1L7PJh0m87AUHaXjpSXPMvi8k8Wv+iQ5WlUjpMkbiafAzk28IEAPPABwS/i7aqNvHgFo2N62ufZ/Ra9102LQQEFFHoKoVCIV7C7dFoMCiig0FNoi+pu6bBiewFeJL11F7fIXOWwlcksxz5hCi2mUNbYj33CVItdrafDguoxx9De652q4eqWYnhhiLwhv49Cu4/dVllfOahZvXuvd6p5N4X1whB53Z/BbHTfmudrml7aj94+UKm10fXRn4tGBRADMcxizHMs0xGklCs2xbr9R+seZDVosjEyIZNXMs1wWjJjFlLVFwb1NeIp6iMTMjmTCUsReOAxo6GAAjMadxIKKDCjMaMxo39vRlOyv6IYmm2+gg1ueQ8AV0G3SbcJhTcUQ7NqAhgDwFVYtLX4xIiBGPPbnKupNqexEarskeA6IYQLVrj/7ZRsjVJjJ1A9m68aEoRDuN8IlzwAa53oBA=="
+  },
+  "audit": {
+    "cases": 162,
+    "ambiguous": 24,
+    "arms": {
+      "always_blue": {
+        "probes": 162,
+        "correct": 150,
+        "ambiguous_resolved": 12,
+        "abstain": 12
+      },
+      "conditional_blue": {
+        "correct": 150,
+        "probes": 24,
+        "ambiguous_resolved": 12,
+        "abstain": 12
+      },
+      "conditional_defaults": {
+        "correct": 162,
+        "probes": 24,
+        "ambiguous_resolved": 24
+      },
+      "select": {
+        "correct": 162,
+        "probes": 24,
+        "ambiguous_resolved": 24
+      }
+    },
+    "app_starts": 558
+  },
+  "off_runner_audit_exit": 0,
+  "corrupted_reports_rejected": 3,
+  "SCIENTIFICALLY_VALIDATED": "NO",
+  "CONFIRMATORY_SET_USED": false,
+  "NEW_LIVE_MODEL_CALLS": 0
+}
