@@ -1,0 +1,103 @@
+{
+  "tested_commit": "3fceb6a7a3ba0eae3c79ab19f333e2d8000541d1",
+  "run": "https://github.com/artemidamoon2223-collab/SOMA-Public-Tests/actions/runs/44450052344",
+  "job": 135311498862,
+  "attempt": 1,
+  "controls": "CONTROLS 5 rejected, 1 accepted",
+  "audit": {
+    "historical_transitions": {
+      "original_access": {
+        "abstain": {
+          "abstain": 4,
+          "correct": 0,
+          "wrong": 0
+        },
+        "correct": {
+          "abstain": 4,
+          "correct": 4,
+          "wrong": 0
+        },
+        "wrong": {
+          "abstain": 4,
+          "correct": 0,
+          "wrong": 0
+        }
+      },
+      "witness_access": {
+        "abstain": {
+          "abstain": 0,
+          "correct": 4,
+          "wrong": 0
+        },
+        "correct": {
+          "abstain": 0,
+          "correct": 8,
+          "wrong": 0
+        },
+        "wrong": {
+          "abstain": 0,
+          "correct": 4,
+          "wrong": 0
+        }
+      }
+    },
+    "target_met": {
+      "original_access": false,
+      "witness_access": true
+    },
+    "totals": {
+      "new/original_access": {
+        "abstain": 9,
+        "correct": 3,
+        "wrong": 0
+      },
+      "new/witness_access": {
+        "abstain": 4,
+        "correct": 8,
+        "wrong": 0
+      },
+      "old/original_access": {
+        "abstain": 12,
+        "correct": 4,
+        "wrong": 0
+      },
+      "old/witness_access": {
+        "abstain": 0,
+        "correct": 16,
+        "wrong": 0
+      }
+    }
+  },
+  "off_runner_recount": "matched per-case transitions and all cohort totals",
+  "records": [
+    "COMMIT 3fceb6a7a3ba0eae3c79ab19f333e2d8000541d1",
+    "CASE [[\"amber\", \"literal\", false, \"open\"], \"amber\", \"oracle-0\", [[[[\"inspect\", [\"defaults.json\", \"boot.json\"]], [\"probe\", \"boot.json\", \"unchanged\"]], null]], {\"stdout\": \"\\\"amber\\\"\\n\", \"sinks\": [[\"defaults.json\", \"amber\"]]}, \"defaults.json\"]",
+    "CASE [[\"amber\", \"literal\", false, \"no_probes\"], \"amber\", \"oracle-0\", [[[[\"inspect\", [\"defaults.json\", \"boot.json\"]], [\"probe\", \"boot.json\", \"unavailable\"]], null]], {\"stdout\": \"\\\"amber\\\"\\n\", \"sinks\": [[\"defaults.json\", \"amber\"]]}, \"defaults.json\"]",
+    "CASE [[\"amber\", \"literal\", true, \"open\"], \"amber\", \"oracle-1\", [[[[\"inspect\", [\"defaults.json\", \"boot.json\"]], [\"probe\", \"boot.json\", \"changed\"]], \"boot.json\"]], {\"stdout\": \"\\\"amber\\\"\\n\", \"sinks\": [[\"boot.json\", \"amber\"]]}, \"boot.json\"]",
+    "CASE [[\"amber\", \"literal\", true, \"no_probes\"], \"amber\", \"oracle-1\", [[[[\"inspect\", [\"defaults.json\", \"boot.json\"]], [\"probe\", \"boot.json\", \"unavailable\"]], null]], {\"stdout\": \"\\\"amber\\\"\\n\", \"sinks\": [[\"boot.json\", \"amber\"]]}, \"boot.json\"]",
+    "CASE [[\"amber\", \"computed\", false, \"open\"], \"amber\", \"oracle-0\", [[[[\"inspect\", [\"defaults.json\"]], [\"probe\", \"defaults.json\", \"changed\"]], \"defaults.json\"]], {\"stdout\": \"\\\"amber\\\"\\n\", \"sinks\": [[\"defaults.json\", \"amber\"]]}, \"defaults.json\"]",
+    "CASE [[\"amber\", \"computed\", false, \"no_probes\"], \"amber\", \"oracle-0\", [[[[\"inspect\", [\"defaults.json\"]], [\"probe\", \"defaults.json\", \"unavailable\"]], null]], {\"stdout\": \"\\\"amber\\\"\\n\", \"sinks\": [[\"defaults.json\", \"amber\"]]}, \"defaults.json\"]",
+    "CASE [[\"amber\", \"computed\", true, \"open\"], \"amber\", \"oracle-1\", [[[[\"inspect\", [\"defaults.json\"]], [\"probe\", \"defaults.json\", \"unchanged\"]], null]], {\"stdout\": \"\\\"amber\\\"\\n\", \"sinks\": [[\"boot.json\", \"amber\"]]}, \"boot.json\"]",
+    "CASE [[\"amber\", \"computed\", true, \"no_probes\"], \"amber\", \"oracle-1\", [[[[\"inspect\", [\"defaults.json\"]], [\"probe\", \"defaults.json\", \"unavailable\"]], null]], {\"stdout\": \"\\\"amber\\\"\\n\", \"sinks\": [[\"boot.json\", \"amber\"]]}, \"boot.json\"]",
+    "CASE [[\"teal\", \"literal\", false, \"open\"], \"teal\", \"oracle-0\", [[[[\"inspect\", [\"defaults.json\", \"boot.json\"]], [\"probe\", \"boot.json\", \"unchanged\"]], null]], {\"stdout\": \"\\\"teal\\\"\\n\", \"sinks\": [[\"defaults.json\", \"teal\"]]}, \"defaults.json\"]",
+    "CASE [[\"teal\", \"literal\", false, \"no_probes\"], \"teal\", \"oracle-0\", [[[[\"inspect\", [\"defaults.json\", \"boot.json\"]], [\"probe\", \"boot.json\", \"unavailable\"]], null]], {\"stdout\": \"\\\"teal\\\"\\n\", \"sinks\": [[\"defaults.json\", \"teal\"]]}, \"defaults.json\"]",
+    "CASE [[\"teal\", \"literal\", true, \"open\"], \"teal\", \"oracle-1\", [[[[\"inspect\", [\"defaults.json\", \"boot.json\"]], [\"probe\", \"boot.json\", \"changed\"]], \"boot.json\"]], {\"stdout\": \"\\\"teal\\\"\\n\", \"sinks\": [[\"boot.json\", \"teal\"]]}, \"boot.json\"]",
+    "CASE [[\"teal\", \"literal\", true, \"no_probes\"], \"teal\", \"oracle-1\", [[[[\"inspect\", [\"defaults.json\", \"boot.json\"]], [\"probe\", \"boot.json\", \"unavailable\"]], null]], {\"stdout\": \"\\\"teal\\\"\\n\", \"sinks\": [[\"boot.json\", \"teal\"]]}, \"boot.json\"]",
+    "CASE [[\"teal\", \"computed\", false, \"open\"], \"teal\", \"oracle-0\", [[[[\"inspect\", [\"defaults.json\"]], [\"probe\", \"defaults.json\", \"changed\"]], \"defaults.json\"]], {\"stdout\": \"\\\"teal\\\"\\n\", \"sinks\": [[\"defaults.json\", \"teal\"]]}, \"defaults.json\"]",
+    "CASE [[\"teal\", \"computed\", false, \"no_probes\"], \"teal\", \"oracle-0\", [[[[\"inspect\", [\"defaults.json\"]], [\"probe\", \"defaults.json\", \"unavailable\"]], null]], {\"stdout\": \"\\\"teal\\\"\\n\", \"sinks\": [[\"defaults.json\", \"teal\"]]}, \"defaults.json\"]",
+    "CASE [[\"teal\", \"computed\", true, \"open\"], \"teal\", \"oracle-1\", [[[[\"inspect\", [\"defaults.json\"]], [\"probe\", \"defaults.json\", \"unchanged\"]], null]], {\"stdout\": \"\\\"teal\\\"\\n\", \"sinks\": [[\"boot.json\", \"teal\"]]}, \"boot.json\"]",
+    "CASE [[\"teal\", \"computed\", true, \"no_probes\"], \"teal\", \"oracle-1\", [[[[\"inspect\", [\"defaults.json\"]], [\"probe\", \"defaults.json\", \"unavailable\"]], null]], {\"stdout\": \"\\\"teal\\\"\\n\", \"sinks\": [[\"boot.json\", \"teal\"]]}, \"boot.json\"]",
+    "CASE [[\"mint\", \"late_decoy\", false, \"open\"], \"mint\", \"oracle-0\", [[[[\"inspect\", [\"session.json\", \"theme.json\"]], [\"probe\", \"theme.json\", \"changed\"]], \"theme.json\"]], {\"stdout\": \"\\\"mint\\\"\\n\", \"sinks\": [[\"theme.json\", \"mint\"]]}, \"theme.json\"]",
+    "CASE [[\"mint\", \"late_decoy\", false, \"no_probes\"], \"mint\", \"oracle-0\", [[[[\"inspect\", [\"session.json\", \"theme.json\"]], [\"probe\", \"theme.json\", \"unavailable\"]], null]], {\"stdout\": \"\\\"mint\\\"\\n\", \"sinks\": [[\"theme.json\", \"mint\"]]}, \"theme.json\"]",
+    "CASE [[\"mint\", \"late_decoy\", true, \"open\"], \"mint\", \"oracle-1\", [[[[\"inspect\", [\"session.json\", \"theme.json\"]], [\"probe\", \"theme.json\", \"unchanged\"]], null]], {\"stdout\": \"\\\"mint\\\"\\n\", \"sinks\": [[\"session.json\", \"mint\"]]}, \"session.json\"]",
+    "CASE [[\"mint\", \"late_decoy\", true, \"no_probes\"], \"mint\", \"oracle-1\", [[[[\"inspect\", [\"session.json\", \"theme.json\"]], [\"probe\", \"theme.json\", \"unavailable\"]], null]], {\"stdout\": \"\\\"mint\\\"\\n\", \"sinks\": [[\"session.json\", \"mint\"]]}, \"session.json\"]",
+    "CASE [[\"mint\", \"stack\", false, \"open\"], \"mint\", \"oracle-0\", [[[[\"inspect\", [\"theme.json\"]], [\"probe\", \"theme.json\", \"changed\"]], \"theme.json\"]], {\"stdout\": \"\\\"mint\\\"\\n\", \"sinks\": [[\"theme.json\", \"mint\"]]}, \"theme.json\"]",
+    "CASE [[\"mint\", \"stack\", false, \"no_probes\"], \"mint\", \"oracle-0\", [[[[\"inspect\", [\"theme.json\"]], [\"probe\", \"theme.json\", \"unavailable\"]], null]], {\"stdout\": \"\\\"mint\\\"\\n\", \"sinks\": [[\"theme.json\", \"mint\"]]}, \"theme.json\"]",
+    "CASE [[\"mint\", \"stack\", true, \"open\"], \"mint\", \"oracle-1\", [[[[\"inspect\", [\"theme.json\"]], [\"probe\", \"theme.json\", \"unchanged\"]], null]], {\"stdout\": \"\\\"mint\\\"\\n\", \"sinks\": [[\"session.json\", \"mint\"]]}, \"session.json\"]",
+    "CASE [[\"mint\", \"stack\", true, \"no_probes\"], \"mint\", \"oracle-1\", [[[[\"inspect\", [\"theme.json\"]], [\"probe\", \"theme.json\", \"unavailable\"]], null]], {\"stdout\": \"\\\"mint\\\"\\n\", \"sinks\": [[\"session.json\", \"mint\"]]}, \"session.json\"]",
+    "CASE [[\"mint\", \"transform\", false, \"open\"], \"mint\", \"oracle-0\", [[[[\"inspect\", [\"theme.json\"]], [\"probe\", \"theme.json\", \"changed\"]], \"theme.json\"]], {\"stdout\": \"\\\"mint\\\"\\n\", \"sinks\": [[null, \"mint\"]]}, null]",
+    "CASE [[\"mint\", \"transform\", false, \"no_probes\"], \"mint\", \"oracle-0\", [[[[\"inspect\", [\"theme.json\"]], [\"probe\", \"theme.json\", \"unavailable\"]], null]], {\"stdout\": \"\\\"mint\\\"\\n\", \"sinks\": [[null, \"mint\"]]}, null]",
+    "CASE [[\"mint\", \"transform\", true, \"open\"], \"mint\", \"oracle-1\", [[[[\"inspect\", [\"theme.json\"]], [\"probe\", \"theme.json\", \"unchanged\"]], null]], {\"stdout\": \"\\\"mint\\\"\\n\", \"sinks\": [[null, \"mint\"]]}, null]",
+    "CASE [[\"mint\", \"transform\", true, \"no_probes\"], \"mint\", \"oracle-1\", [[[[\"inspect\", [\"theme.json\"]], [\"probe\", \"theme.json\", \"unavailable\"]], null]], {\"stdout\": \"\\\"mint\\\"\\n\", \"sinks\": [[null, \"mint\"]]}, null]"
+  ]
+}
