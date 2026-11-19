@@ -1,0 +1,36 @@
+name: Verify attribution repair on original and new pairs
+on:
+  push:
+    branches: ['ci/loader-attribution-016']
+    paths:
+      - 'repair016/*.py'
+      - '.github/workflows/soma-repair-016.yml'
+permissions:
+  contents: read
+concurrency:
+  group: loader-attribution-016
+  cancel-in-progress: false
+jobs:
+  verify:
+    if: github.repository == 'artemidamoon2223-collab/SOMA-Public-Tests'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 1
+          persist-credentials: false
+      - name: Record paired decisions and audit evidence
+        env:
+          SOURCE_SHA: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+          umask 077
+          test "$(git rev-parse HEAD)" = "$SOURCE_SHA"
+          /usr/bin/python3 -I -c 'import sys; assert sys.version_info[:2] == (3, 12); print(sys.version)'
+          ulimit -t 30 -v 524288 -f 4096 -n 128 -u 128
+          /usr/bin/python3 -I -B repair016/controls.py
+          receipt=$(mktemp)
+          timeout -k 3 60 /usr/bin/python3 -I -B repair016/trial.py | tee "$receipt"
+          timeout -k 3 15 /usr/bin/python3 -I -B repair016/audit.py "$receipt" paired015/EVIDENCE.json "$SOURCE_SHA"
