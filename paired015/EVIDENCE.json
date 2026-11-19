@@ -1,0 +1,75 @@
+{
+  "tested_commit": "86cec41cc6d81b1550d983dbf6475a76600cf642",
+  "run": "https://github.com/artemidamoon2223-collab/SOMA-Public-Tests/actions/runs/44449512386",
+  "job": 135309726402,
+  "attempt": 1,
+  "rule_order": [
+    "inspect/unresolved",
+    "inspect/always"
+  ],
+  "audit": {
+    "claim_pass": false,
+    "pairs": 8,
+    "premature_stop_pairs": [
+      [
+        "amber",
+        "computed",
+        "no_probes"
+      ],
+      [
+        "amber",
+        "computed",
+        "open"
+      ],
+      [
+        "teal",
+        "computed",
+        "no_probes"
+      ],
+      [
+        "teal",
+        "computed",
+        "open"
+      ]
+    ],
+    "rejected_corruptions": 4,
+    "scores": [
+      {
+        "abstain": 4,
+        "checks": 24,
+        "contradicted_by_probe": 0,
+        "correct": 8,
+        "requested": 8,
+        "wrong": 4
+      },
+      {
+        "abstain": 4,
+        "checks": 32,
+        "contradicted_by_probe": 2,
+        "correct": 8,
+        "requested": 16,
+        "wrong": 4
+      }
+    ]
+  },
+  "external_recount": "Counted from job outputs using the tagged source and observed schedule; all totals matched.",
+  "records": [
+    "COMMIT 86cec41cc6d81b1550d983dbf6475a76600cf642",
+    "CASE [[\"amber\", \"literal\", false, \"open\"], \"amber\", \"oracle-0\", [[[[\"inspect\", [\"defaults.json\", \"boot.json\"]], [\"probe\", \"boot.json\", \"unchanged\"]], \"defaults.json\"], [[[\"inspect\", [\"defaults.json\", \"boot.json\"]], [\"probe\", \"boot.json\", \"unchanged\"]], \"defaults.json\"]]]",
+    "CASE [[\"amber\", \"literal\", false, \"no_probes\"], \"amber\", \"oracle-0\", [[[[\"inspect\", [\"defaults.json\", \"boot.json\"]], [\"probe\", \"boot.json\", \"unavailable\"]], null], [[[\"inspect\", [\"defaults.json\", \"boot.json\"]], [\"probe\", \"boot.json\", \"unavailable\"]], null]]]",
+    "CASE [[\"amber\", \"literal\", true, \"open\"], \"amber\", \"oracle-1\", [[[[\"inspect\", [\"defaults.json\", \"boot.json\"]], [\"probe\", \"boot.json\", \"changed\"]], \"boot.json\"], [[[\"inspect\", [\"defaults.json\", \"boot.json\"]], [\"probe\", \"boot.json\", \"changed\"]], \"boot.json\"]]]",
+    "CASE [[\"amber\", \"literal\", true, \"no_probes\"], \"amber\", \"oracle-1\", [[[[\"inspect\", [\"defaults.json\", \"boot.json\"]], [\"probe\", \"boot.json\", \"unavailable\"]], null], [[[\"inspect\", [\"defaults.json\", \"boot.json\"]], [\"probe\", \"boot.json\", \"unavailable\"]], null]]]",
+    "CASE [[\"amber\", \"computed\", false, \"open\"], \"amber\", \"oracle-0\", [[[[\"inspect\", [\"defaults.json\"]]], \"defaults.json\"], [[[\"inspect\", [\"defaults.json\"]], [\"probe\", \"defaults.json\", \"changed\"]], \"defaults.json\"]]]",
+    "CASE [[\"amber\", \"computed\", false, \"no_probes\"], \"amber\", \"oracle-0\", [[[[\"inspect\", [\"defaults.json\"]]], \"defaults.json\"], [[[\"inspect\", [\"defaults.json\"]], [\"probe\", \"defaults.json\", \"unavailable\"]], \"defaults.json\"]]]",
+    "CASE [[\"amber\", \"computed\", true, \"open\"], \"amber\", \"oracle-1\", [[[[\"inspect\", [\"defaults.json\"]]], \"defaults.json\"], [[[\"inspect\", [\"defaults.json\"]], [\"probe\", \"defaults.json\", \"unchanged\"]], \"defaults.json\"]]]",
+    "CASE [[\"amber\", \"computed\", true, \"no_probes\"], \"amber\", \"oracle-1\", [[[[\"inspect\", [\"defaults.json\"]]], \"defaults.json\"], [[[\"inspect\", [\"defaults.json\"]], [\"probe\", \"defaults.json\", \"unavailable\"]], \"defaults.json\"]]]",
+    "CASE [[\"teal\", \"literal\", false, \"open\"], \"teal\", \"oracle-0\", [[[[\"inspect\", [\"defaults.json\", \"boot.json\"]], [\"probe\", \"boot.json\", \"unchanged\"]], \"defaults.json\"], [[[\"inspect\", [\"defaults.json\", \"boot.json\"]], [\"probe\", \"boot.json\", \"unchanged\"]], \"defaults.json\"]]]",
+    "CASE [[\"teal\", \"literal\", false, \"no_probes\"], \"teal\", \"oracle-0\", [[[[\"inspect\", [\"defaults.json\", \"boot.json\"]], [\"probe\", \"boot.json\", \"unavailable\"]], null], [[[\"inspect\", [\"defaults.json\", \"boot.json\"]], [\"probe\", \"boot.json\", \"unavailable\"]], null]]]",
+    "CASE [[\"teal\", \"literal\", true, \"open\"], \"teal\", \"oracle-1\", [[[[\"inspect\", [\"defaults.json\", \"boot.json\"]], [\"probe\", \"boot.json\", \"changed\"]], \"boot.json\"], [[[\"inspect\", [\"defaults.json\", \"boot.json\"]], [\"probe\", \"boot.json\", \"changed\"]], \"boot.json\"]]]",
+    "CASE [[\"teal\", \"literal\", true, \"no_probes\"], \"teal\", \"oracle-1\", [[[[\"inspect\", [\"defaults.json\", \"boot.json\"]], [\"probe\", \"boot.json\", \"unavailable\"]], null], [[[\"inspect\", [\"defaults.json\", \"boot.json\"]], [\"probe\", \"boot.json\", \"unavailable\"]], null]]]",
+    "CASE [[\"teal\", \"computed\", false, \"open\"], \"teal\", \"oracle-0\", [[[[\"inspect\", [\"defaults.json\"]]], \"defaults.json\"], [[[\"inspect\", [\"defaults.json\"]], [\"probe\", \"defaults.json\", \"changed\"]], \"defaults.json\"]]]",
+    "CASE [[\"teal\", \"computed\", false, \"no_probes\"], \"teal\", \"oracle-0\", [[[[\"inspect\", [\"defaults.json\"]]], \"defaults.json\"], [[[\"inspect\", [\"defaults.json\"]], [\"probe\", \"defaults.json\", \"unavailable\"]], \"defaults.json\"]]]",
+    "CASE [[\"teal\", \"computed\", true, \"open\"], \"teal\", \"oracle-1\", [[[[\"inspect\", [\"defaults.json\"]]], \"defaults.json\"], [[[\"inspect\", [\"defaults.json\"]], [\"probe\", \"defaults.json\", \"unchanged\"]], \"defaults.json\"]]]",
+    "CASE [[\"teal\", \"computed\", true, \"no_probes\"], \"teal\", \"oracle-1\", [[[[\"inspect\", [\"defaults.json\"]]], \"defaults.json\"], [[[\"inspect\", [\"defaults.json\"]], [\"probe\", \"defaults.json\", \"unavailable\"]], \"defaults.json\"]]]"
+  ]
+}
