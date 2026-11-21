@@ -1,0 +1,107 @@
+{
+  "tested_commit": "93cfe14237f1031f194005ff5559ba45943ac236",
+  "run": "https://github.com/artemidamoon2223-collab/SOMA-Public-Tests/actions/runs/44842129403",
+  "job": 136652853258,
+  "attempt": 1,
+  "runner": "ubuntu-24.04",
+  "audit": {
+    "abstentions_with_twin": 32,
+    "challenges": {
+      "abstain/no_challenge": 18,
+      "correct/consistent": 1,
+      "correct/no_challenge": 4,
+      "wrong/consistent": 1,
+      "wrong/no_challenge": 6,
+      "wrong/refuted": 2
+    },
+    "corruptions_rejected": 3,
+    "groups": {
+      "controls": {
+        "correct": 4
+      },
+      "historical": {
+        "abstain": 32
+      }
+    },
+    "transitions": {
+      "abstain": {
+        "abstain": 18
+      },
+      "correct": {
+        "abstain": 5
+      },
+      "wrong": {
+        "abstain": 9
+      }
+    }
+  },
+  "off_runner_recount": {
+    "groups": {
+      "historical": {
+        "abstain": 32
+      },
+      "controls": {
+        "correct": 4
+      }
+    },
+    "transitions": {
+      "wrong": {
+        "abstain": 9
+      },
+      "correct": {
+        "abstain": 5
+      },
+      "abstain": {
+        "abstain": 18
+      }
+    },
+    "challenges": {
+      "wrong/consistent": 1,
+      "correct/no_challenge": 4,
+      "correct/consistent": 1,
+      "wrong/refuted": 2,
+      "wrong/no_challenge": 6,
+      "abstain/no_challenge": 18
+    },
+    "abstentions_with_twin": 32
+  },
+  "records": [
+    "COMMIT 93cfe14237f1031f194005ff5559ba45943ac236",
+    "CASE [[\"two_names\", \"open\", 0], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [\"a.json\", \"b.json\", \"c.json\"], [[\"a.json\", \"BASE\"], [\"c.json\", \"BASE\"]], {\"provisional\": [\"b.json\"], \"challenge\": [\"c.json\", \"consistent\"], \"confirmed\": [], \"untested\": [\"b.json\"], \"exact\": null}, {\"a.json\": \"BASE\", \"b.json\": \"BASE\", \"c.json\": \"BASE\"}]",
+    "CASE [[\"two_names\", \"open\", 1], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [\"a.json\", \"b.json\", \"c.json\"], [[\"a.json\", \"PLANNER\"], [\"b.json\", \"BASE\"]], {\"provisional\": [\"a.json\"], \"challenge\": null, \"confirmed\": [\"a.json\"], \"untested\": [\"c.json\"], \"exact\": null}, {\"a.json\": \"ORACLE\", \"b.json\": \"BASE\", \"c.json\": \"BASE\"}]",
+    "CASE [[\"two_names\", \"open\", 2], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [\"a.json\", \"b.json\", \"c.json\"], [[\"a.json\", \"BASE\"], [\"c.json\", \"BASE\"]], {\"provisional\": [\"b.json\"], \"challenge\": [\"c.json\", \"consistent\"], \"confirmed\": [], \"untested\": [\"b.json\"], \"exact\": null}, {\"a.json\": \"BASE\", \"b.json\": \"ORACLE\", \"c.json\": \"BASE\"}]",
+    "CASE [[\"two_names\", \"open\", 3], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [\"a.json\", \"b.json\", \"c.json\"], [[\"a.json\", \"BASE\"], [\"c.json\", \"PLANNER\"]], {\"provisional\": [\"b.json\"], \"challenge\": [\"c.json\", \"refuted\"], \"confirmed\": [\"c.json\"], \"untested\": [\"b.json\"], \"exact\": null}, {\"a.json\": \"BASE\", \"b.json\": \"BASE\", \"c.json\": \"ORACLE\"}]",
+    "CASE [[\"two_names\", \"open\", 4], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [\"a.json\", \"b.json\", \"c.json\"], [[\"a.json\", \"PLANNER\"], [\"b.json\", \"PLANNER\"]], {\"provisional\": [\"a.json\", \"b.json\"], \"challenge\": null, \"confirmed\": [\"a.json\", \"b.json\"], \"untested\": [\"c.json\"], \"exact\": null}, {\"a.json\": \"ORACLE\", \"b.json\": \"ORACLE\", \"c.json\": \"BASE\"}]",
+    "CASE [[\"two_names\", \"open\", 5], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [\"a.json\", \"b.json\", \"c.json\"], [[\"a.json\", \"PLANNER\"], [\"b.json\", \"BASE\"]], {\"provisional\": [\"a.json\"], \"challenge\": null, \"confirmed\": [\"a.json\"], \"untested\": [\"c.json\"], \"exact\": null}, {\"a.json\": \"ORACLE\", \"b.json\": \"BASE\", \"c.json\": \"ORACLE\"}]",
+    "CASE [[\"two_names\", \"open\", 6], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [\"a.json\", \"b.json\", \"c.json\"], [[\"a.json\", \"BASE\"], [\"c.json\", \"PLANNER\"]], {\"provisional\": [\"b.json\"], \"challenge\": [\"c.json\", \"refuted\"], \"confirmed\": [\"c.json\"], \"untested\": [\"b.json\"], \"exact\": null}, {\"a.json\": \"BASE\", \"b.json\": \"ORACLE\", \"c.json\": \"ORACLE\"}]",
+    "CASE [[\"two_names\", \"open\", 7], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [\"a.json\", \"b.json\", \"c.json\"], [[\"a.json\", \"PLANNER\"], [\"b.json\", \"PLANNER\"]], {\"provisional\": [\"a.json\", \"b.json\"], \"challenge\": null, \"confirmed\": [\"a.json\", \"b.json\"], \"untested\": [\"c.json\"], \"exact\": null}, {\"a.json\": \"ORACLE\", \"b.json\": \"ORACLE\", \"c.json\": \"ORACLE\"}]",
+    "CASE [[\"two_names\", \"one\", 0], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [\"a.json\", \"b.json\", \"c.json\"], [[\"a.json\", \"BASE\"]], {\"provisional\": [\"b.json\"], \"challenge\": null, \"confirmed\": [], \"untested\": [\"b.json\", \"c.json\"], \"exact\": null}, {\"a.json\": \"BASE\", \"b.json\": \"BASE\", \"c.json\": \"BASE\"}]",
+    "CASE [[\"two_names\", \"one\", 1], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [\"a.json\", \"b.json\", \"c.json\"], [[\"a.json\", \"PLANNER\"]], {\"provisional\": null, \"challenge\": null, \"confirmed\": [\"a.json\"], \"untested\": [\"b.json\", \"c.json\"], \"exact\": null}, {\"a.json\": \"ORACLE\", \"b.json\": \"BASE\", \"c.json\": \"BASE\"}]",
+    "CASE [[\"two_names\", \"one\", 2], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [\"a.json\", \"b.json\", \"c.json\"], [[\"a.json\", \"BASE\"]], {\"provisional\": [\"b.json\"], \"challenge\": null, \"confirmed\": [], \"untested\": [\"b.json\", \"c.json\"], \"exact\": null}, {\"a.json\": \"BASE\", \"b.json\": \"ORACLE\", \"c.json\": \"BASE\"}]",
+    "CASE [[\"two_names\", \"one\", 3], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [\"a.json\", \"b.json\", \"c.json\"], [[\"a.json\", \"BASE\"]], {\"provisional\": [\"b.json\"], \"challenge\": null, \"confirmed\": [], \"untested\": [\"b.json\", \"c.json\"], \"exact\": null}, {\"a.json\": \"BASE\", \"b.json\": \"BASE\", \"c.json\": \"ORACLE\"}]",
+    "CASE [[\"two_names\", \"one\", 4], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [\"a.json\", \"b.json\", \"c.json\"], [[\"a.json\", \"PLANNER\"]], {\"provisional\": null, \"challenge\": null, \"confirmed\": [\"a.json\"], \"untested\": [\"b.json\", \"c.json\"], \"exact\": null}, {\"a.json\": \"ORACLE\", \"b.json\": \"ORACLE\", \"c.json\": \"BASE\"}]",
+    "CASE [[\"two_names\", \"one\", 5], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [\"a.json\", \"b.json\", \"c.json\"], [[\"a.json\", \"PLANNER\"]], {\"provisional\": null, \"challenge\": null, \"confirmed\": [\"a.json\"], \"untested\": [\"b.json\", \"c.json\"], \"exact\": null}, {\"a.json\": \"ORACLE\", \"b.json\": \"BASE\", \"c.json\": \"ORACLE\"}]",
+    "CASE [[\"two_names\", \"one\", 6], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [\"a.json\", \"b.json\", \"c.json\"], [[\"a.json\", \"BASE\"]], {\"provisional\": [\"b.json\"], \"challenge\": null, \"confirmed\": [], \"untested\": [\"b.json\", \"c.json\"], \"exact\": null}, {\"a.json\": \"BASE\", \"b.json\": \"ORACLE\", \"c.json\": \"ORACLE\"}]",
+    "CASE [[\"two_names\", \"one\", 7], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [\"a.json\", \"b.json\", \"c.json\"], [[\"a.json\", \"PLANNER\"]], {\"provisional\": null, \"challenge\": null, \"confirmed\": [\"a.json\"], \"untested\": [\"b.json\", \"c.json\"], \"exact\": null}, {\"a.json\": \"ORACLE\", \"b.json\": \"ORACLE\", \"c.json\": \"ORACLE\"}]",
+    "CASE [[\"nonempty\", \"open\", 0], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [\"a.json\", \"b.json\", \"c.json\"], [[\"a.json\", \"BASE\"], [\"b.json\", \"BASE\"]], {\"provisional\": [\"c.json\"], \"challenge\": null, \"confirmed\": [], \"untested\": [\"c.json\"], \"exact\": null}, {\"a.json\": \"BASE\", \"b.json\": \"BASE\", \"c.json\": \"BASE\"}]",
+    "CASE [[\"nonempty\", \"open\", 1], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [\"a.json\", \"b.json\", \"c.json\"], [[\"a.json\", \"PLANNER\"], [\"b.json\", \"BASE\"]], {\"provisional\": null, \"challenge\": null, \"confirmed\": [\"a.json\"], \"untested\": [\"c.json\"], \"exact\": null}, {\"a.json\": \"ORACLE\", \"b.json\": \"BASE\", \"c.json\": \"BASE\"}]",
+    "CASE [[\"nonempty\", \"open\", 2], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [\"a.json\", \"b.json\", \"c.json\"], [[\"a.json\", \"BASE\"], [\"b.json\", \"PLANNER\"]], {\"provisional\": null, \"challenge\": null, \"confirmed\": [\"b.json\"], \"untested\": [\"c.json\"], \"exact\": null}, {\"a.json\": \"BASE\", \"b.json\": \"ORACLE\", \"c.json\": \"BASE\"}]",
+    "CASE [[\"nonempty\", \"open\", 3], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [\"a.json\", \"b.json\", \"c.json\"], [[\"a.json\", \"BASE\"], [\"b.json\", \"BASE\"]], {\"provisional\": [\"c.json\"], \"challenge\": null, \"confirmed\": [], \"untested\": [\"c.json\"], \"exact\": null}, {\"a.json\": \"BASE\", \"b.json\": \"BASE\", \"c.json\": \"ORACLE\"}]",
+    "CASE [[\"nonempty\", \"open\", 4], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [\"a.json\", \"b.json\", \"c.json\"], [[\"a.json\", \"PLANNER\"], [\"b.json\", \"PLANNER\"]], {\"provisional\": null, \"challenge\": null, \"confirmed\": [\"a.json\", \"b.json\"], \"untested\": [\"c.json\"], \"exact\": null}, {\"a.json\": \"ORACLE\", \"b.json\": \"ORACLE\", \"c.json\": \"BASE\"}]",
+    "CASE [[\"nonempty\", \"open\", 5], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [\"a.json\", \"b.json\", \"c.json\"], [[\"a.json\", \"PLANNER\"], [\"b.json\", \"BASE\"]], {\"provisional\": null, \"challenge\": null, \"confirmed\": [\"a.json\"], \"untested\": [\"c.json\"], \"exact\": null}, {\"a.json\": \"ORACLE\", \"b.json\": \"BASE\", \"c.json\": \"ORACLE\"}]",
+    "CASE [[\"nonempty\", \"open\", 6], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [\"a.json\", \"b.json\", \"c.json\"], [[\"a.json\", \"BASE\"], [\"b.json\", \"PLANNER\"]], {\"provisional\": null, \"challenge\": null, \"confirmed\": [\"b.json\"], \"untested\": [\"c.json\"], \"exact\": null}, {\"a.json\": \"BASE\", \"b.json\": \"ORACLE\", \"c.json\": \"ORACLE\"}]",
+    "CASE [[\"nonempty\", \"open\", 7], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [\"a.json\", \"b.json\", \"c.json\"], [[\"a.json\", \"PLANNER\"], [\"b.json\", \"PLANNER\"]], {\"provisional\": null, \"challenge\": null, \"confirmed\": [\"a.json\", \"b.json\"], \"untested\": [\"c.json\"], \"exact\": null}, {\"a.json\": \"ORACLE\", \"b.json\": \"ORACLE\", \"c.json\": \"ORACLE\"}]",
+    "CASE [[\"nonempty\", \"one\", 0], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [\"a.json\", \"b.json\", \"c.json\"], [[\"a.json\", \"BASE\"]], {\"provisional\": null, \"challenge\": null, \"confirmed\": [], \"untested\": [\"b.json\", \"c.json\"], \"exact\": null}, {\"a.json\": \"BASE\", \"b.json\": \"BASE\", \"c.json\": \"BASE\"}]",
+    "CASE [[\"nonempty\", \"one\", 1], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [\"a.json\", \"b.json\", \"c.json\"], [[\"a.json\", \"PLANNER\"]], {\"provisional\": null, \"challenge\": null, \"confirmed\": [\"a.json\"], \"untested\": [\"b.json\", \"c.json\"], \"exact\": null}, {\"a.json\": \"ORACLE\", \"b.json\": \"BASE\", \"c.json\": \"BASE\"}]",
+    "CASE [[\"nonempty\", \"one\", 2], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [\"a.json\", \"b.json\", \"c.json\"], [[\"a.json\", \"BASE\"]], {\"provisional\": null, \"challenge\": null, \"confirmed\": [], \"untested\": [\"b.json\", \"c.json\"], \"exact\": null}, {\"a.json\": \"BASE\", \"b.json\": \"ORACLE\", \"c.json\": \"BASE\"}]",
+    "CASE [[\"nonempty\", \"one\", 3], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [\"a.json\", \"b.json\", \"c.json\"], [[\"a.json\", \"BASE\"]], {\"provisional\": null, \"challenge\": null, \"confirmed\": [], \"untested\": [\"b.json\", \"c.json\"], \"exact\": null}, {\"a.json\": \"BASE\", \"b.json\": \"BASE\", \"c.json\": \"ORACLE\"}]",
+    "CASE [[\"nonempty\", \"one\", 4], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [\"a.json\", \"b.json\", \"c.json\"], [[\"a.json\", \"PLANNER\"]], {\"provisional\": null, \"challenge\": null, \"confirmed\": [\"a.json\"], \"untested\": [\"b.json\", \"c.json\"], \"exact\": null}, {\"a.json\": \"ORACLE\", \"b.json\": \"ORACLE\", \"c.json\": \"BASE\"}]",
+    "CASE [[\"nonempty\", \"one\", 5], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [\"a.json\", \"b.json\", \"c.json\"], [[\"a.json\", \"PLANNER\"]], {\"provisional\": null, \"challenge\": null, \"confirmed\": [\"a.json\"], \"untested\": [\"b.json\", \"c.json\"], \"exact\": null}, {\"a.json\": \"ORACLE\", \"b.json\": \"BASE\", \"c.json\": \"ORACLE\"}]",
+    "CASE [[\"nonempty\", \"one\", 6], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [\"a.json\", \"b.json\", \"c.json\"], [[\"a.json\", \"BASE\"]], {\"provisional\": null, \"challenge\": null, \"confirmed\": [], \"untested\": [\"b.json\", \"c.json\"], \"exact\": null}, {\"a.json\": \"BASE\", \"b.json\": \"ORACLE\", \"c.json\": \"ORACLE\"}]",
+    "CASE [[\"nonempty\", \"one\", 7], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [\"a.json\", \"b.json\", \"c.json\"], [[\"a.json\", \"PLANNER\"]], {\"provisional\": null, \"challenge\": null, \"confirmed\": [\"a.json\"], \"untested\": [\"b.json\", \"c.json\"], \"exact\": null}, {\"a.json\": \"ORACLE\", \"b.json\": \"ORACLE\", \"c.json\": \"ORACLE\"}]",
+    "CASE [[\"control\", 0], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [\"a.json\", \"b.json\"], [[\"a.json\", \"BASE\"], [\"b.json\", \"BASE\"]], {\"provisional\": [\"b.json\"], \"challenge\": [\"b.json\", \"refuted\"], \"confirmed\": [], \"untested\": [], \"exact\": []}, {\"a.json\": \"BASE\", \"b.json\": \"BASE\"}]",
+    "CASE [[\"control\", 1], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [\"a.json\", \"b.json\"], [[\"a.json\", \"PLANNER\"], [\"b.json\", \"BASE\"]], {\"provisional\": [\"a.json\"], \"challenge\": [\"b.json\", \"consistent\"], \"confirmed\": [\"a.json\"], \"untested\": [], \"exact\": [\"a.json\"]}, {\"a.json\": \"ORACLE\", \"b.json\": \"BASE\"}]",
+    "CASE [[\"control\", 2], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [\"a.json\", \"b.json\"], [[\"a.json\", \"BASE\"], [\"b.json\", \"PLANNER\"]], {\"provisional\": [\"b.json\"], \"challenge\": [\"b.json\", \"consistent\"], \"confirmed\": [\"b.json\"], \"untested\": [], \"exact\": [\"b.json\"]}, {\"a.json\": \"BASE\", \"b.json\": \"ORACLE\"}]",
+    "CASE [[\"control\", 3], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [\"a.json\", \"b.json\"], [[\"a.json\", \"PLANNER\"], [\"b.json\", \"PLANNER\"]], {\"provisional\": [\"a.json\"], \"challenge\": [\"b.json\", \"refuted\"], \"confirmed\": [\"a.json\", \"b.json\"], \"untested\": [], \"exact\": [\"a.json\", \"b.json\"]}, {\"a.json\": \"ORACLE\", \"b.json\": \"ORACLE\"}]"
+  ]
+}
