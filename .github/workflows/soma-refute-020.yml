@@ -1,0 +1,36 @@
+name: Challenge a provisional source attribution
+on:
+  push:
+    branches: ['ci/refutation-020']
+    paths:
+      - 'refute020/*.py'
+      - '.github/workflows/soma-refute-020.yml'
+permissions:
+  contents: read
+concurrency:
+  group: refutation-020
+  cancel-in-progress: false
+jobs:
+  verify:
+    if: github.repository == 'artemidamoon2223-collab/SOMA-Public-Tests'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 1
+          persist-credentials: false
+      - name: Record paired decisions and audit evidence
+        env:
+          SOURCE_SHA: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+          umask 077
+          test "$(git rev-parse HEAD)" = "$SOURCE_SHA"
+          /usr/bin/python3 -I -c 'import sys; assert sys.version_info[:2] == (3, 12); print(sys.version)'
+          ulimit -t 30 -v 524288 -f 4096 -n 128 -u 128
+          test "$(git hash-object probes018/choose.py)" = 953cf1aef1d47b4af11dcde29748085229aa3b9a
+          receipt=$(mktemp)
+          timeout -k 3 90 /usr/bin/python3 -I -B refute020/trial020.py | tee "$receipt"
+          timeout -k 3 15 /usr/bin/python3 -I -B refute020/audit.py "$receipt" open019/EVIDENCE.json "$SOURCE_SHA"
