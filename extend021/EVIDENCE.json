@@ -1,0 +1,119 @@
+{
+  "tested_commit": "d7d56b591ca341284efa155e104c01c08a5bad55",
+  "run": "https://github.com/artemidamoon2223-collab/SOMA-Public-Tests/actions/runs/44844707652",
+  "job": 136661450502,
+  "runner": "ubuntu-24.04",
+  "attempt": 1,
+  "audit": {
+    "corruptions_rejected": 4,
+    "scores": {
+      "control": {
+        "allow_edits": 0,
+        "allow_exact": 4,
+        "allow_partial": 0,
+        "cases": 4,
+        "deny_edits": 0,
+        "deny_exact": 4,
+        "deny_partial": 0,
+        "requests": 0
+      },
+      "one": {
+        "allow_edits": 16,
+        "allow_exact": 0,
+        "allow_partial": 16,
+        "cases": 16,
+        "deny_edits": 0,
+        "deny_exact": 0,
+        "deny_partial": 16,
+        "requests": 16
+      },
+      "open": {
+        "allow_edits": 16,
+        "allow_exact": 16,
+        "allow_partial": 0,
+        "cases": 16,
+        "deny_edits": 0,
+        "deny_exact": 0,
+        "deny_partial": 16,
+        "requests": 16
+      }
+    }
+  },
+  "off_runner_recount": {
+    "scores": {
+      "open": {
+        "cases": 16,
+        "requests": 16,
+        "allow_exact": 16,
+        "allow_partial": 0,
+        "allow_edits": 16,
+        "deny_exact": 0,
+        "deny_partial": 16,
+        "deny_edits": 0
+      },
+      "one": {
+        "cases": 16,
+        "requests": 16,
+        "allow_exact": 0,
+        "allow_partial": 16,
+        "allow_edits": 16,
+        "deny_exact": 0,
+        "deny_partial": 16,
+        "deny_edits": 0
+      },
+      "control": {
+        "cases": 4,
+        "requests": 0,
+        "allow_exact": 4,
+        "allow_partial": 0,
+        "allow_edits": 0,
+        "deny_exact": 4,
+        "deny_partial": 0,
+        "deny_edits": 0
+      }
+    },
+    "requests": {
+      "b.json": 20,
+      "c.json": 12
+    }
+  },
+  "records": [
+    "COMMIT d7d56b591ca341284efa155e104c01c08a5bad55",
+    "CASE [[\"two_names\", \"open\", 0], {\"present\": [], \"absent\": [\"a.json\", \"c.json\"], \"unknown\": [\"b.json\"], \"exact\": null}, \"b.json\", {\"deny\": [[], {\"present\": [], \"absent\": [\"a.json\", \"c.json\"], \"unknown\": [\"b.json\"], \"exact\": null}], \"allow\": [[[\"b.json\", \"BASE\"]], {\"present\": [], \"absent\": [\"a.json\", \"b.json\", \"c.json\"], \"unknown\": [], \"exact\": []}]}]",
+    "CASE [[\"two_names\", \"open\", 1], {\"present\": [\"a.json\"], \"absent\": [\"b.json\"], \"unknown\": [\"c.json\"], \"exact\": null}, \"c.json\", {\"deny\": [[], {\"present\": [\"a.json\"], \"absent\": [\"b.json\"], \"unknown\": [\"c.json\"], \"exact\": null}], \"allow\": [[[\"c.json\", \"BASE\"]], {\"present\": [\"a.json\"], \"absent\": [\"b.json\", \"c.json\"], \"unknown\": [], \"exact\": [\"a.json\"]}]}]",
+    "CASE [[\"two_names\", \"open\", 2], {\"present\": [], \"absent\": [\"a.json\", \"c.json\"], \"unknown\": [\"b.json\"], \"exact\": null}, \"b.json\", {\"deny\": [[], {\"present\": [], \"absent\": [\"a.json\", \"c.json\"], \"unknown\": [\"b.json\"], \"exact\": null}], \"allow\": [[[\"b.json\", \"EXTENSION\"]], {\"present\": [\"b.json\"], \"absent\": [\"a.json\", \"c.json\"], \"unknown\": [], \"exact\": [\"b.json\"]}]}]",
+    "CASE [[\"two_names\", \"open\", 3], {\"present\": [\"c.json\"], \"absent\": [\"a.json\"], \"unknown\": [\"b.json\"], \"exact\": null}, \"b.json\", {\"deny\": [[], {\"present\": [\"c.json\"], \"absent\": [\"a.json\"], \"unknown\": [\"b.json\"], \"exact\": null}], \"allow\": [[[\"b.json\", \"BASE\"]], {\"present\": [\"c.json\"], \"absent\": [\"a.json\", \"b.json\"], \"unknown\": [], \"exact\": [\"c.json\"]}]}]",
+    "CASE [[\"two_names\", \"open\", 4], {\"present\": [\"a.json\", \"b.json\"], \"absent\": [], \"unknown\": [\"c.json\"], \"exact\": null}, \"c.json\", {\"deny\": [[], {\"present\": [\"a.json\", \"b.json\"], \"absent\": [], \"unknown\": [\"c.json\"], \"exact\": null}], \"allow\": [[[\"c.json\", \"BASE\"]], {\"present\": [\"a.json\", \"b.json\"], \"absent\": [\"c.json\"], \"unknown\": [], \"exact\": [\"a.json\", \"b.json\"]}]}]",
+    "CASE [[\"two_names\", \"open\", 5], {\"present\": [\"a.json\"], \"absent\": [\"b.json\"], \"unknown\": [\"c.json\"], \"exact\": null}, \"c.json\", {\"deny\": [[], {\"present\": [\"a.json\"], \"absent\": [\"b.json\"], \"unknown\": [\"c.json\"], \"exact\": null}], \"allow\": [[[\"c.json\", \"EXTENSION\"]], {\"present\": [\"a.json\", \"c.json\"], \"absent\": [\"b.json\"], \"unknown\": [], \"exact\": [\"a.json\", \"c.json\"]}]}]",
+    "CASE [[\"two_names\", \"open\", 6], {\"present\": [\"c.json\"], \"absent\": [\"a.json\"], \"unknown\": [\"b.json\"], \"exact\": null}, \"b.json\", {\"deny\": [[], {\"present\": [\"c.json\"], \"absent\": [\"a.json\"], \"unknown\": [\"b.json\"], \"exact\": null}], \"allow\": [[[\"b.json\", \"EXTENSION\"]], {\"present\": [\"b.json\", \"c.json\"], \"absent\": [\"a.json\"], \"unknown\": [], \"exact\": [\"b.json\", \"c.json\"]}]}]",
+    "CASE [[\"two_names\", \"open\", 7], {\"present\": [\"a.json\", \"b.json\"], \"absent\": [], \"unknown\": [\"c.json\"], \"exact\": null}, \"c.json\", {\"deny\": [[], {\"present\": [\"a.json\", \"b.json\"], \"absent\": [], \"unknown\": [\"c.json\"], \"exact\": null}], \"allow\": [[[\"c.json\", \"EXTENSION\"]], {\"present\": [\"a.json\", \"b.json\", \"c.json\"], \"absent\": [], \"unknown\": [], \"exact\": [\"a.json\", \"b.json\", \"c.json\"]}]}]",
+    "CASE [[\"two_names\", \"one\", 0], {\"present\": [], \"absent\": [\"a.json\"], \"unknown\": [\"b.json\", \"c.json\"], \"exact\": null}, \"b.json\", {\"deny\": [[], {\"present\": [], \"absent\": [\"a.json\"], \"unknown\": [\"b.json\", \"c.json\"], \"exact\": null}], \"allow\": [[[\"b.json\", \"BASE\"]], {\"present\": [], \"absent\": [\"a.json\", \"b.json\"], \"unknown\": [\"c.json\"], \"exact\": null}]}]",
+    "CASE [[\"two_names\", \"one\", 1], {\"present\": [\"a.json\"], \"absent\": [], \"unknown\": [\"b.json\", \"c.json\"], \"exact\": null}, \"b.json\", {\"deny\": [[], {\"present\": [\"a.json\"], \"absent\": [], \"unknown\": [\"b.json\", \"c.json\"], \"exact\": null}], \"allow\": [[[\"b.json\", \"BASE\"]], {\"present\": [\"a.json\"], \"absent\": [\"b.json\"], \"unknown\": [\"c.json\"], \"exact\": null}]}]",
+    "CASE [[\"two_names\", \"one\", 2], {\"present\": [], \"absent\": [\"a.json\"], \"unknown\": [\"b.json\", \"c.json\"], \"exact\": null}, \"b.json\", {\"deny\": [[], {\"present\": [], \"absent\": [\"a.json\"], \"unknown\": [\"b.json\", \"c.json\"], \"exact\": null}], \"allow\": [[[\"b.json\", \"EXTENSION\"]], {\"present\": [\"b.json\"], \"absent\": [\"a.json\"], \"unknown\": [\"c.json\"], \"exact\": null}]}]",
+    "CASE [[\"two_names\", \"one\", 3], {\"present\": [], \"absent\": [\"a.json\"], \"unknown\": [\"b.json\", \"c.json\"], \"exact\": null}, \"b.json\", {\"deny\": [[], {\"present\": [], \"absent\": [\"a.json\"], \"unknown\": [\"b.json\", \"c.json\"], \"exact\": null}], \"allow\": [[[\"b.json\", \"BASE\"]], {\"present\": [], \"absent\": [\"a.json\", \"b.json\"], \"unknown\": [\"c.json\"], \"exact\": null}]}]",
+    "CASE [[\"two_names\", \"one\", 4], {\"present\": [\"a.json\"], \"absent\": [], \"unknown\": [\"b.json\", \"c.json\"], \"exact\": null}, \"b.json\", {\"deny\": [[], {\"present\": [\"a.json\"], \"absent\": [], \"unknown\": [\"b.json\", \"c.json\"], \"exact\": null}], \"allow\": [[[\"b.json\", \"EXTENSION\"]], {\"present\": [\"a.json\", \"b.json\"], \"absent\": [], \"unknown\": [\"c.json\"], \"exact\": null}]}]",
+    "CASE [[\"two_names\", \"one\", 5], {\"present\": [\"a.json\"], \"absent\": [], \"unknown\": [\"b.json\", \"c.json\"], \"exact\": null}, \"b.json\", {\"deny\": [[], {\"present\": [\"a.json\"], \"absent\": [], \"unknown\": [\"b.json\", \"c.json\"], \"exact\": null}], \"allow\": [[[\"b.json\", \"BASE\"]], {\"present\": [\"a.json\"], \"absent\": [\"b.json\"], \"unknown\": [\"c.json\"], \"exact\": null}]}]",
+    "CASE [[\"two_names\", \"one\", 6], {\"present\": [], \"absent\": [\"a.json\"], \"unknown\": [\"b.json\", \"c.json\"], \"exact\": null}, \"b.json\", {\"deny\": [[], {\"present\": [], \"absent\": [\"a.json\"], \"unknown\": [\"b.json\", \"c.json\"], \"exact\": null}], \"allow\": [[[\"b.json\", \"EXTENSION\"]], {\"present\": [\"b.json\"], \"absent\": [\"a.json\"], \"unknown\": [\"c.json\"], \"exact\": null}]}]",
+    "CASE [[\"two_names\", \"one\", 7], {\"present\": [\"a.json\"], \"absent\": [], \"unknown\": [\"b.json\", \"c.json\"], \"exact\": null}, \"b.json\", {\"deny\": [[], {\"present\": [\"a.json\"], \"absent\": [], \"unknown\": [\"b.json\", \"c.json\"], \"exact\": null}], \"allow\": [[[\"b.json\", \"EXTENSION\"]], {\"present\": [\"a.json\", \"b.json\"], \"absent\": [], \"unknown\": [\"c.json\"], \"exact\": null}]}]",
+    "CASE [[\"nonempty\", \"open\", 0], {\"present\": [], \"absent\": [\"a.json\", \"b.json\"], \"unknown\": [\"c.json\"], \"exact\": null}, \"c.json\", {\"deny\": [[], {\"present\": [], \"absent\": [\"a.json\", \"b.json\"], \"unknown\": [\"c.json\"], \"exact\": null}], \"allow\": [[[\"c.json\", \"BASE\"]], {\"present\": [], \"absent\": [\"a.json\", \"b.json\", \"c.json\"], \"unknown\": [], \"exact\": []}]}]",
+    "CASE [[\"nonempty\", \"open\", 1], {\"present\": [\"a.json\"], \"absent\": [\"b.json\"], \"unknown\": [\"c.json\"], \"exact\": null}, \"c.json\", {\"deny\": [[], {\"present\": [\"a.json\"], \"absent\": [\"b.json\"], \"unknown\": [\"c.json\"], \"exact\": null}], \"allow\": [[[\"c.json\", \"BASE\"]], {\"present\": [\"a.json\"], \"absent\": [\"b.json\", \"c.json\"], \"unknown\": [], \"exact\": [\"a.json\"]}]}]",
+    "CASE [[\"nonempty\", \"open\", 2], {\"present\": [\"b.json\"], \"absent\": [\"a.json\"], \"unknown\": [\"c.json\"], \"exact\": null}, \"c.json\", {\"deny\": [[], {\"present\": [\"b.json\"], \"absent\": [\"a.json\"], \"unknown\": [\"c.json\"], \"exact\": null}], \"allow\": [[[\"c.json\", \"BASE\"]], {\"present\": [\"b.json\"], \"absent\": [\"a.json\", \"c.json\"], \"unknown\": [], \"exact\": [\"b.json\"]}]}]",
+    "CASE [[\"nonempty\", \"open\", 3], {\"present\": [], \"absent\": [\"a.json\", \"b.json\"], \"unknown\": [\"c.json\"], \"exact\": null}, \"c.json\", {\"deny\": [[], {\"present\": [], \"absent\": [\"a.json\", \"b.json\"], \"unknown\": [\"c.json\"], \"exact\": null}], \"allow\": [[[\"c.json\", \"EXTENSION\"]], {\"present\": [\"c.json\"], \"absent\": [\"a.json\", \"b.json\"], \"unknown\": [], \"exact\": [\"c.json\"]}]}]",
+    "CASE [[\"nonempty\", \"open\", 4], {\"present\": [\"a.json\", \"b.json\"], \"absent\": [], \"unknown\": [\"c.json\"], \"exact\": null}, \"c.json\", {\"deny\": [[], {\"present\": [\"a.json\", \"b.json\"], \"absent\": [], \"unknown\": [\"c.json\"], \"exact\": null}], \"allow\": [[[\"c.json\", \"BASE\"]], {\"present\": [\"a.json\", \"b.json\"], \"absent\": [\"c.json\"], \"unknown\": [], \"exact\": [\"a.json\", \"b.json\"]}]}]",
+    "CASE [[\"nonempty\", \"open\", 5], {\"present\": [\"a.json\"], \"absent\": [\"b.json\"], \"unknown\": [\"c.json\"], \"exact\": null}, \"c.json\", {\"deny\": [[], {\"present\": [\"a.json\"], \"absent\": [\"b.json\"], \"unknown\": [\"c.json\"], \"exact\": null}], \"allow\": [[[\"c.json\", \"EXTENSION\"]], {\"present\": [\"a.json\", \"c.json\"], \"absent\": [\"b.json\"], \"unknown\": [], \"exact\": [\"a.json\", \"c.json\"]}]}]",
+    "CASE [[\"nonempty\", \"open\", 6], {\"present\": [\"b.json\"], \"absent\": [\"a.json\"], \"unknown\": [\"c.json\"], \"exact\": null}, \"c.json\", {\"deny\": [[], {\"present\": [\"b.json\"], \"absent\": [\"a.json\"], \"unknown\": [\"c.json\"], \"exact\": null}], \"allow\": [[[\"c.json\", \"EXTENSION\"]], {\"present\": [\"b.json\", \"c.json\"], \"absent\": [\"a.json\"], \"unknown\": [], \"exact\": [\"b.json\", \"c.json\"]}]}]",
+    "CASE [[\"nonempty\", \"open\", 7], {\"present\": [\"a.json\", \"b.json\"], \"absent\": [], \"unknown\": [\"c.json\"], \"exact\": null}, \"c.json\", {\"deny\": [[], {\"present\": [\"a.json\", \"b.json\"], \"absent\": [], \"unknown\": [\"c.json\"], \"exact\": null}], \"allow\": [[[\"c.json\", \"EXTENSION\"]], {\"present\": [\"a.json\", \"b.json\", \"c.json\"], \"absent\": [], \"unknown\": [], \"exact\": [\"a.json\", \"b.json\", \"c.json\"]}]}]",
+    "CASE [[\"nonempty\", \"one\", 0], {\"present\": [], \"absent\": [\"a.json\"], \"unknown\": [\"b.json\", \"c.json\"], \"exact\": null}, \"b.json\", {\"deny\": [[], {\"present\": [], \"absent\": [\"a.json\"], \"unknown\": [\"b.json\", \"c.json\"], \"exact\": null}], \"allow\": [[[\"b.json\", \"BASE\"]], {\"present\": [], \"absent\": [\"a.json\", \"b.json\"], \"unknown\": [\"c.json\"], \"exact\": null}]}]",
+    "CASE [[\"nonempty\", \"one\", 1], {\"present\": [\"a.json\"], \"absent\": [], \"unknown\": [\"b.json\", \"c.json\"], \"exact\": null}, \"b.json\", {\"deny\": [[], {\"present\": [\"a.json\"], \"absent\": [], \"unknown\": [\"b.json\", \"c.json\"], \"exact\": null}], \"allow\": [[[\"b.json\", \"BASE\"]], {\"present\": [\"a.json\"], \"absent\": [\"b.json\"], \"unknown\": [\"c.json\"], \"exact\": null}]}]",
+    "CASE [[\"nonempty\", \"one\", 2], {\"present\": [], \"absent\": [\"a.json\"], \"unknown\": [\"b.json\", \"c.json\"], \"exact\": null}, \"b.json\", {\"deny\": [[], {\"present\": [], \"absent\": [\"a.json\"], \"unknown\": [\"b.json\", \"c.json\"], \"exact\": null}], \"allow\": [[[\"b.json\", \"EXTENSION\"]], {\"present\": [\"b.json\"], \"absent\": [\"a.json\"], \"unknown\": [\"c.json\"], \"exact\": null}]}]",
+    "CASE [[\"nonempty\", \"one\", 3], {\"present\": [], \"absent\": [\"a.json\"], \"unknown\": [\"b.json\", \"c.json\"], \"exact\": null}, \"b.json\", {\"deny\": [[], {\"present\": [], \"absent\": [\"a.json\"], \"unknown\": [\"b.json\", \"c.json\"], \"exact\": null}], \"allow\": [[[\"b.json\", \"BASE\"]], {\"present\": [], \"absent\": [\"a.json\", \"b.json\"], \"unknown\": [\"c.json\"], \"exact\": null}]}]",
+    "CASE [[\"nonempty\", \"one\", 4], {\"present\": [\"a.json\"], \"absent\": [], \"unknown\": [\"b.json\", \"c.json\"], \"exact\": null}, \"b.json\", {\"deny\": [[], {\"present\": [\"a.json\"], \"absent\": [], \"unknown\": [\"b.json\", \"c.json\"], \"exact\": null}], \"allow\": [[[\"b.json\", \"EXTENSION\"]], {\"present\": [\"a.json\", \"b.json\"], \"absent\": [], \"unknown\": [\"c.json\"], \"exact\": null}]}]",
+    "CASE [[\"nonempty\", \"one\", 5], {\"present\": [\"a.json\"], \"absent\": [], \"unknown\": [\"b.json\", \"c.json\"], \"exact\": null}, \"b.json\", {\"deny\": [[], {\"present\": [\"a.json\"], \"absent\": [], \"unknown\": [\"b.json\", \"c.json\"], \"exact\": null}], \"allow\": [[[\"b.json\", \"BASE\"]], {\"present\": [\"a.json\"], \"absent\": [\"b.json\"], \"unknown\": [\"c.json\"], \"exact\": null}]}]",
+    "CASE [[\"nonempty\", \"one\", 6], {\"present\": [], \"absent\": [\"a.json\"], \"unknown\": [\"b.json\", \"c.json\"], \"exact\": null}, \"b.json\", {\"deny\": [[], {\"present\": [], \"absent\": [\"a.json\"], \"unknown\": [\"b.json\", \"c.json\"], \"exact\": null}], \"allow\": [[[\"b.json\", \"EXTENSION\"]], {\"present\": [\"b.json\"], \"absent\": [\"a.json\"], \"unknown\": [\"c.json\"], \"exact\": null}]}]",
+    "CASE [[\"nonempty\", \"one\", 7], {\"present\": [\"a.json\"], \"absent\": [], \"unknown\": [\"b.json\", \"c.json\"], \"exact\": null}, \"b.json\", {\"deny\": [[], {\"present\": [\"a.json\"], \"absent\": [], \"unknown\": [\"b.json\", \"c.json\"], \"exact\": null}], \"allow\": [[[\"b.json\", \"EXTENSION\"]], {\"present\": [\"a.json\", \"b.json\"], \"absent\": [], \"unknown\": [\"c.json\"], \"exact\": null}]}]",
+    "CASE [[\"control\", 0], {\"present\": [], \"absent\": [\"a.json\", \"b.json\"], \"unknown\": [], \"exact\": []}, null, {\"deny\": [[], {\"present\": [], \"absent\": [\"a.json\", \"b.json\"], \"unknown\": [], \"exact\": []}], \"allow\": [[], {\"present\": [], \"absent\": [\"a.json\", \"b.json\"], \"unknown\": [], \"exact\": []}]}]",
+    "CASE [[\"control\", 1], {\"present\": [\"a.json\"], \"absent\": [\"b.json\"], \"unknown\": [], \"exact\": [\"a.json\"]}, null, {\"deny\": [[], {\"present\": [\"a.json\"], \"absent\": [\"b.json\"], \"unknown\": [], \"exact\": [\"a.json\"]}], \"allow\": [[], {\"present\": [\"a.json\"], \"absent\": [\"b.json\"], \"unknown\": [], \"exact\": [\"a.json\"]}]}]",
+    "CASE [[\"control\", 2], {\"present\": [\"b.json\"], \"absent\": [\"a.json\"], \"unknown\": [], \"exact\": [\"b.json\"]}, null, {\"deny\": [[], {\"present\": [\"b.json\"], \"absent\": [\"a.json\"], \"unknown\": [], \"exact\": [\"b.json\"]}], \"allow\": [[], {\"present\": [\"b.json\"], \"absent\": [\"a.json\"], \"unknown\": [], \"exact\": [\"b.json\"]}]}]",
+    "CASE [[\"control\", 3], {\"present\": [\"a.json\", \"b.json\"], \"absent\": [], \"unknown\": [], \"exact\": [\"a.json\", \"b.json\"]}, null, {\"deny\": [[], {\"present\": [\"a.json\", \"b.json\"], \"absent\": [], \"unknown\": [], \"exact\": [\"a.json\", \"b.json\"]}], \"allow\": [[], {\"present\": [\"a.json\", \"b.json\"], \"absent\": [], \"unknown\": [], \"exact\": [\"a.json\", \"b.json\"]}]}]"
+  ]
+}
