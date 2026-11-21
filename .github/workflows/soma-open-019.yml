@@ -1,0 +1,36 @@
+name: Challenge the frozen planner with missing hypotheses
+on:
+  push:
+    branches: ['ci/missing-hypotheses-019']
+    paths:
+      - 'open019/*.py'
+      - '.github/workflows/soma-open-019.yml'
+permissions:
+  contents: read
+concurrency:
+  group: missing-hypotheses-019
+  cancel-in-progress: false
+jobs:
+  verify:
+    if: github.repository == 'artemidamoon2223-collab/SOMA-Public-Tests'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 1
+          persist-credentials: false
+      - name: Record paired decisions and audit evidence
+        env:
+          SOURCE_SHA: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+          umask 077
+          test "$(git rev-parse HEAD)" = "$SOURCE_SHA"
+          /usr/bin/python3 -I -c 'import sys; assert sys.version_info[:2] == (3, 12); print(sys.version)'
+          ulimit -t 30 -v 524288 -f 4096 -n 128 -u 128
+          test "$(git hash-object probes018/choose.py)" = 953cf1aef1d47b4af11dcde29748085229aa3b9a
+          receipt=$(mktemp)
+          timeout -k 3 90 /usr/bin/python3 -I -B open019/trial.py | tee "$receipt"
+          timeout -k 3 15 /usr/bin/python3 -I -B open019/audit.py "$receipt" "$SOURCE_SHA"
