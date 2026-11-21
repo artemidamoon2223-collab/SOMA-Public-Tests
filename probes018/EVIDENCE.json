@@ -1,0 +1,235 @@
+{
+  "tested_commit": "14065a1384ab49b56350cc88ed04cdad17ba25ee",
+  "run": "https://github.com/artemidamoon2223-collab/SOMA-Public-Tests/actions/runs/44841278338",
+  "job": 136649984999,
+  "attempt": 1,
+  "runner": "ubuntu-24.04",
+  "audit": {
+    "metrics": {
+      "prior": {
+        "fixed": {
+          "correct": 6,
+          "wrong": 0,
+          "abstain": 0,
+          "probes": 12,
+          "solved_on_first": 0,
+          "solved_on_second": 6
+        },
+        "adaptive": {
+          "correct": 6,
+          "wrong": 0,
+          "abstain": 0,
+          "probes": 12,
+          "solved_on_first": 0,
+          "solved_on_second": 6
+        }
+      },
+      "fork": {
+        "fixed": {
+          "correct": 4,
+          "wrong": 0,
+          "abstain": 4,
+          "probes": 14,
+          "solved_on_first": 2,
+          "solved_on_second": 2
+        },
+        "adaptive": {
+          "correct": 8,
+          "wrong": 0,
+          "abstain": 0,
+          "probes": 16,
+          "solved_on_first": 0,
+          "solved_on_second": 8
+        }
+      },
+      "early": {
+        "fixed": {
+          "correct": 6,
+          "wrong": 0,
+          "abstain": 0,
+          "probes": 10,
+          "solved_on_first": 2,
+          "solved_on_second": 4
+        },
+        "adaptive": {
+          "correct": 6,
+          "wrong": 0,
+          "abstain": 0,
+          "probes": 10,
+          "solved_on_first": 2,
+          "solved_on_second": 4
+        }
+      },
+      "restricted": {
+        "fixed": {
+          "correct": 0,
+          "wrong": 0,
+          "abstain": 8,
+          "probes": 8,
+          "solved_on_first": 0,
+          "solved_on_second": 0
+        },
+        "adaptive": {
+          "correct": 0,
+          "wrong": 0,
+          "abstain": 8,
+          "probes": 8,
+          "solved_on_first": 0,
+          "solved_on_second": 0
+        }
+      },
+      "denied": {
+        "fixed": {
+          "correct": 0,
+          "wrong": 0,
+          "abstain": 8,
+          "probes": 0,
+          "solved_on_first": 0,
+          "solved_on_second": 0
+        },
+        "adaptive": {
+          "correct": 0,
+          "wrong": 0,
+          "abstain": 8,
+          "probes": 0,
+          "solved_on_first": 0,
+          "solved_on_second": 0
+        }
+      }
+    },
+    "branching_in_both_rotations": true,
+    "target_met": true,
+    "corrupt_receipts_rejected": 3
+  },
+  "off_runner_recount": {
+    "prior": {
+      "fixed": {
+        "correct": 6,
+        "wrong": 0,
+        "abstain": 0,
+        "probes": 12,
+        "solved_on_first": 0,
+        "solved_on_second": 6
+      },
+      "adaptive": {
+        "correct": 6,
+        "wrong": 0,
+        "abstain": 0,
+        "probes": 12,
+        "solved_on_first": 0,
+        "solved_on_second": 6
+      }
+    },
+    "fork": {
+      "fixed": {
+        "correct": 4,
+        "wrong": 0,
+        "abstain": 4,
+        "probes": 14,
+        "solved_on_first": 2,
+        "solved_on_second": 2
+      },
+      "adaptive": {
+        "correct": 8,
+        "wrong": 0,
+        "abstain": 0,
+        "probes": 16,
+        "solved_on_first": 0,
+        "solved_on_second": 8
+      }
+    },
+    "early": {
+      "fixed": {
+        "correct": 6,
+        "wrong": 0,
+        "abstain": 0,
+        "probes": 10,
+        "solved_on_first": 2,
+        "solved_on_second": 4
+      },
+      "adaptive": {
+        "correct": 6,
+        "wrong": 0,
+        "abstain": 0,
+        "probes": 10,
+        "solved_on_first": 2,
+        "solved_on_second": 4
+      }
+    },
+    "restricted": {
+      "fixed": {
+        "correct": 0,
+        "wrong": 0,
+        "abstain": 8,
+        "probes": 8,
+        "solved_on_first": 0,
+        "solved_on_second": 0
+      },
+      "adaptive": {
+        "correct": 0,
+        "wrong": 0,
+        "abstain": 8,
+        "probes": 8,
+        "solved_on_first": 0,
+        "solved_on_second": 0
+      }
+    },
+    "denied": {
+      "fixed": {
+        "correct": 0,
+        "wrong": 0,
+        "abstain": 8,
+        "probes": 0,
+        "solved_on_first": 0,
+        "solved_on_second": 0
+      },
+      "adaptive": {
+        "correct": 0,
+        "wrong": 0,
+        "abstain": 8,
+        "probes": 0,
+        "solved_on_first": 0,
+        "solved_on_second": 0
+      }
+    }
+  },
+  "records": [
+    "COMMIT 14065a1384ab49b56350cc88ed04cdad17ba25ee",
+    "CASE [[\"old\", \"two_files\", false], \"cedar\", {\"stdout\": \"\\\"cedar\\\"\\n\", \"sinks\": [[null, \"cedar\"]]}, [\"left.json\", \"right.json\"], [[], [\"left.json\"], [\"right.json\"], [\"left.json\", \"right.json\"]], [\"left.json\", \"right.json\"], [[[[\"left.json\", \"Z\"], [\"right.json\", \"!cedar!\"]], [\"left.json\", \"right.json\"]], [[[\"left.json\", \"Z\"], [\"right.json\", \"!cedar!\"]], [\"left.json\", \"right.json\"]]], {\"left.json\": \"Q\", \"right.json\": \"!cedar!\"}]",
+    "CASE [[\"old\", \"two_files\", true], \"cedar\", {\"stdout\": \"\\\"cedar\\\"\\n\", \"sinks\": [[null, \"cedar\"]]}, [\"left.json\", \"right.json\"], [[], [\"left.json\"], [\"right.json\"], [\"left.json\", \"right.json\"]], [\"left.json\", \"right.json\"], [[[[\"left.json\", \"!cedar!\"], [\"right.json\", \"Z\"]], [\"left.json\", \"right.json\"]], [[[\"left.json\", \"!cedar!\"], [\"right.json\", \"Z\"]], [\"left.json\", \"right.json\"]]], {\"left.json\": \"!cedar!\", \"right.json\": \"Q\"}]",
+    "CASE [[\"old\", \"join\", false], \"cedar !\", {\"stdout\": \"\\\"cedar !\\\"\\n\", \"sinks\": [[null, \"cedar !\"]]}, [\"left.json\", \"right.json\"], [[], [\"left.json\"], [\"right.json\"], [\"left.json\", \"right.json\"]], [\"left.json\", \"right.json\"], [[[[\"left.json\", \"Z!\"], [\"right.json\", \"cedar Z\"]], [\"left.json\", \"right.json\"]], [[[\"left.json\", \"Z!\"], [\"right.json\", \"cedar Z\"]], [\"left.json\", \"right.json\"]]], {\"left.json\": \"Q!\", \"right.json\": \"cedar Q\"}]",
+    "CASE [[\"old\", \"join\", true], \"cedar !\", {\"stdout\": \"\\\"cedar !\\\"\\n\", \"sinks\": [[null, \"cedar !\"]]}, [\"left.json\", \"right.json\"], [[], [\"left.json\"], [\"right.json\"], [\"left.json\", \"right.json\"]], [\"left.json\", \"right.json\"], [[[[\"left.json\", \"cedar Z\"], [\"right.json\", \"Z!\"]], [\"left.json\", \"right.json\"]], [[[\"left.json\", \"cedar Z\"], [\"right.json\", \"Z!\"]], [\"left.json\", \"right.json\"]]], {\"left.json\": \"cedar Q\", \"right.json\": \"Q!\"}]",
+    "CASE [[\"old\", \"upper\", false], \"CEDAR\", {\"stdout\": \"\\\"CEDAR\\\"\\n\", \"sinks\": [[null, \"CEDAR\"]]}, [\"left.json\", \"right.json\"], [[], [\"left.json\"], [\"right.json\"], [\"left.json\", \"right.json\"]], [\"left.json\", \"right.json\"], [[[[\"left.json\", \"Z\"], [\"right.json\", \"CEDAR\"]], [\"left.json\"]], [[[\"left.json\", \"Z\"], [\"right.json\", \"CEDAR\"]], [\"left.json\"]]], {\"left.json\": \"Q\", \"right.json\": \"CEDAR\"}]",
+    "CASE [[\"old\", \"upper\", true], \"CEDAR\", {\"stdout\": \"\\\"CEDAR\\\"\\n\", \"sinks\": [[null, \"CEDAR\"]]}, [\"left.json\", \"right.json\"], [[], [\"left.json\"], [\"right.json\"], [\"left.json\", \"right.json\"]], [\"left.json\", \"right.json\"], [[[[\"left.json\", \"CEDAR\"], [\"right.json\", \"Z\"]], [\"right.json\"]], [[[\"left.json\", \"CEDAR\"], [\"right.json\", \"Z\"]], [\"right.json\"]]], {\"left.json\": \"CEDAR\", \"right.json\": \"Q\"}]",
+    "CASE [[\"new\", 0, \"fork\", 0], \"XX\", {\"stdout\": \"\\\"XX\\\"\\n\", \"sinks\": [[null, \"XX\"]]}, [\"ash.json\", \"bay.json\", \"elm.json\", \"oak.json\"], [[\"ash.json\"], [\"ash.json\", \"bay.json\"], [\"elm.json\"], [\"oak.json\"]], [\"ash.json\", \"bay.json\", \"elm.json\", \"oak.json\"], [[[[\"bay.json\", \"XX\"], [\"ash.json\", \"ZZ\"]], [\"ash.json\"]], [[[\"ash.json\", \"ZZ\"], [\"bay.json\", \"XX\"]], [\"ash.json\"]]], {\"ash.json\": \"QQ\", \"bay.json\": \"XX\", \"elm.json\": \"XX\", \"oak.json\": \"XX\"}]",
+    "CASE [[\"new\", 0, \"fork\", 1], \"XX\", {\"stdout\": \"\\\"XX\\\"\\n\", \"sinks\": [[null, \"XX\"]]}, [\"ash.json\", \"bay.json\", \"elm.json\", \"oak.json\"], [[\"ash.json\"], [\"ash.json\", \"bay.json\"], [\"elm.json\"], [\"oak.json\"]], [\"ash.json\", \"bay.json\", \"elm.json\", \"oak.json\"], [[[[\"bay.json\", \"XZ\"]], [\"ash.json\", \"bay.json\"]], [[[\"ash.json\", \"ZX\"], [\"bay.json\", \"XZ\"]], [\"ash.json\", \"bay.json\"]]], {\"ash.json\": \"QX\", \"bay.json\": \"XQ\", \"elm.json\": \"XX\", \"oak.json\": \"XX\"}]",
+    "CASE [[\"new\", 0, \"fork\", 2], \"XX\", {\"stdout\": \"\\\"XX\\\"\\n\", \"sinks\": [[null, \"XX\"]]}, [\"ash.json\", \"bay.json\", \"elm.json\", \"oak.json\"], [[\"ash.json\"], [\"ash.json\", \"bay.json\"], [\"elm.json\"], [\"oak.json\"]], [\"ash.json\", \"bay.json\", \"elm.json\", \"oak.json\"], [[[[\"bay.json\", \"XX\"], [\"ash.json\", \"XX\"]], null], [[[\"ash.json\", \"XX\"], [\"elm.json\", \"ZZ\"]], [\"elm.json\"]]], {\"ash.json\": \"XX\", \"bay.json\": \"XX\", \"elm.json\": \"QQ\", \"oak.json\": \"XX\"}]",
+    "CASE [[\"new\", 0, \"fork\", 3], \"XX\", {\"stdout\": \"\\\"XX\\\"\\n\", \"sinks\": [[null, \"XX\"]]}, [\"ash.json\", \"bay.json\", \"elm.json\", \"oak.json\"], [[\"ash.json\"], [\"ash.json\", \"bay.json\"], [\"elm.json\"], [\"oak.json\"]], [\"ash.json\", \"bay.json\", \"elm.json\", \"oak.json\"], [[[[\"bay.json\", \"XX\"], [\"ash.json\", \"XX\"]], null], [[[\"ash.json\", \"XX\"], [\"elm.json\", \"XX\"]], [\"oak.json\"]]], {\"ash.json\": \"XX\", \"bay.json\": \"XX\", \"elm.json\": \"XX\", \"oak.json\": \"QQ\"}]",
+    "CASE [[\"new\", 0, \"early\", 0], \"XX\", {\"stdout\": \"\\\"XX\\\"\\n\", \"sinks\": [[null, \"XX\"]]}, [\"ash.json\", \"bay.json\", \"elm.json\", \"oak.json\"], [[\"ash.json\"], [\"ash.json\", \"bay.json\"], [\"elm.json\"]], [\"ash.json\", \"bay.json\", \"elm.json\", \"oak.json\"], [[[[\"ash.json\", \"ZZ\"], [\"bay.json\", \"XX\"]], [\"ash.json\"]], [[[\"ash.json\", \"ZZ\"], [\"bay.json\", \"XX\"]], [\"ash.json\"]]], {\"ash.json\": \"QQ\", \"bay.json\": \"XX\", \"elm.json\": \"XX\", \"oak.json\": \"XX\"}]",
+    "CASE [[\"new\", 0, \"early\", 1], \"XX\", {\"stdout\": \"\\\"XX\\\"\\n\", \"sinks\": [[null, \"XX\"]]}, [\"ash.json\", \"bay.json\", \"elm.json\", \"oak.json\"], [[\"ash.json\"], [\"ash.json\", \"bay.json\"], [\"elm.json\"]], [\"ash.json\", \"bay.json\", \"elm.json\", \"oak.json\"], [[[[\"ash.json\", \"ZX\"], [\"bay.json\", \"XZ\"]], [\"ash.json\", \"bay.json\"]], [[[\"ash.json\", \"ZX\"], [\"bay.json\", \"XZ\"]], [\"ash.json\", \"bay.json\"]]], {\"ash.json\": \"QX\", \"bay.json\": \"XQ\", \"elm.json\": \"XX\", \"oak.json\": \"XX\"}]",
+    "CASE [[\"new\", 0, \"early\", 2], \"XX\", {\"stdout\": \"\\\"XX\\\"\\n\", \"sinks\": [[null, \"XX\"]]}, [\"ash.json\", \"bay.json\", \"elm.json\", \"oak.json\"], [[\"ash.json\"], [\"ash.json\", \"bay.json\"], [\"elm.json\"]], [\"ash.json\", \"bay.json\", \"elm.json\", \"oak.json\"], [[[[\"ash.json\", \"XX\"]], [\"elm.json\"]], [[[\"ash.json\", \"XX\"]], [\"elm.json\"]]], {\"ash.json\": \"XX\", \"bay.json\": \"XX\", \"elm.json\": \"QQ\", \"oak.json\": \"XX\"}]",
+    "CASE [[\"new\", 0, \"restricted\", 0], \"XX\", {\"stdout\": \"\\\"XX\\\"\\n\", \"sinks\": [[null, \"XX\"]]}, [\"ash.json\", \"bay.json\", \"elm.json\", \"oak.json\"], [[\"ash.json\"], [\"ash.json\", \"bay.json\"], [\"elm.json\"], [\"oak.json\"]], [\"ash.json\"], [[[[\"ash.json\", \"ZZ\"]], null], [[[\"ash.json\", \"ZZ\"]], null]], {\"ash.json\": \"QQ\", \"bay.json\": \"XX\", \"elm.json\": \"XX\", \"oak.json\": \"XX\"}]",
+    "CASE [[\"new\", 0, \"restricted\", 1], \"XX\", {\"stdout\": \"\\\"XX\\\"\\n\", \"sinks\": [[null, \"XX\"]]}, [\"ash.json\", \"bay.json\", \"elm.json\", \"oak.json\"], [[\"ash.json\"], [\"ash.json\", \"bay.json\"], [\"elm.json\"], [\"oak.json\"]], [\"ash.json\"], [[[[\"ash.json\", \"ZX\"]], null], [[[\"ash.json\", \"ZX\"]], null]], {\"ash.json\": \"QX\", \"bay.json\": \"XQ\", \"elm.json\": \"XX\", \"oak.json\": \"XX\"}]",
+    "CASE [[\"new\", 0, \"restricted\", 2], \"XX\", {\"stdout\": \"\\\"XX\\\"\\n\", \"sinks\": [[null, \"XX\"]]}, [\"ash.json\", \"bay.json\", \"elm.json\", \"oak.json\"], [[\"ash.json\"], [\"ash.json\", \"bay.json\"], [\"elm.json\"], [\"oak.json\"]], [\"ash.json\"], [[[[\"ash.json\", \"XX\"]], null], [[[\"ash.json\", \"XX\"]], null]], {\"ash.json\": \"XX\", \"bay.json\": \"XX\", \"elm.json\": \"QQ\", \"oak.json\": \"XX\"}]",
+    "CASE [[\"new\", 0, \"restricted\", 3], \"XX\", {\"stdout\": \"\\\"XX\\\"\\n\", \"sinks\": [[null, \"XX\"]]}, [\"ash.json\", \"bay.json\", \"elm.json\", \"oak.json\"], [[\"ash.json\"], [\"ash.json\", \"bay.json\"], [\"elm.json\"], [\"oak.json\"]], [\"ash.json\"], [[[[\"ash.json\", \"XX\"]], null], [[[\"ash.json\", \"XX\"]], null]], {\"ash.json\": \"XX\", \"bay.json\": \"XX\", \"elm.json\": \"XX\", \"oak.json\": \"QQ\"}]",
+    "CASE [[\"new\", 0, \"denied\", 0], \"XX\", {\"stdout\": \"\\\"XX\\\"\\n\", \"sinks\": [[null, \"XX\"]]}, [\"ash.json\", \"bay.json\", \"elm.json\", \"oak.json\"], [[\"ash.json\"], [\"ash.json\", \"bay.json\"], [\"elm.json\"], [\"oak.json\"]], [], [[[], null], [[], null]], {\"ash.json\": \"QQ\", \"bay.json\": \"XX\", \"elm.json\": \"XX\", \"oak.json\": \"XX\"}]",
+    "CASE [[\"new\", 0, \"denied\", 1], \"XX\", {\"stdout\": \"\\\"XX\\\"\\n\", \"sinks\": [[null, \"XX\"]]}, [\"ash.json\", \"bay.json\", \"elm.json\", \"oak.json\"], [[\"ash.json\"], [\"ash.json\", \"bay.json\"], [\"elm.json\"], [\"oak.json\"]], [], [[[], null], [[], null]], {\"ash.json\": \"QX\", \"bay.json\": \"XQ\", \"elm.json\": \"XX\", \"oak.json\": \"XX\"}]",
+    "CASE [[\"new\", 0, \"denied\", 2], \"XX\", {\"stdout\": \"\\\"XX\\\"\\n\", \"sinks\": [[null, \"XX\"]]}, [\"ash.json\", \"bay.json\", \"elm.json\", \"oak.json\"], [[\"ash.json\"], [\"ash.json\", \"bay.json\"], [\"elm.json\"], [\"oak.json\"]], [], [[[], null], [[], null]], {\"ash.json\": \"XX\", \"bay.json\": \"XX\", \"elm.json\": \"QQ\", \"oak.json\": \"XX\"}]",
+    "CASE [[\"new\", 0, \"denied\", 3], \"XX\", {\"stdout\": \"\\\"XX\\\"\\n\", \"sinks\": [[null, \"XX\"]]}, [\"ash.json\", \"bay.json\", \"elm.json\", \"oak.json\"], [[\"ash.json\"], [\"ash.json\", \"bay.json\"], [\"elm.json\"], [\"oak.json\"]], [], [[[], null], [[], null]], {\"ash.json\": \"XX\", \"bay.json\": \"XX\", \"elm.json\": \"XX\", \"oak.json\": \"QQ\"}]",
+    "CASE [[\"new\", 2, \"fork\", 0], \"XX\", {\"stdout\": \"\\\"XX\\\"\\n\", \"sinks\": [[null, \"XX\"]]}, [\"elm.json\", \"oak.json\", \"ash.json\", \"bay.json\"], [[\"elm.json\"], [\"elm.json\", \"oak.json\"], [\"ash.json\"], [\"bay.json\"]], [\"elm.json\", \"oak.json\", \"ash.json\", \"bay.json\"], [[[[\"ash.json\", \"XX\"], [\"bay.json\", \"XX\"]], null], [[[\"elm.json\", \"ZZ\"], [\"oak.json\", \"XX\"]], [\"elm.json\"]]], {\"elm.json\": \"QQ\", \"oak.json\": \"XX\", \"ash.json\": \"XX\", \"bay.json\": \"XX\"}]",
+    "CASE [[\"new\", 2, \"fork\", 1], \"XX\", {\"stdout\": \"\\\"XX\\\"\\n\", \"sinks\": [[null, \"XX\"]]}, [\"elm.json\", \"oak.json\", \"ash.json\", \"bay.json\"], [[\"elm.json\"], [\"elm.json\", \"oak.json\"], [\"ash.json\"], [\"bay.json\"]], [\"elm.json\", \"oak.json\", \"ash.json\", \"bay.json\"], [[[[\"ash.json\", \"XX\"], [\"bay.json\", \"XX\"]], null], [[[\"elm.json\", \"ZX\"], [\"oak.json\", \"XZ\"]], [\"elm.json\", \"oak.json\"]]], {\"elm.json\": \"QX\", \"oak.json\": \"XQ\", \"ash.json\": \"XX\", \"bay.json\": \"XX\"}]",
+    "CASE [[\"new\", 2, \"fork\", 2], \"XX\", {\"stdout\": \"\\\"XX\\\"\\n\", \"sinks\": [[null, \"XX\"]]}, [\"elm.json\", \"oak.json\", \"ash.json\", \"bay.json\"], [[\"elm.json\"], [\"elm.json\", \"oak.json\"], [\"ash.json\"], [\"bay.json\"]], [\"elm.json\", \"oak.json\", \"ash.json\", \"bay.json\"], [[[[\"ash.json\", \"ZZ\"]], [\"ash.json\"]], [[[\"elm.json\", \"XX\"], [\"ash.json\", \"ZZ\"]], [\"ash.json\"]]], {\"elm.json\": \"XX\", \"oak.json\": \"XX\", \"ash.json\": \"QQ\", \"bay.json\": \"XX\"}]",
+    "CASE [[\"new\", 2, \"fork\", 3], \"XX\", {\"stdout\": \"\\\"XX\\\"\\n\", \"sinks\": [[null, \"XX\"]]}, [\"elm.json\", \"oak.json\", \"ash.json\", \"bay.json\"], [[\"elm.json\"], [\"elm.json\", \"oak.json\"], [\"ash.json\"], [\"bay.json\"]], [\"elm.json\", \"oak.json\", \"ash.json\", \"bay.json\"], [[[[\"ash.json\", \"XX\"], [\"bay.json\", \"ZZ\"]], [\"bay.json\"]], [[[\"elm.json\", \"XX\"], [\"ash.json\", \"XX\"]], [\"bay.json\"]]], {\"elm.json\": \"XX\", \"oak.json\": \"XX\", \"ash.json\": \"XX\", \"bay.json\": \"QQ\"}]",
+    "CASE [[\"new\", 2, \"early\", 0], \"XX\", {\"stdout\": \"\\\"XX\\\"\\n\", \"sinks\": [[null, \"XX\"]]}, [\"elm.json\", \"oak.json\", \"ash.json\", \"bay.json\"], [[\"elm.json\"], [\"elm.json\", \"oak.json\"], [\"ash.json\"]], [\"elm.json\", \"oak.json\", \"ash.json\", \"bay.json\"], [[[[\"ash.json\", \"XX\"], [\"oak.json\", \"XX\"]], [\"elm.json\"]], [[[\"ash.json\", \"XX\"], [\"oak.json\", \"XX\"]], [\"elm.json\"]]], {\"elm.json\": \"QQ\", \"oak.json\": \"XX\", \"ash.json\": \"XX\", \"bay.json\": \"XX\"}]",
+    "CASE [[\"new\", 2, \"early\", 1], \"XX\", {\"stdout\": \"\\\"XX\\\"\\n\", \"sinks\": [[null, \"XX\"]]}, [\"elm.json\", \"oak.json\", \"ash.json\", \"bay.json\"], [[\"elm.json\"], [\"elm.json\", \"oak.json\"], [\"ash.json\"]], [\"elm.json\", \"oak.json\", \"ash.json\", \"bay.json\"], [[[[\"ash.json\", \"XX\"], [\"oak.json\", \"XZ\"]], [\"elm.json\", \"oak.json\"]], [[[\"ash.json\", \"XX\"], [\"oak.json\", \"XZ\"]], [\"elm.json\", \"oak.json\"]]], {\"elm.json\": \"QX\", \"oak.json\": \"XQ\", \"ash.json\": \"XX\", \"bay.json\": \"XX\"}]",
+    "CASE [[\"new\", 2, \"early\", 2], \"XX\", {\"stdout\": \"\\\"XX\\\"\\n\", \"sinks\": [[null, \"XX\"]]}, [\"elm.json\", \"oak.json\", \"ash.json\", \"bay.json\"], [[\"elm.json\"], [\"elm.json\", \"oak.json\"], [\"ash.json\"]], [\"elm.json\", \"oak.json\", \"ash.json\", \"bay.json\"], [[[[\"ash.json\", \"ZZ\"]], [\"ash.json\"]], [[[\"ash.json\", \"ZZ\"]], [\"ash.json\"]]], {\"elm.json\": \"XX\", \"oak.json\": \"XX\", \"ash.json\": \"QQ\", \"bay.json\": \"XX\"}]",
+    "CASE [[\"new\", 2, \"restricted\", 0], \"XX\", {\"stdout\": \"\\\"XX\\\"\\n\", \"sinks\": [[null, \"XX\"]]}, [\"elm.json\", \"oak.json\", \"ash.json\", \"bay.json\"], [[\"elm.json\"], [\"elm.json\", \"oak.json\"], [\"ash.json\"], [\"bay.json\"]], [\"elm.json\"], [[[[\"elm.json\", \"ZZ\"]], null], [[[\"elm.json\", \"ZZ\"]], null]], {\"elm.json\": \"QQ\", \"oak.json\": \"XX\", \"ash.json\": \"XX\", \"bay.json\": \"XX\"}]",
+    "CASE [[\"new\", 2, \"restricted\", 1], \"XX\", {\"stdout\": \"\\\"XX\\\"\\n\", \"sinks\": [[null, \"XX\"]]}, [\"elm.json\", \"oak.json\", \"ash.json\", \"bay.json\"], [[\"elm.json\"], [\"elm.json\", \"oak.json\"], [\"ash.json\"], [\"bay.json\"]], [\"elm.json\"], [[[[\"elm.json\", \"ZX\"]], null], [[[\"elm.json\", \"ZX\"]], null]], {\"elm.json\": \"QX\", \"oak.json\": \"XQ\", \"ash.json\": \"XX\", \"bay.json\": \"XX\"}]",
+    "CASE [[\"new\", 2, \"restricted\", 2], \"XX\", {\"stdout\": \"\\\"XX\\\"\\n\", \"sinks\": [[null, \"XX\"]]}, [\"elm.json\", \"oak.json\", \"ash.json\", \"bay.json\"], [[\"elm.json\"], [\"elm.json\", \"oak.json\"], [\"ash.json\"], [\"bay.json\"]], [\"elm.json\"], [[[[\"elm.json\", \"XX\"]], null], [[[\"elm.json\", \"XX\"]], null]], {\"elm.json\": \"XX\", \"oak.json\": \"XX\", \"ash.json\": \"QQ\", \"bay.json\": \"XX\"}]",
+    "CASE [[\"new\", 2, \"restricted\", 3], \"XX\", {\"stdout\": \"\\\"XX\\\"\\n\", \"sinks\": [[null, \"XX\"]]}, [\"elm.json\", \"oak.json\", \"ash.json\", \"bay.json\"], [[\"elm.json\"], [\"elm.json\", \"oak.json\"], [\"ash.json\"], [\"bay.json\"]], [\"elm.json\"], [[[[\"elm.json\", \"XX\"]], null], [[[\"elm.json\", \"XX\"]], null]], {\"elm.json\": \"XX\", \"oak.json\": \"XX\", \"ash.json\": \"XX\", \"bay.json\": \"QQ\"}]",
+    "CASE [[\"new\", 2, \"denied\", 0], \"XX\", {\"stdout\": \"\\\"XX\\\"\\n\", \"sinks\": [[null, \"XX\"]]}, [\"elm.json\", \"oak.json\", \"ash.json\", \"bay.json\"], [[\"elm.json\"], [\"elm.json\", \"oak.json\"], [\"ash.json\"], [\"bay.json\"]], [], [[[], null], [[], null]], {\"elm.json\": \"QQ\", \"oak.json\": \"XX\", \"ash.json\": \"XX\", \"bay.json\": \"XX\"}]",
+    "CASE [[\"new\", 2, \"denied\", 1], \"XX\", {\"stdout\": \"\\\"XX\\\"\\n\", \"sinks\": [[null, \"XX\"]]}, [\"elm.json\", \"oak.json\", \"ash.json\", \"bay.json\"], [[\"elm.json\"], [\"elm.json\", \"oak.json\"], [\"ash.json\"], [\"bay.json\"]], [], [[[], null], [[], null]], {\"elm.json\": \"QX\", \"oak.json\": \"XQ\", \"ash.json\": \"XX\", \"bay.json\": \"XX\"}]",
+    "CASE [[\"new\", 2, \"denied\", 2], \"XX\", {\"stdout\": \"\\\"XX\\\"\\n\", \"sinks\": [[null, \"XX\"]]}, [\"elm.json\", \"oak.json\", \"ash.json\", \"bay.json\"], [[\"elm.json\"], [\"elm.json\", \"oak.json\"], [\"ash.json\"], [\"bay.json\"]], [], [[[], null], [[], null]], {\"elm.json\": \"XX\", \"oak.json\": \"XX\", \"ash.json\": \"QQ\", \"bay.json\": \"XX\"}]",
+    "CASE [[\"new\", 2, \"denied\", 3], \"XX\", {\"stdout\": \"\\\"XX\\\"\\n\", \"sinks\": [[null, \"XX\"]]}, [\"elm.json\", \"oak.json\", \"ash.json\", \"bay.json\"], [[\"elm.json\"], [\"elm.json\", \"oak.json\"], [\"ash.json\"], [\"bay.json\"]], [], [[[], null], [[], null]], {\"elm.json\": \"XX\", \"oak.json\": \"XX\", \"ash.json\": \"XX\", \"bay.json\": \"QQ\"}]"
+  ]
+}
