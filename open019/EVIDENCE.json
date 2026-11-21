@@ -1,0 +1,114 @@
+{
+  "tested_commit": "71e1f9df30d8cb085d08779fc570852211e525bf",
+  "run": "https://github.com/artemidamoon2223-collab/SOMA-Public-Tests/actions/runs/44841787271",
+  "job": 136651704072,
+  "attempt": 1,
+  "runner": "ubuntu-24.04",
+  "audit": {
+    "scores": {
+      "omitted/open": {
+        "correct": 0,
+        "wrong": 6,
+        "abstain": 0,
+        "contradiction": 0
+      },
+      "listed/open": {
+        "correct": 4,
+        "wrong": 0,
+        "abstain": 6,
+        "contradiction": 0
+      },
+      "omitted/one": {
+        "correct": 0,
+        "wrong": 3,
+        "abstain": 3,
+        "contradiction": 0
+      },
+      "listed/one": {
+        "correct": 1,
+        "wrong": 0,
+        "abstain": 9,
+        "contradiction": 0
+      }
+    },
+    "wrong_with_exact_twin": 9,
+    "external_control": {
+      "contradicted": 4,
+      "compatible": 4
+    },
+    "zero_false_answers": false,
+    "rejected_corruptions": 3
+  },
+  "off_runner_recount": {
+    "scores": {
+      "omitted/open": {
+        "correct": 0,
+        "wrong": 6,
+        "abstain": 0,
+        "contradiction": 0
+      },
+      "listed/open": {
+        "correct": 4,
+        "wrong": 0,
+        "abstain": 6,
+        "contradiction": 0
+      },
+      "omitted/one": {
+        "correct": 0,
+        "wrong": 3,
+        "abstain": 3,
+        "contradiction": 0
+      },
+      "listed/one": {
+        "correct": 1,
+        "wrong": 0,
+        "abstain": 9,
+        "contradiction": 0
+      }
+    },
+    "wrong_with_exact_twin": 9,
+    "external_control": {
+      "contradicted": 4,
+      "compatible": 4
+    },
+    "example": [
+      "[\"two_names\",\"open\",\"c.json\"]",
+      "[\"two_names\",\"open\",\"b.json\"]"
+    ]
+  },
+  "records": [
+    "COMMIT 71e1f9df30d8cb085d08779fc570852211e525bf",
+    "CASE [[\"two_names\", \"open\", 0], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [[\"a.json\", \"BASE\"]], [\"b.json\"], [\"c.json\", \"BASE\"], {\"a.json\": \"BASE\", \"b.json\": \"BASE\", \"c.json\": \"BASE\"}]",
+    "CASE [[\"two_names\", \"open\", 1], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [[\"a.json\", \"PLANNER\"], [\"b.json\", \"BASE\"]], [\"a.json\"], [\"c.json\", \"BASE\"], {\"a.json\": \"ORACLE\", \"b.json\": \"BASE\", \"c.json\": \"BASE\"}]",
+    "CASE [[\"two_names\", \"open\", 2], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [[\"a.json\", \"BASE\"]], [\"b.json\"], [\"c.json\", \"BASE\"], {\"a.json\": \"BASE\", \"b.json\": \"ORACLE\", \"c.json\": \"BASE\"}]",
+    "CASE [[\"two_names\", \"open\", 3], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [[\"a.json\", \"BASE\"]], [\"b.json\"], [\"c.json\", \"CONTROL\"], {\"a.json\": \"BASE\", \"b.json\": \"BASE\", \"c.json\": \"ORACLE\"}]",
+    "CASE [[\"two_names\", \"open\", 4], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [[\"a.json\", \"PLANNER\"], [\"b.json\", \"PLANNER\"]], [\"a.json\", \"b.json\"], [\"c.json\", \"BASE\"], {\"a.json\": \"ORACLE\", \"b.json\": \"ORACLE\", \"c.json\": \"BASE\"}]",
+    "CASE [[\"two_names\", \"open\", 5], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [[\"a.json\", \"PLANNER\"], [\"b.json\", \"BASE\"]], [\"a.json\"], [\"c.json\", \"CONTROL\"], {\"a.json\": \"ORACLE\", \"b.json\": \"BASE\", \"c.json\": \"ORACLE\"}]",
+    "CASE [[\"two_names\", \"open\", 6], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [[\"a.json\", \"BASE\"]], [\"b.json\"], [\"c.json\", \"CONTROL\"], {\"a.json\": \"BASE\", \"b.json\": \"ORACLE\", \"c.json\": \"ORACLE\"}]",
+    "CASE [[\"two_names\", \"open\", 7], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [[\"a.json\", \"PLANNER\"], [\"b.json\", \"PLANNER\"]], [\"a.json\", \"b.json\"], [\"c.json\", \"CONTROL\"], {\"a.json\": \"ORACLE\", \"b.json\": \"ORACLE\", \"c.json\": \"ORACLE\"}]",
+    "CASE [[\"two_names\", \"one\", 0], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [[\"a.json\", \"BASE\"]], [\"b.json\"], null, {\"a.json\": \"BASE\", \"b.json\": \"BASE\", \"c.json\": \"BASE\"}]",
+    "CASE [[\"two_names\", \"one\", 1], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [[\"a.json\", \"PLANNER\"]], null, null, {\"a.json\": \"ORACLE\", \"b.json\": \"BASE\", \"c.json\": \"BASE\"}]",
+    "CASE [[\"two_names\", \"one\", 2], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [[\"a.json\", \"BASE\"]], [\"b.json\"], null, {\"a.json\": \"BASE\", \"b.json\": \"ORACLE\", \"c.json\": \"BASE\"}]",
+    "CASE [[\"two_names\", \"one\", 3], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [[\"a.json\", \"BASE\"]], [\"b.json\"], null, {\"a.json\": \"BASE\", \"b.json\": \"BASE\", \"c.json\": \"ORACLE\"}]",
+    "CASE [[\"two_names\", \"one\", 4], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [[\"a.json\", \"PLANNER\"]], null, null, {\"a.json\": \"ORACLE\", \"b.json\": \"ORACLE\", \"c.json\": \"BASE\"}]",
+    "CASE [[\"two_names\", \"one\", 5], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [[\"a.json\", \"PLANNER\"]], null, null, {\"a.json\": \"ORACLE\", \"b.json\": \"BASE\", \"c.json\": \"ORACLE\"}]",
+    "CASE [[\"two_names\", \"one\", 6], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [[\"a.json\", \"BASE\"]], [\"b.json\"], null, {\"a.json\": \"BASE\", \"b.json\": \"ORACLE\", \"c.json\": \"ORACLE\"}]",
+    "CASE [[\"two_names\", \"one\", 7], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [[\"a.json\", \"PLANNER\"]], null, null, {\"a.json\": \"ORACLE\", \"b.json\": \"ORACLE\", \"c.json\": \"ORACLE\"}]",
+    "CASE [[\"nonempty\", \"open\", 0], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [[\"a.json\", \"BASE\"], [\"b.json\", \"BASE\"]], [\"c.json\"], null, {\"a.json\": \"BASE\", \"b.json\": \"BASE\", \"c.json\": \"BASE\"}]",
+    "CASE [[\"nonempty\", \"open\", 1], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [[\"a.json\", \"PLANNER\"], [\"b.json\", \"BASE\"]], null, null, {\"a.json\": \"ORACLE\", \"b.json\": \"BASE\", \"c.json\": \"BASE\"}]",
+    "CASE [[\"nonempty\", \"open\", 2], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [[\"a.json\", \"BASE\"], [\"b.json\", \"PLANNER\"]], null, null, {\"a.json\": \"BASE\", \"b.json\": \"ORACLE\", \"c.json\": \"BASE\"}]",
+    "CASE [[\"nonempty\", \"open\", 3], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [[\"a.json\", \"BASE\"], [\"b.json\", \"BASE\"]], [\"c.json\"], null, {\"a.json\": \"BASE\", \"b.json\": \"BASE\", \"c.json\": \"ORACLE\"}]",
+    "CASE [[\"nonempty\", \"open\", 4], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [[\"a.json\", \"PLANNER\"], [\"b.json\", \"PLANNER\"]], null, null, {\"a.json\": \"ORACLE\", \"b.json\": \"ORACLE\", \"c.json\": \"BASE\"}]",
+    "CASE [[\"nonempty\", \"open\", 5], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [[\"a.json\", \"PLANNER\"], [\"b.json\", \"BASE\"]], null, null, {\"a.json\": \"ORACLE\", \"b.json\": \"BASE\", \"c.json\": \"ORACLE\"}]",
+    "CASE [[\"nonempty\", \"open\", 6], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [[\"a.json\", \"BASE\"], [\"b.json\", \"PLANNER\"]], null, null, {\"a.json\": \"BASE\", \"b.json\": \"ORACLE\", \"c.json\": \"ORACLE\"}]",
+    "CASE [[\"nonempty\", \"open\", 7], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [[\"a.json\", \"PLANNER\"], [\"b.json\", \"PLANNER\"]], null, null, {\"a.json\": \"ORACLE\", \"b.json\": \"ORACLE\", \"c.json\": \"ORACLE\"}]",
+    "CASE [[\"nonempty\", \"one\", 0], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [[\"a.json\", \"BASE\"]], null, null, {\"a.json\": \"BASE\", \"b.json\": \"BASE\", \"c.json\": \"BASE\"}]",
+    "CASE [[\"nonempty\", \"one\", 1], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [[\"a.json\", \"PLANNER\"]], null, null, {\"a.json\": \"ORACLE\", \"b.json\": \"BASE\", \"c.json\": \"BASE\"}]",
+    "CASE [[\"nonempty\", \"one\", 2], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [[\"a.json\", \"BASE\"]], null, null, {\"a.json\": \"BASE\", \"b.json\": \"ORACLE\", \"c.json\": \"BASE\"}]",
+    "CASE [[\"nonempty\", \"one\", 3], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [[\"a.json\", \"BASE\"]], null, null, {\"a.json\": \"BASE\", \"b.json\": \"BASE\", \"c.json\": \"ORACLE\"}]",
+    "CASE [[\"nonempty\", \"one\", 4], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [[\"a.json\", \"PLANNER\"]], null, null, {\"a.json\": \"ORACLE\", \"b.json\": \"ORACLE\", \"c.json\": \"BASE\"}]",
+    "CASE [[\"nonempty\", \"one\", 5], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [[\"a.json\", \"PLANNER\"]], null, null, {\"a.json\": \"ORACLE\", \"b.json\": \"BASE\", \"c.json\": \"ORACLE\"}]",
+    "CASE [[\"nonempty\", \"one\", 6], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [[\"a.json\", \"BASE\"]], null, null, {\"a.json\": \"BASE\", \"b.json\": \"ORACLE\", \"c.json\": \"ORACLE\"}]",
+    "CASE [[\"nonempty\", \"one\", 7], \"BASE\", {\"stdout\": \"\\\"BASE\\\"\\n\", \"sinks\": [[null, \"BASE\"]]}, [[\"a.json\", \"PLANNER\"]], null, null, {\"a.json\": \"ORACLE\", \"b.json\": \"ORACLE\", \"c.json\": \"ORACLE\"}]"
+  ]
+}
