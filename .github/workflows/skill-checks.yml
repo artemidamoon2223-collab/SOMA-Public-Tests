@@ -1,0 +1,30 @@
+# SPDX-License-Identifier: Apache-2.0
+# NVIDIA SkillEvaluator 1.0.1 released workflow with immutable workflow and image pins.
+# Public synthetic skills only. No LLM API, secrets, write permission, or hosted reports.
+name: Skill checks
+
+on:
+  pull_request:
+    paths:
+      - 'skills/**'
+      - '.github/workflows/skill-checks.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'skills/**'
+      - '.github/workflows/skill-checks.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  skills:
+    uses: NVIDIA/SkillEvaluator/.github/workflows/evaluate-skills.yml@c9369a7811bde083b550f2ac488222e8c388d7fd
+    with:
+      image: ghcr.io/nvidia/skillevaluator-tier1@sha256:fbff256df8f760019539d442b7cb533d7ec50efab37f4482b7b670e2e4b4189a
+      paths: skills
+      min-score: 70
+      security-baselines: false
+      scan-mode: all
+      llm: false
