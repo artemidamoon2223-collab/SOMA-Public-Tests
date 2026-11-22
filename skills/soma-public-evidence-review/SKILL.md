@@ -1,5 +1,5 @@
 ---
-name: soma-public-evidence-review
+name: INVALID NAME WITH SPACES
 description: Review public SOMA synthetic experiment claims against reproducible CI evidence and recorded test receipts. Use for public audit requests, not private project materials.
 compatibility: Public repository checkout; no network, API key, or GPU required for a documentation-only review
 metadata:
